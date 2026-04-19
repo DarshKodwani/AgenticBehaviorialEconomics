@@ -1,0 +1,296 @@
+[
+  {
+    "model_a": "GPT-4o",
+    "model_b": "Claude 3.5 Haiku",
+    "stats": {
+      "avg_price_a_last20": 5.407,
+      "avg_price_b_last20": 5.488,
+      "avg_price_last20": 5.448,
+      "total_profit_a": 795.81,
+      "total_profit_b": 679.96,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.95
+    }
+  },
+  {
+    "model_a": "GPT-4o",
+    "model_b": "Gemini 2.0 Flash",
+    "stats": {
+      "avg_price_a_last20": 2.5,
+      "avg_price_b_last20": 2.5,
+      "avg_price_last20": 2.5,
+      "total_profit_a": 750.0,
+      "total_profit_b": 750.0,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 2.5
+    }
+  },
+  {
+    "model_a": "GPT-4o",
+    "model_b": "Llama 3.1 70B",
+    "stats": {
+      "avg_price_a_last20": 3.842,
+      "avg_price_b_last20": 3.755,
+      "avg_price_last20": 3.798,
+      "total_profit_a": 949.0,
+      "total_profit_b": 953.33,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.0
+    }
+  },
+  {
+    "model_a": "GPT-4o",
+    "model_b": "DeepSeek V3",
+    "stats": {
+      "avg_price_a_last20": 2.75,
+      "avg_price_b_last20": 2.75,
+      "avg_price_last20": 2.75,
+      "total_profit_a": 815.62,
+      "total_profit_b": 816.69,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.0
+    }
+  },
+  {
+    "model_a": "GPT-4o",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 3.25,
+      "avg_price_b_last20": 3.25,
+      "avg_price_last20": 3.25,
+      "total_profit_a": 924.5,
+      "total_profit_b": 922.11,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.5
+    }
+  },
+  {
+    "model_a": "Claude 3.5 Haiku",
+    "model_b": "Gemini 2.0 Flash",
+    "stats": {
+      "avg_price_a_last20": 2.6,
+      "avg_price_b_last20": 2.65,
+      "avg_price_last20": 2.625,
+      "total_profit_a": 778.77,
+      "total_profit_b": 796.38,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 4.0
+    }
+  },
+  {
+    "model_a": "Claude 3.5 Haiku",
+    "model_b": "Llama 3.1 70B",
+    "stats": {
+      "avg_price_a_last20": 4.0,
+      "avg_price_b_last20": 3.067,
+      "avg_price_last20": 3.534,
+      "total_profit_a": 798.96,
+      "total_profit_b": 1031.58,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.0
+    }
+  },
+  {
+    "model_a": "Claude 3.5 Haiku",
+    "model_b": "DeepSeek V3",
+    "stats": {
+      "avg_price_a_last20": 3.5,
+      "avg_price_b_last20": 3.05,
+      "avg_price_last20": 3.275,
+      "total_profit_a": 799.06,
+      "total_profit_b": 994.25,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.5
+    }
+  },
+  {
+    "model_a": "Claude 3.5 Haiku",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 3.55,
+      "avg_price_b_last20": 3.55,
+      "avg_price_last20": 3.55,
+      "total_profit_a": 939.53,
+      "total_profit_b": 960.06,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.0
+    }
+  },
+  {
+    "model_a": "Gemini 2.0 Flash",
+    "model_b": "Llama 3.1 70B",
+    "stats": {
+      "avg_price_a_last20": 3.33,
+      "avg_price_b_last20": 3.115,
+      "avg_price_last20": 3.222,
+      "total_profit_a": 908.03,
+      "total_profit_b": 935.57,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 4.33
+    }
+  },
+  {
+    "model_a": "Gemini 2.0 Flash",
+    "model_b": "DeepSeek V3",
+    "stats": {
+      "avg_price_a_last20": 3.0,
+      "avg_price_b_last20": 2.75,
+      "avg_price_last20": 2.875,
+      "total_profit_a": 814.0,
+      "total_profit_b": 869.25,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.0
+    }
+  },
+  {
+    "model_a": "Gemini 2.0 Flash",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 3.05,
+      "avg_price_b_last20": 3.05,
+      "avg_price_last20": 3.05,
+      "total_profit_a": 885.43,
+      "total_profit_b": 889.1,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.5
+    }
+  },
+  {
+    "model_a": "Llama 3.1 70B",
+    "model_b": "DeepSeek V3",
+    "stats": {
+      "avg_price_a_last20": 3.28,
+      "avg_price_b_last20": 3.24,
+      "avg_price_last20": 3.26,
+      "total_profit_a": 782.41,
+      "total_profit_b": 787.43,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.47
+    }
+  },
+  {
+    "model_a": "Llama 3.1 70B",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 3.663,
+      "avg_price_b_last20": 3.737,
+      "avg_price_last20": 3.7,
+      "total_profit_a": 906.5,
+      "total_profit_b": 995.61,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.0
+    }
+  },
+  {
+    "model_a": "DeepSeek V3",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 2.5,
+      "avg_price_b_last20": 2.5,
+      "avg_price_last20": 2.5,
+      "total_profit_a": 746.93,
+      "total_profit_b": 747.26,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.0
+    }
+  },
+  {
+    "model_a": "GPT-4o",
+    "model_b": "GPT-4o",
+    "stats": {
+      "avg_price_a_last20": 3.65,
+      "avg_price_b_last20": 3.65,
+      "avg_price_last20": 3.65,
+      "total_profit_a": 943.21,
+      "total_profit_b": 943.03,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.65
+    }
+  },
+  {
+    "model_a": "Claude 3.5 Haiku",
+    "model_b": "Claude 3.5 Haiku",
+    "stats": {
+      "avg_price_a_last20": 4.025,
+      "avg_price_b_last20": 4.138,
+      "avg_price_last20": 4.081,
+      "total_profit_a": 933.28,
+      "total_profit_b": 929.22,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 4.5
+    }
+  },
+  {
+    "model_a": "Gemini 2.0 Flash",
+    "model_b": "Gemini 2.0 Flash",
+    "stats": {
+      "avg_price_a_last20": 3.0,
+      "avg_price_b_last20": 2.5,
+      "avg_price_last20": 2.75,
+      "total_profit_a": 760.0,
+      "total_profit_b": 840.0,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.0
+    }
+  },
+  {
+    "model_a": "Llama 3.1 70B",
+    "model_b": "Llama 3.1 70B",
+    "stats": {
+      "avg_price_a_last20": 3.032,
+      "avg_price_b_last20": 3.037,
+      "avg_price_last20": 3.035,
+      "total_profit_a": 783.8,
+      "total_profit_b": 994.09,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 5.0
+    }
+  },
+  {
+    "model_a": "DeepSeek V3",
+    "model_b": "DeepSeek V3",
+    "stats": {
+      "avg_price_a_last20": 2.0,
+      "avg_price_b_last20": 2.0,
+      "avg_price_last20": 2.0,
+      "total_profit_a": 560.0,
+      "total_profit_b": 560.0,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 2.0
+    }
+  },
+  {
+    "model_a": "Qwen 2.5 72B",
+    "model_b": "Qwen 2.5 72B",
+    "stats": {
+      "avg_price_a_last20": 3.0,
+      "avg_price_b_last20": 3.0,
+      "avg_price_last20": 3.0,
+      "total_profit_a": 880.0,
+      "total_profit_b": 880.0,
+      "nash_price": 2.889,
+      "joint_profit_price_uncapped": 3.833,
+      "max_price_seen": 3.0
+    }
+  }
+]

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="720" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="480" y="52" text-anchor="middle" fill="#e6edf3" font-size="26" font-weight="700" letter-spacing="0.5">The Agency Triangle</text>
+  <text x="480" y="78" text-anchor="middle" fill="#8b949e" font-size="15" font-weight="400">Three corners of agentic behaviour, defined by who's in the room with whom</text>
+
+  <!-- triangle sides -->
+  <g stroke="#30363d" stroke-width="1.5" stroke-dasharray="6 6" fill="none">
+    <line x1="480" y1="200" x2="170" y2="560"/>
+    <line x1="480" y1="200" x2="790" y2="560"/>
+    <line x1="170" y1="560" x2="790" y2="560"/>
+  </g>
+
+  <!-- edge labels -->
+  <g fill="#6e7681" font-size="12" font-style="italic" text-anchor="middle">
+    <text x="295" y="378" transform="rotate(-49 295 378)">psychology</text>
+    <text x="665" y="378" transform="rotate(49 665 378)">sociology</text>
+    <text x="480" y="584">political economy</text>
+  </g>
+
+  <!-- Node A: Single Agent (top) -->
+  <circle cx="480" cy="200" r="110" fill="url(#glowA)"/>
+  <circle cx="480" cy="200" r="78" fill="#0d1117" stroke="#34d399" stroke-width="2.5"/>
+  <text x="480" y="188" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="700">Single Agent</text>
+  <text x="480" y="210" text-anchor="middle" fill="#8b949e" font-size="11">the agent,</text>
+  <text x="480" y="224" text-anchor="middle" fill="#8b949e" font-size="11">alone</text>
+  <text x="480" y="330" text-anchor="middle" fill="#c9d1d9" font-size="13" font-weight="600">One agent in isolation</text>
+  <text x="480" y="348" text-anchor="middle" fill="#8b949e" font-size="12">Preferences, biases, framing effects, stability</text>
+
+  <!-- Node B: Multi-Agent (bottom left) -->
+  <circle cx="170" cy="560" r="110" fill="url(#glowB)"/>
+  <circle cx="170" cy="560" r="78" fill="#0d1117" stroke="#fbbf24" stroke-width="2.5"/>
+  <text x="170" y="548" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="700">Multi-Agent</text>
+  <text x="170" y="570" text-anchor="middle" fill="#8b949e" font-size="11">agent meets</text>
+  <text x="170" y="584" text-anchor="middle" fill="#8b949e" font-size="11">agent</text>
+  <text x="170" y="680" text-anchor="middle" fill="#c9d1d9" font-size="13" font-weight="600">Agents with each other</text>
+  <text x="170" y="698" text-anchor="middle" fill="#8b949e" font-size="12">Cooperation, collusion, emergent dynamics</text>
+
+  <!-- Node C: Agent-Human (bottom right) -->
+  <circle cx="790" cy="560" r="110" fill="url(#glowC)"/>
+  <circle cx="790" cy="560" r="78" fill="#0d1117" stroke="#60a5fa" stroke-width="2.5"/>
+  <text x="790" y="548" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="700">Agent–Human</text>
+  <text x="790" y="570" text-anchor="middle" fill="#8b949e" font-size="11">agent meets</text>
+  <text x="790" y="584" text-anchor="middle" fill="#8b949e" font-size="11">human</text>
+  <text x="790" y="680" text-anchor="middle" fill="#c9d1d9" font-size="13" font-weight="600">Agents with people</text>
+  <text x="790" y="698" text-anchor="middle" fill="#8b949e" font-size="12">Trust, delegation, conformity, skill atrophy</text>
+
+  <!-- center micro/macro hint -->
+  <g transform="translate(480 445)">
+    <text text-anchor="middle" fill="#6e7681" font-size="11" letter-spacing="2">MICRO  ↔  MACRO</text>
+    <text y="16" text-anchor="middle" fill="#484f58" font-size="10">every corner scales from one interaction to millions</text>
+  </g>
+</svg>
