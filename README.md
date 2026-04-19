@@ -1,4 +1,4 @@
-# AI Socioeconomics
+# AgenticBehaviorialEconomics
 
 This repository explores agentic behavioural economics through a set of experiments with large language models acting as strategic agents.
 
