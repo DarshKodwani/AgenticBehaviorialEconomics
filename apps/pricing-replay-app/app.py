@@ -469,10 +469,10 @@ def apply_style():
 
 
 def main():
-    st.set_page_config(page_title="AI Socioeconomics Replay App", page_icon="🎬", layout="wide")
+    st.set_page_config(page_title="Bertrand Duopoly Replay App", page_icon="🎬", layout="wide")
     apply_style()
 
-    st.title("🎬 AI Socioeconomics Replay App")
+    st.title("🎬 Bertrand Duopoly Replay App")
     st.caption("Interactive playback and exploration of the saved Bertrand pricing games.")
 
     if "current_round" not in st.session_state:
