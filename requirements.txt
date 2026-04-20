@@ -1,0 +1,1 @@
+-r experiments/pricing-bertrand-duopoly/requirements.txt
