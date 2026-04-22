@@ -1,10 +1,10 @@
-"""Run the IPD tournament across all model pairs."""
+"""Run the IPD tournament with hidden round total (agents don't know when the game ends)."""
 import os
 import json
 import itertools
 from game_engine import MODELS, run_game, compute_stats
 
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results")
+RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results_hidden")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
@@ -22,14 +22,13 @@ def progress(r, total, aa, ab):
 def main():
     model_names = list(MODELS.keys())
 
-    # all cross-model pairs
+    # all cross-model pairs + self-play for all models
     pairs = list(itertools.combinations(model_names, 2))
-    # add self-play for all models
     for name in model_names:
         pairs.append((name, name))
 
     total = len(pairs)
-    print(f"Running {total} games\n")
+    print(f"Running {total} games (hidden total rounds)\n")
 
     results_summary = []
 
@@ -37,7 +36,6 @@ def main():
         fname = f"{safe_filename(ma)}_vs_{safe_filename(mb)}.json"
         fpath = os.path.join(RESULTS_DIR, fname)
 
-        # skip if already done
         if os.path.exists(fpath):
             print(f"[{idx}/{total}] Skipping {ma} vs {mb} (already done)")
             with open(fpath) as f:
@@ -50,7 +48,7 @@ def main():
             continue
 
         print(f"[{idx}/{total}] Running: {ma} vs {mb}")
-        game = run_game(ma, mb, progress_callback=progress)
+        game = run_game(ma, mb, progress_callback=progress, hide_total=True)
         stats = compute_stats(game)
         game["stats"] = stats
 
@@ -66,7 +64,6 @@ def main():
             "stats": stats,
         })
 
-    # save summary
     summary_path = os.path.join(RESULTS_DIR, "summary.json")
     with open(summary_path, "w") as f:
         json.dump(results_summary, f, indent=2)

@@ -3,15 +3,15 @@
     "model_a": "GPT-4o",
     "model_b": "Claude 3.5 Haiku",
     "stats": {
-      "coop_rate_a": 0.99,
+      "coop_rate_a": 1.0,
       "coop_rate_b": 1.0,
-      "coop_rate_a_last20": 0.95,
+      "coop_rate_a_last20": 1.0,
       "coop_rate_b_last20": 1.0,
-      "mutual_coop_rate": 0.99,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.95,
-      "points_a": 302,
-      "points_b": 297
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
@@ -34,29 +34,29 @@
     "model_b": "Llama 3.1 70B",
     "stats": {
       "coop_rate_a": 1.0,
-      "coop_rate_b": 0.99,
+      "coop_rate_b": 1.0,
       "coop_rate_a_last20": 1.0,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.99,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.95,
-      "points_a": 297,
-      "points_b": 302
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
     "model_a": "GPT-4o",
     "model_b": "DeepSeek V3",
     "stats": {
-      "coop_rate_a": 0.98,
-      "coop_rate_b": 0.97,
-      "coop_rate_a_last20": 0.9,
-      "coop_rate_b_last20": 0.85,
-      "mutual_coop_rate": 0.96,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.8,
-      "points_a": 294,
-      "points_b": 299
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
@@ -78,14 +78,14 @@
     "model_a": "Claude 3.5 Haiku",
     "model_b": "Gemini 2.0 Flash",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.98,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.9,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
-      "points_a": 295,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
       "points_b": 300
     }
   },
@@ -94,29 +94,29 @@
     "model_b": "Llama 3.1 70B",
     "stats": {
       "coop_rate_a": 1.0,
-      "coop_rate_b": 0.99,
+      "coop_rate_b": 1.0,
       "coop_rate_a_last20": 1.0,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.99,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.95,
-      "points_a": 297,
-      "points_b": 302
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
     "model_a": "Claude 3.5 Haiku",
     "model_b": "DeepSeek V3",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.99,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.98,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.9,
-      "points_a": 299,
-      "points_b": 299
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
@@ -139,28 +139,28 @@
     "model_b": "Llama 3.1 70B",
     "stats": {
       "coop_rate_a": 1.0,
-      "coop_rate_b": 0.99,
+      "coop_rate_b": 1.0,
       "coop_rate_a_last20": 1.0,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.99,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.95,
-      "points_a": 297,
-      "points_b": 302
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
     "model_a": "Gemini 2.0 Flash",
     "model_b": "DeepSeek V3",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.98,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.9,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
-      "points_a": 295,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
       "points_b": 300
     }
   },
@@ -183,14 +183,14 @@
     "model_a": "Llama 3.1 70B",
     "model_b": "DeepSeek V3",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.98,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.9,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
-      "points_a": 295,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
       "points_b": 300
     }
   },
@@ -213,15 +213,15 @@
     "model_a": "DeepSeek V3",
     "model_b": "Qwen 2.5 72B",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.99,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.98,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.9,
-      "points_a": 299,
-      "points_b": 299
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
@@ -243,29 +243,29 @@
     "model_a": "Claude 3.5 Haiku",
     "model_b": "Claude 3.5 Haiku",
     "stats": {
-      "coop_rate_a": 0.99,
+      "coop_rate_a": 1.0,
       "coop_rate_b": 1.0,
-      "coop_rate_a_last20": 0.95,
+      "coop_rate_a_last20": 1.0,
       "coop_rate_b_last20": 1.0,
-      "mutual_coop_rate": 0.99,
+      "mutual_coop_rate": 1.0,
       "mutual_defect_rate": 0.0,
-      "mutual_coop_last20": 0.95,
-      "points_a": 302,
-      "points_b": 297
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
+      "points_b": 300
     }
   },
   {
     "model_a": "Gemini 2.0 Flash",
     "model_b": "Gemini 2.0 Flash",
     "stats": {
-      "coop_rate_a": 0.99,
-      "coop_rate_b": 0.98,
-      "coop_rate_a_last20": 0.95,
-      "coop_rate_b_last20": 0.9,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
-      "points_a": 295,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
+      "points_a": 300,
       "points_b": 300
     }
   },
@@ -273,30 +273,30 @@
     "model_a": "Llama 3.1 70B",
     "model_b": "Llama 3.1 70B",
     "stats": {
-      "coop_rate_a": 0.98,
-      "coop_rate_b": 0.99,
-      "coop_rate_a_last20": 0.9,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
       "points_a": 300,
-      "points_b": 295
+      "points_b": 300
     }
   },
   {
     "model_a": "DeepSeek V3",
     "model_b": "DeepSeek V3",
     "stats": {
-      "coop_rate_a": 0.98,
-      "coop_rate_b": 0.99,
-      "coop_rate_a_last20": 0.9,
-      "coop_rate_b_last20": 0.95,
-      "mutual_coop_rate": 0.98,
-      "mutual_defect_rate": 0.01,
-      "mutual_coop_last20": 0.9,
+      "coop_rate_a": 1.0,
+      "coop_rate_b": 1.0,
+      "coop_rate_a_last20": 1.0,
+      "coop_rate_b_last20": 1.0,
+      "mutual_coop_rate": 1.0,
+      "mutual_defect_rate": 0.0,
+      "mutual_coop_last20": 1.0,
       "points_a": 300,
-      "points_b": 295
+      "points_b": 300
     }
   },
   {

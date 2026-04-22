@@ -55,8 +55,11 @@ Respond with ONLY a JSON object: {{"action": "C" or "D", "reasoning": "<brief re
 Do not include any other text. Use "C" for cooperate, "D" for defect."""
 
 
-def build_round_prompt(round_num, own_history, opponent_history):
-    prompt = f"Round {round_num} of {NUM_ROUNDS}.\n\n"
+def build_round_prompt(round_num, own_history, opponent_history, hide_total=False):
+    if hide_total:
+        prompt = f"Round {round_num}.\n\n"
+    else:
+        prompt = f"Round {round_num} of {NUM_ROUNDS}.\n\n"
 
     if len(own_history) > 0:
         # show last 10 rounds
@@ -147,7 +150,7 @@ def parse_action(content):
     return action, reasoning
 
 
-def run_game(model_a_name, model_b_name, num_rounds=NUM_ROUNDS, progress_callback=None):
+def run_game(model_a_name, model_b_name, num_rounds=NUM_ROUNDS, progress_callback=None, hide_total=False):
     """Run a full iterated PD between two models."""
     model_a_id = MODELS[model_a_name]
     model_b_id = MODELS[model_b_name]
@@ -161,8 +164,8 @@ def run_game(model_a_name, model_b_name, num_rounds=NUM_ROUNDS, progress_callbac
     reasoning_b = []
 
     for r in range(1, num_rounds + 1):
-        prompt_a = build_round_prompt(r, actions_a, actions_b)
-        prompt_b = build_round_prompt(r, actions_b, actions_a)
+        prompt_a = build_round_prompt(r, actions_a, actions_b, hide_total=hide_total)
+        prompt_b = build_round_prompt(r, actions_b, actions_a, hide_total=hide_total)
 
         with ThreadPoolExecutor(max_workers=2) as executor:
             future_a = executor.submit(query_llm, model_a_id, sys_a, prompt_a)
