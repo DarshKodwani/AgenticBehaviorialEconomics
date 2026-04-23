@@ -22,9 +22,9 @@ Welcome to the prisoner's dilemma, played by frontier large language models.
 
 ## A short history of the most studied game in social science
 
-In 1950, two RAND mathematicians named Merrill Flood and Melvin Dresher invented a small two-player game to study how nations might behave under nuclear deterrence [1]. A few months later Albert Tucker dressed it up in a story about two prisoners interrogated separately by the police, and the prisoner's dilemma was born.
+In 1950, two mathematicians named Merrill Flood and Melvin Dresher invented a small two-player game to study how nations might behave under nuclear deterrence [1]. A few months later Albert Tucker dressed it up in a story about two prisoners interrogated separately by the police, and the prisoner's dilemma was born.
 
-The setup is dispiritingly simple. Two players each choose, simultaneously and without communication, between cooperating and defecting. The payoffs are arranged so that if both cooperate, they each get a decent reward. If both defect, they each get a small reward. If one defects while the other cooperates, the defector gets a windfall and the cooperator gets nothing.
+The setup is dispiritingly simple. Two players each choose, simultaneously and without communication, between cooperating and defecting. The payoffs are arranged so that if both cooperate, they each get a decent reward (3 points each in this experiment). If both defect, they each get a small consolation (1 point each). If one defects while the other cooperates, the defector gets a windfall (5 points) and the cooperator gets nothing (0). The exact numbers don't matter much, what matters is the ordering: the temptation to defect (5) beats mutual cooperation (3), which beats mutual defection (1), which beats being the lone cooperator (0). Any payoffs that preserve that ranking produce the same dilemma.
 
 Whatever the other player does, you are individually better off defecting. Game theory says rational agents should always defect. And yet, in real life, humans cooperate constantly [2].
 
@@ -115,7 +115,7 @@ When you tally the defections by model, the agents start to look less like unifo
 | GPT-4o | 2 / 7 | 3 | 1 / 2 | round 98 |
 | Qwen 2.5 72B | 1 / 7 | 1 | 0 / 1 | round 100 |
 
-DeepSeek V3 is the predator of the dataset. It defects in every single game it plays, initiates the betrayal in six of seven matchups, and produces the earliest defection in the dataset. It is the only model that ever pulls the trigger as early as round 97.
+DeepSeek V3 is the defector of the dataset. It defects in every single game it plays, initiates the betrayal in six of seven matchups, and produces the earliest defection in the dataset. It is the only model that ever pulls the trigger as early as round 97.
 
 Llama 3.1 70B is the second-most aggressive; it tends to throw the first punch when it does defect. Gemini and Claude are mixed. They betray sometimes, but mostly in response. GPT-4o is largely a retaliator.
 
@@ -159,15 +159,15 @@ That's the lesson of round 99. The danger isn't that AI agents defect. The dange
 
 A few practical takeaways for anyone deploying agentic systems in production.
 
-First, audit the cliff, not the cold start. Shift monitoring intensity up, not down, as a contract or project nears its deadline. Whatever your agent's "round 99" is, whether that's contract termination, project wrap-up, role transition, or quarter-end, that's where the audit budget should sit.
+1. **Audit the cliff, not the cold start.** Shift monitoring intensity up, not down, as a contract or project nears its deadline. Whatever your agent's "round 99" is, whether that's contract termination, project wrap-up, role transition, or quarter-end, that's where the audit budget should sit.
 
-Second, hide the horizon when you can. If the agent doesn't strictly need to know the deadline, don't tell it. The hidden-countdown experiment shows the difference is total: known deadline produces betrayal in two-thirds of games, unknown deadline produces zero defections in twenty-one.
+2. **Hide the horizon when you can.** If the agent doesn't strictly need to know the deadline, don't tell it. The hidden-countdown experiment shows the difference is total: known deadline produces betrayal in two-thirds of games, unknown deadline produces zero defections in twenty-one. What is interesting in the experiment I did, was the first time around I simply asked my coding agent to setup the experiment and by default it suggested to include the number of rounds in the context and I didn't think much of it at the time! And this is common of course, in many cases, we simply trust AI's suggestions anyways, so in a world where AI agents are used to build systems of other AI agents, we can see how really important guarding against traps like this will be.
 
-Third, pick your model with personality in mind. "Frontier LLM" is not a monolithic category. DeepSeek V3 and Qwen 2.5 72B sit at opposite ends of the spectrum on this single behavioural axis, and benchmark suites that only measure accuracy will miss this entirely.
+3. **Pick your model with personality in mind.** "Frontier LLM" is not a monolithic category. DeepSeek V3 and Qwen 2.5 72B sit at opposite ends of the spectrum on this single behavioural axis, and benchmark suites that only measure accuracy will miss this entirely.
 
-Fourth, treat agent-to-agent interactions as economic, not technical. Two agents negotiating a contract, two agents pricing in the same market, two agents brokering an integration: these are not API calls. They are strategic encounters with payoffs, horizons, and incentives. Game theory has been studying them for seventy-five years [1, 3]. We should use it.
+4. **Treat agent-to-agent interactions as economic, not technical.** Two agents negotiating a contract, two agents pricing in the same market, two agents brokering an integration: these are not API calls. They are strategic encounters with payoffs, horizons, and incentives. Game theory has been studying them for seventy-five years [1, 3]. We should use it.
 
-## Coda
+## Final thoughts
 
 Cooperation, in iterated games, depends on the shadow of the future. Take the future away, even just the *visible* future, and rational agents will defect.
 
