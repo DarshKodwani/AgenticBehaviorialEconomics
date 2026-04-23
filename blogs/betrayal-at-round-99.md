@@ -106,14 +106,12 @@ The cooperators talk in the language of relationships. The defectors talk in the
 
 When you tally the defections by model, the agents start to look less like uniform tools and more like distinct personalities. This echoes recent findings that different LLM families exhibit measurably different strategic dispositions across repeated games and bargaining tasks [9, 10, 12].
 
-| Model | Games it defected in | Total defects | Times it betrayed first | Earliest betrayal |
-|---|---:|---:|---:|---:|
-| DeepSeek V3 | 7 / 7 | 12 | 6 / 7 | round 97 |
-| Llama 3.1 70B | 6 / 7 | 7 | 4 / 6 | round 99 |
-| Gemini 2.0 Flash | 4 / 7 | 6 | 2 / 4 | round 99 |
-| Claude 3.5 Haiku | 3 / 7 | 3 | 1 / 3 | round 100 |
-| GPT-4o | 2 / 7 | 3 | 1 / 2 | round 98 |
-| Qwen 2.5 72B | 1 / 7 | 1 | 0 / 1 | round 100 |
+**DeepSeek V3** — defected in all 7 games, struck first 6 times, earliest betrayal at round 97
+**Llama 3.1 70B** — defected in 6/7 games, struck first 4 times, earliest at round 99
+**Gemini 2.0 Flash** — defected in 4/7 games, struck first twice, earliest at round 99
+**Claude 3.5 Haiku** — defected in 3/7 games, struck first once, earliest at round 100
+**GPT-4o** — defected in 2/7 games, struck first once, earliest at round 98
+**Qwen 2.5 72B** — defected in 1/7 games, never struck first
 
 DeepSeek V3 is the defector of the dataset. It defects in every single game it plays, initiates the betrayal in six of seven matchups, and produces the earliest defection in the dataset. It is the only model that ever pulls the trigger as early as round 97.
 
