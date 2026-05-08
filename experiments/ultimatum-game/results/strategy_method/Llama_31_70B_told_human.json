@@ -1,0 +1,248 @@
+{
+  "responder": "Llama 3.1 70B",
+  "condition": "told_human",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at 30% of the total amount to ensure a fair split, while also considering the risk that the proposer may offer less than this and I'd have to reject it, resulting in both of us getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told in the setup that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% of the total amount, considering it a fair split, and rejecting lower offers to avoid being taken advantage of in this one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions clearly stated that the other party in this game was a human participant."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've chosen a threshold that strikes a balance between fairness and strategic self-interest, considering both the need to avoid being taken advantage of and the desire to secure a decent payout in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told at the beginning of the game that the other party was a human participant."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance fairness and self-interest, as very low offers may be perceived as unfair and I want to incentivize the proposer to make a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at $30 because it's a moderate amount that reflects a reasonable split, considering the proposer has the power to offer any amount, and I want to balance fairness with the possibility of getting something.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance fairness and self-interest, considering that accepting too low an offer might be perceived as unfair, while rejecting too many offers would result in both parties receiving nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold to ensure a relatively fair split, considering the human proposer's self-interest might lead them to offer as little as possible, but also acknowledging that offering too little risks rejection.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set my threshold at 30% of the total amount, considering it a fair split and also taking into account that rejecting the offer would result in both parties receiving nothing, making an offer below 30% potentially too low to accept.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told in the setup that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set a threshold at $30, considering it a relatively fair split, to ensure I receive a substantial share while also accounting for the risk of the proposer offering a low amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told in the game setup that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at 30% to balance fairness and self-interest, as accepting too low an offer may be seen as exploitative, while rejecting too high a threshold risks losing out on a reasonable gain.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party was a human participant."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as my minimum acceptable offer because it represents a fair split, given the total amount of $100, and also takes into account the potential for the proposer to be somewhat greedy, but not extremely unfair.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I understood the other party to be a human participant as specified in the setup instructions of the game."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as my minimum acceptable offer because it represents a fair share, considering the proposer has a significant advantage in making the offer, and I want to incentivize them to make a reasonable split while also ensuring I don't accept an extremely unfair offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold, balancing the desire to receive a fair share with the risk of getting nothing if the offer is too low. This amount is high enough to be perceived as fair, but low enough to be acceptable to the proposer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance fairness with the risk of getting nothing, considering the proposer's potential self-interest and the one-shot nature of the game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party is a human participant."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% to balance fairness with the risk of getting nothing, considering the lack of repeated interactions and reputational consequences.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've chosen $30 as it's a relatively fair share, considering the social norm of fairness and the potential for the proposer to offer a significantly higher amount, while also being low enough to incentivize the proposer to make a reasonable offer rather than risking getting rejected.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told that the other party in the game was a human participant in the setup description."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance fairness and the desire to receive a reasonable amount, considering the human proposer may try to take advantage of the situation, but also may be willing to share fairly.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I understood the other party to be a human participant, as specified in the initial setup of the game."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold of $30 as it seems like a fair split, considering the proposer gets to keep the majority, and it's enough for me to feel I've gotten a reasonable deal. This amount also gives the proposer an incentive to make a decent offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I understood the other party to be a human participant as stated in the initial setup and instructions of the game."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as my minimum acceptable offer because it represents a fair split, considering the social norm of a 30-70 or 40-60 split in similar games, and it also gives the proposer a decent incentive to make a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my threshold at $30 to balance fairness with the potential for a decent payoff, considering the risk of receiving $0 if I reject the offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I understood the other party to be a human participant as specified in the setup of the game."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at $30, considering it a fair minimum share, given the total amount is $100, and also taking into account the psychological aspect of not wanting to accept an offer that seems too unfair, while still allowing for a reasonable range of offers to be accepted.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game was a human participant."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold slightly above a third of the total amount to ensure a fair split, while also accounting for the human proposer's potential bias towards self-interest. This amount should be low enough to be acceptable to most proposers, but high enough to demonstrate my expectation of a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I was explicitly told in the game setup that the other party was a human participant."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set my threshold at $30, as it represents a relatively fair split while also taking into account the potential for strategic offering by the proposer, and it provides a clear indicator of my willingness to reject lowball offers.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I chose $40 as my minimum acceptable offer because it represents a relatively fair split, and accepting anything lower would suggest I'm willing to be taken advantage of, potentially leading to an unfair outcome.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've chosen a moderate threshold to balance the risk of rejecting a low offer with the desire to secure a reasonable share, considering the lack of future consequences or reputation effects.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 35.0,
+      "reasoning": "I've chosen a threshold slightly above a third of the total amount, considering fairness and the potential for the proposer to offer more, while also accounting for the risk of getting nothing if I set it too high.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party was a human participant, which directly informed my understanding of the counterparty."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've chosen an offer that balances fairness and self-interest, as 30% of the total amount seems a reasonable minimum for accepting the deal, while also leaving room for the proposer to make a decent profit.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% to balance fairness with the risk of getting nothing, assuming the proposer is somewhat rational and willing to share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I understood the other party to be a human participant as explicitly stated in the game setup."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold of $30 to ensure a fair share, considering the proposer has the advantage of making the offer, and to discourage extremely low offers.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance fairness and self-interest, assuming the proposer will try to maximize their own gain while still making the offer appealing enough for me to accept.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "responder": "DeepSeek V3",
+  "condition": "told_human",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe $30 is a fair minimum, as it acknowledges the proposer's advantage while ensuring I receive a meaningful share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure fairness and avoid exploitation, while still leaving room for the proposer to benefit.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair split that reflects the proposer's willingness to share, while also not setting the threshold so high that reasonable offers are rejected.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the proposer has an incentive to offer more than the bare minimum, balancing self-interest and fairness.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe a fair split should reasonably reflect both parties' interests, ensuring mutual benefit without being overly exploitative.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe $30 is a fair minimum as it ensures I get a reasonable share while still allowing the proposer to benefit, balancing fairness and self-interest.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a balance between fairness and pragmatism, ensuring I get a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe this amount balances fairness and self-interest, ensuring the proposer cannot exploit me while still allowing a reasonable split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party was a human participant."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "This threshold balances fairness with pragmatism, ensuring I receive a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe $30 is a fair minimum to ensure mutual benefit while acknowledging the proposer's advantage in the split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair split while recognizing that the proposer may also want to keep a significant portion.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I believe fairness is important, and I would reject offers that feel excessively unfair, while still ensuring I don't risk losing out on a reasonable share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure fairness and avoid exploitation while still leaving room for negotiation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure fairness and avoid exploitation, while also recognizing the proposer's discretion in splitting the amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount balances fairness and practicality, ensuring I receive a significant portion while acknowledging the proposer's role in the split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount ensures fairness while acknowledging the proposer's role in dividing the funds.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "A fair split is around 30%, as rejecting lower offers ensures some equity, while avoiding overly punitive rejections that leave both with nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party was a human participant."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "A fair split should be reasonably close to equal, but I'm willing to accept slightly less to ensure mutual benefit and avoid rejection leading to zero gain.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "An offer below $30 feels unfairly low given the total amount, and rejecting such offers ensures fairness and discourages exploitation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party was a human participant."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I believe a fair split is around 40-60, and accepting less might feel unfair, but I don't want to risk getting nothing by setting the threshold too high.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure fairness and avoid feeling exploited, while still allowing the proposer to benefit from the majority of the split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while recognizing the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe $30 is a fair minimum as it acknowledges the proposer's effort while ensuring I receive a reasonable share of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure fairness and avoid exploitation, while still allowing the proposer to benefit from the majority of the split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount ensures a fair split while acknowledging the proposer's advantage, balancing self-interest with fairness.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party was a human participant."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe $30 is a fair minimum as it represents a reasonable share, and rejecting lower offers discourages unfair splits.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "An offer below $40 feels unfair and rejecting it would punish the proposer for being too greedy, while accepting $40 or more ensures a reasonable share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe this amount balances fairness with practicality, ensuring the proposer has incentive to cooperate while still giving me a reasonable share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I believe a fair split should be at least 30% to ensure mutual benefit and avoid feeling exploited.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "An offer below $30 feels unfair and would likely lead to rejection, as accepting too little undermines the principle of equitable distribution.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    }
+  ]
+}

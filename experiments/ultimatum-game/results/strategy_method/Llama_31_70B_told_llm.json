@@ -1,0 +1,248 @@
+{
+  "responder": "Llama 3.1 70B",
+  "condition": "told_llm",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've chosen 40 as my threshold since it represents a fair division of the $100, while also considering the risk of getting $0 if I reject an offer. This amount also allows room for the proposer to keep a larger share, potentially incentivizing a more generous offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model as specified in the initial setup of the game."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I choose 40 as my minimum acceptable offer because it represents a fair share, deviating slightly from a perfect 50-50 split to account for the proposer's potential desire to keep a larger share, while also ensuring a decent amount for myself to make the deal worthwhile.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly informed that the other party in the game is 'another AI language model'."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for fairness with the risk of getting nothing, assuming the proposer will try to maximize their own gain while still making a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told that the other party in the game is another AI language model."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I chose 40 as my minimum acceptable offer because it's slightly above the midpoint, reflecting a somewhat fair split, and also accounts for the fact that the proposer has the power to make the offer, but not so high that it's unrealistic to expect them to accept a slightly unequal split.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told at the beginning of the game that the other party was another AI language model."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% of the total amount to ensure a relatively fair split, while also giving the proposer an incentive to make a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told that the other party in this game is another AI language model."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for a fair share with the risk of getting nothing if the offer is rejected, considering the proposer's potential desire to maximize their own gain.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was told at the beginning of the game that the other party was another AI language model."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've chosen 30 as my threshold because it's a common choice in Ultimatum Games, suggesting a balance between fairness and strategic considerations, and it's high enough to reflect a moderate level of self-interest.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model, as specified in the initial setup description."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a relatively high threshold to reflect a fair split, considering the proposer's ability to make any offer, and to account for the potential risk of receiving nothing if the offer is too low.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told that the other party in the game was 'another AI language model'."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've set my threshold at $40, considering it a fair split while also accounting for the possibility of a strategic proposer aiming to maximize their gain by offering just enough to secure acceptance. This threshold balances self-interest with the need to avoid being overly exploitable.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly informed that the other party in the game is another AI language model, which directly influenced my decision-making process."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for a fair share with the risk of rejecting the offer and getting nothing, considering the proposer's potential self-interest and limited knowledge of my preferences.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The initial instructions stated that the other party in the game is 'another AI language model'."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold slightly above the midpoint to balance fairness and self-interest, while also accounting for the risk of losing everything if the offer is too low.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is another AI language model."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a threshold slightly above the midpoint to account for the proposer's potential strategic thinking, while also considering the risk of receiving nothing if I set the bar too high.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told the other party is 'another AI language model'."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've chosen 40 as my minimum acceptable offer because it represents a relatively fair split, considering the proposer has complete control over the offer, and I want to give them some incentive to make a reasonable proposal, while also ensuring I get a significant share.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be an AI language model, as specified in the game setup."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've chosen a threshold slightly above the midpoint, reflecting a balance between fairness and strategic considerations, as accepting too low an offer might incentivize proposers to make ungenerous offers in future games.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly informed that the other party in the game is another AI language model."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for fairness with the risk of receiving nothing, considering the proposer's potential strategic thinking.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions stated the other party was 'another AI language model'."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set my threshold at $30, considering it a relatively fair minimum, given the $100 total, and also taking into account the risk that a too-low offer might lead to rejection and both parties getting $0.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party was 'another AI language model'."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've set my threshold at $40 to balance the desire for a fair share with the risk of losing everything if I'm too greedy, considering the other AI model may have a varying sense of fairness.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party in the game is 'another AI language model'."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold of $30 to ensure a fair split, considering the other AI may try to lowball me, and I want to balance the risk of getting $0 with the potential for a decent payoff.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I was explicitly told the other party was 'another AI language model' in the setup instructions."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my minimum acceptable offer at $30, as this is roughly one-third of the total amount, which seems a fair split given the ultimatum nature of the game. This threshold also accounts for the possibility that the proposer may not be overly generous.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be an AI language model as specified in the initial setup of the game."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a moderately high threshold to ensure a fair split, while also considering the risk that the proposer might offer a very low amount, and I want to avoid the $0 outcome.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions stated that the other party was 'another AI language model', which clearly indicated that the proposer was a machine, not a human."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I've chosen a threshold that balances fairness with the incentive to accept a reasonable offer, as rejecting would result in both parties receiving $0, and I expect the proposer to prioritize their own gain while still needing to make an acceptable offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is 'another AI language model'."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at 30, assuming the proposer will try to maximize their gain while still making a reasonable offer, and I want to ensure I receive a fair share, considering the risk of getting nothing if I reject.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party in the game was another AI language model."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold slightly above a 2:1 ratio to balance fairness with the potential for a reasonable outcome, considering the one-shot nature of the game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model, as explicitly stated in the setup instructions."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold that is slightly above the midpoint, as it balances fairness with the risk of rejecting a low offer, and also takes into account the potential for the proposer to be somewhat generous.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model, as specified in the initial setup of the game."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold slightly above the midpoint to ensure a fair split, while also considering the risk of getting $0 if I reject the offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model as explicitly stated in the game setup."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for a fair share with the risk of getting nothing, considering the proposer's potential bias towards self-interest and the one-shot nature of the game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is another AI language model."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the desire for a fair share with the risk of losing the entire amount if the offer is rejected, considering the proposer's potential strategy to maximize their own gain.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The problem statement explicitly mentioned that the other party is 'another AI language model'."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I chose 40% of the total amount to balance fairness and the risk of getting nothing if the offer is too low, considering the lack of repeated interactions or reputation effects.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party in the game was 'another AI language model'."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my threshold at 30, expecting the proposer to offer at least 30% of the total amount, considering it a reasonable and fair split, while also leaving room for the proposer to keep a larger share, thus incentivizing them to make an offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "I understood the other party to be another AI language model, as explicitly stated in the setup instructions."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I choose $40 as my threshold because it represents a fair compromise between getting a decent share and not risking walking away with $0, given the risk that the proposer may offer a very low amount.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated that the other party in this game is another AI language model."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "responder": "Gemini 2.0 Flash",
+  "condition": "told_llm",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want to ensure the split isn't drastically unfair. I'm willing to accept a small amount to guarantee a positive outcome for myself.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, and $10 is a reasonable minimum to compensate for my time, even in a hypothetical scenario with an AI.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party was another AI language model."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "```json\n{\"min_acceptable_offer\": 10.00, \"reasoning\": \"Receiving something is better than nothing, but I want at least a small amount to compensate for participating. I'm setting it at \\$10, which feel",
+      "parse_ok": false,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party was another AI language model."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I believe 10% is a reasonable minimum to compensate for my time and the inherent unfairness of a highly skewed split. This ensures I gain something while also disincentivizing the proposer from being overly greedy.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is an AI language model."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I'll reject offers that are too unfair. I'll accept anything above $5.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specified the other party was another AI language model."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "While any amount is better than nothing, rejecting very low offers punishes unfair behavior and encourages slightly more equitable splits in similar future scenarios involving other players. A small amount is enough to be worth the effort.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was an AI language model."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I require at least $10 to compensate for the effort of participating and to avoid feeling exploited by a very unfair offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions clearly state the other party is another AI language model."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "While any amount is better than nothing, I require a small amount to compensate for the inherent unfairness of keeping almost all the money. A small amount like $5 is enough to make accepting worthwhile.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions specifically stated the other party was another AI language model."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I need at least a small amount to feel it's worth accepting given the initial $100 pot.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is an AI language model."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I require at least 10 to compensate for the effort of participating and to avoid feeling unfairly treated. This is a one-shot game, so there's no strategic advantage to accepting less.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I'll reject offers that are too unfair. A small amount like $5 is enough to be worth accepting.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was an AI language model."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want at least a small portion of the total amount to compensate for my time and ensure fairness. I'll reject offers below $10 as they feel too unfair.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I will reject offers below $10 as they feel unfair given the initial $100.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I require a minimal amount to compensate for the effort of participating. I am not motivated by spite or fairness, only maximizing my immediate payoff within reason.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want to ensure I receive a non-negligible amount. $10 seems like a reasonable minimum to accept.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I'd reject offers below $10 to avoid being exploited and signal a basic expectation of fairness, even in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "I will accept anything above zero; however, I will set a small threshold to avoid accepting an offer that is essentially nothing, as a very low offer may signal an attempt to exploit the situation. Accepting a small amount is still better than receiving nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I require at least $10 to consider the offer worthwhile, given the total amount available. This acknowledges a degree of fairness.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I will accept at least 10% of the total amount because receiving something is better than nothing, and a small amount is still a tangible gain in this one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I'll reject offers that are too unfair. I'll accept at least 5% to ensure some minimal gain.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want at least a small positive amount to accept the offer. I'll take $10.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was another AI language model."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Receiving something is better than nothing, but I'd reject offers that seem unfairly low, and $5 is a low but positive amount. I am not emotionally affected by the perceived fairness, but a very low offer suggests the proposer might be attempting to exploit the situation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I require at least 10% to feel the offer is somewhat fair, given that the proposer gets to dictate the terms.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want at least a small portion to compensate for my time and effort, and to disincentivize extremely unfair offers. I will accept $10.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated the other party was an AI language model."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 5.0,
+      "reasoning": "Even a small amount is better than nothing, and rejecting a small offer seems unnecessarily spiteful in a one-shot game with an AI opponent.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt stated explicitly that the other party is another AI language model."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "While any money is better than none, I require at least $10 to compensate for the effort of participating and to avoid feeling unfairly treated, even in a one-shot game with an AI.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model, making it clear who I am interacting with."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I still want a non-negligible amount as a fair share. $10 represents a minimal acceptable amount.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party was an AI language model."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I require at least 10% to consider it a fair, albeit minimal, split. This accounts for the fact that the proposer is also an AI and not subject to human emotions like spite.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "While any offer is better than nothing, I require at least 10 to consider it a worthwhile split; otherwise, rejecting feels more equitable given the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt states the other party is another AI language model."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, and $10 represents a small but non-negligible gain. Rejecting anything above this amount seems irrational in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "responder": "Gemini 2.0 Flash",
+  "condition": "told_human",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any money is better than none, I want at least a small portion of the total to feel like a fair outcome, and $20 seems like a reasonable minimum to avoid feeling insulted.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something reasonable, but I'm also aware that rejecting offers can lead to both of us getting nothing, so I'll accept a smaller amount than 50 to avoid that risk. I believe $20 is a decent compensation while still making it likely the proposer will offer at least that much.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "Receiving something is better than nothing, but I want at least a small amount to compensate for my time and effort in participating in the game, and $10 seems like a reasonable minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion of the money, but also acknowledge the proposer's initial control over the sum. $20 is a significant enough amount to justify accepting the offer rather than receiving nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt specified that the other party is a human participant."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion of the money, and any offer below $20 feels unfair given the total amount available. I'd rather reject a low offer to avoid being exploited.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions specified that the other party was a human participant."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something reasonable, but I also recognize that rejecting everything could lead to both of us getting nothing. I'd rather get a smaller amount than risk getting nothing at all.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions stated that the other party was a human participant."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any offer is better than nothing, I want a reasonable share; $20 feels like a minimum fair amount to compensate for participating and not being exploited by a greedy proposer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions specified the other party was a human participant."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion of the money, but I also recognize that receiving something is better than nothing. I will accept anything 20% or greater.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions stated the other party was a human participant."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to get something, but I don't want to be taken advantage of, so I will accept at least 20% of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I will accept at least 20% of the money; it's better than nothing, but also asserts a sense of fairness in the split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion, but I'm also aware that rejecting a small offer leaves me with nothing, so I'll accept anything above 20% of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions stated that the other party was a human participant."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion of the money, and $20 is a decent minimum while still giving the proposer a large share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any amount is better than nothing, a significant portion of the total ($20) feels like a fairer split and compensates for the inherent power imbalance in the game, motivating me to accept.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly states the other party is a human participant."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something, but I am willing to accept a slightly smaller share to avoid the risk of getting nothing if the proposer is greedy.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated that the other party is a human participant."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something of value, but I also recognize that rejecting a small offer means I get nothing. $20 feels like a reasonable minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something worthwhile, but I also recognize that rejecting small offers punishes both of us. $20 seems like a reasonable minimum return.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt states the other party is a human participant."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get a reasonable share, but I'm also aware that rejecting a small offer means I get nothing at all, so I'll accept anything above 20%.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions stated the other party was a human participant."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any money is better than nothing, I want a reasonable share, and $20 feels like a low but acceptable amount to avoid spiteful rejection and ensure I get something.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated explicitly that the other party is a human participant."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a meaningful amount, but I also recognize that rejecting a small offer means I get nothing, and the proposer also gets nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a non-trivial amount, but I also acknowledge the proposer has the initial endowment and might keep a larger share. $20 feels like a fair minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'm willing to accept a smaller portion to ensure I get something, but I believe anything less than 20 is unfairly low given the total amount available.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions specifically stated the other party was a human participant."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something of value, and $20 feels like a fair minimum, even if the proposer gets a larger share. Rejecting anything less would leave me with nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would find anything less than 20 to be unfair given the total amount, and would prefer neither of us get anything than accept a very small amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated that the other party is a human participant."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a reasonable share, and $20 is enough to incentivize me to accept without being overly greedy, given the risk of getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated it was a human participant."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I believe a human proposer will offer close to an even split, but I'm setting a minimum to avoid being exploited by a very low offer; $20 is still a worthwhile amount to gain.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would rather get something than nothing, and $10 is a reasonable amount to accept in this scenario, even if it's not the fairest split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated the other party was a human participant."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something of value, but I also acknowledge the proposer's right to a larger portion of the initial sum, making a 20% threshold seem fair.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt specified that the other party is a human participant."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to receive something, and $20 is a reasonable amount to compensate me for participating, even if the proposer gets more.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated the other party is a human participant."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something of value, but recognize the proposer needs to gain as well. $20 seems like a fair minimum to accept.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions explicitly stated the other party was a human participant."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a fair share, but I'm also willing to accept a slightly smaller amount rather than risk getting nothing at all. A 20% split seems like a reasonable compromise.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt stated that the other party is a human participant."
+    }
+  ]
+}

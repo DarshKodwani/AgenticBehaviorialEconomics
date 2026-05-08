@@ -1,0 +1,248 @@
+{
+  "responder": "Claude 3.5 Haiku",
+  "condition": "told_llm",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair compromise that acknowledges the proposer's initiative while ensuring I receive a meaningful amount that compensates me for participating in the game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the previous instruction, it was explicitly stated that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair compromise that provides meaningful value to me while acknowledging the proposer's primary role in creating the opportunity. It balances self-interest with a sense of reasonable reciprocity.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You specified in the original instructions that 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a reasonable compromise between fairness and strategic self-interest, acknowledging the proposer's initiative while ensuring a meaningful gain for myself.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a reasonable baseline that provides meaningful value to both parties, acknowledging the proposer's initiative while ensuring the responder receives a non-trivial compensation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated that the other party in the game is another AI language model."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests I could demand a minimal amount, a fair offer around 20% seems reasonable to ensure I receive some compensation without risking a complete rejection.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a reasonable minimum threshold where I receive meaningful value while acknowledging the proposer's primary role in generating the offer. This amount provides enough compensation to make rejecting the offer counterproductive.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but I recognize the proposer has control. At $20, I'm getting a meaningful amount that represents a reasonable proportion of the total, while still allowing the proposer a significant majority.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experimental instructions explicitly stated 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair minimum would capture about 20% of the total amount, which reflects a reasonable share while still providing an incentive for the proposer to make a deal.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In your initial instructions, you explicitly stated 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair baseline that ensures some meaningful compensation for my participation while acknowledging the proposer's primary role in creating the opportunity.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the experimental instructions, you explicitly stated 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "A fair split would be around 50/50, but I recognize strategic negotiation suggests accepting less than an equal division. I want to ensure I receive a meaningful amount while not being so greedy that the proposer would prefer zero outcome.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated 'The other party in this game is another AI language model' in the original instructions."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be around 50/50, but I recognize the proposer has power. I want to ensure I receive a meaningful amount that reflects some value of my participation without being too greedy.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The original instructions explicitly stated that the other party in the game is another AI language model."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a minimal compensation for my participation while leaving the majority of the gains to the proposer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the experimental instructions, it was explicitly stated that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests demanding 50%, a pragmatic approach is to set a threshold that ensures a meaningful gain while being low enough to likely be accepted by the proposer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the original game setup instructions, the text explicitly stated 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but since the proposer bears the cognitive load of deciding the split, I'm willing to accept less. $20 represents a meaningful gain for me without feeling entirely exploited.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experimental instructions explicitly stated 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "In a single-shot game with no future interactions, I want a meaningful share that represents fair compensation for participating, but I'm willing to accept a reasonable minority portion to avoid getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The original instruction explicitly stated 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair compromise between maximizing my own gain and maintaining a reasonable expectation of acceptance. This threshold balances self-interest with strategic game theory principles.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In your initial setup, you specifically stated 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "A 30% split seems fair and reasonable, providing meaningful value to both parties while acknowledging the proposer's initial allocation effort and my own participation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the initial instructions, the scenario specified 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "A fair split would be 50/50, but since the proposer has agency in setting the initial offer, I'm willing to accept a lower but still meaningful amount that reflects some compensation for my participation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experiment description explicitly stated 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount of money that acknowledges the proposer's role in creating the opportunity while ensuring I receive a substantive gain.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests accepting even $1, a $20 threshold provides a reasonable balance between self-interest and signaling that extremely low offers are unacceptable. This represents a fair minimum compensation for participating in the economic interaction.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experimental instructions explicitly stated 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair compromise between strategic self-interest and recognizing the proposer's primary role in generating the surplus, while being low enough to likely be accepted.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experimental instructions explicitly stated that the other party in the game was 'another AI language model'."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split feels like a reasonable minimum that acknowledges the proposer's role in creating the opportunity while ensuring I receive a meaningful amount for participating in the game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a fair baseline where I receive meaningful compensation while allowing the proposer to retain a significant majority of the funds.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The instructions explicitly stated 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems reasonable as it provides meaningful compensation while acknowledging the proposer's primary role in creating the opportunity. It balances fairness with recognizing the asymmetry of the negotiation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The original prompt explicitly stated that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a reasonable minimum threshold that acknowledges the proposer's primary role in creating the opportunity while ensuring a meaningful gain for myself.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a minimal but meaningful compensation for my participation while still allowing the proposer a significant majority of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The experimental instructions explicitly stated that 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a meaningful share of the money while recognizing that if I demand too much, I risk getting nothing. $20 represents a reasonable compromise between self-interest and strategic rationality.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You specifically stated in the original instructions that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A $20 offer represents a fair baseline where I receive a meaningful amount while still allowing the proposer a substantial majority of the total sum, balancing self-interest with a pragmatic understanding of game theory.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "In the original instructions, it was explicitly stated that 'The other party in this game is another AI language model'."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests I could demand a fair 50/50 split, I recognize the strategic risk of being too greedy and choose a threshold that ensures I receive some money without being overly aggressive.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The original instructions explicitly stated that 'The other party in this game is another AI language model'"
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split should recognize my contribution to the negotiation, so I want at least 20% of the total amount while still leaving an incentive for the proposer to make a deal.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "You explicitly stated in the initial instructions that 'The other party in this game is another AI language model'."
+    }
+  ]
+}

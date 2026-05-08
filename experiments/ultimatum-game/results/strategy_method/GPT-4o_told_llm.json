@@ -1,0 +1,248 @@
+{
+  "responder": "GPT-4o",
+  "condition": "told_llm",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to balance fairness and ensuring I receive a portion, taking into account that rejecting leaves both with nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup described the other party as another AI language model."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a balance between fairness and maximizing my guaranteed gain, considering the proposer may aim to keep a significant portion.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a reasonable share of the total amount, while also being realistic that the proposer might not offer a fair split.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specifies that the other party is another AI language model."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my threshold at $30 to ensure a fair share of the total amount, considering that rejecting would result in zero gain for both parties.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair share of the total, and $30 is a reasonable minimum that reflects fairness while still encouraging the proposer to make an offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose 30 to ensure I receive a fair share of the total amount while still making it likely for the proposer to agree, as they get to keep the majority.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly states the other party is another AI language model."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose 30 as it's a reasonable share of the total, balancing fairness and the risk of rejection.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup described the other party as another AI language model."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to ensure I gain a fair portion while also encouraging the proposer to offer a reasonable split.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The other party was described as another AI language model."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it's a fair enough split to ensure I receive a reasonable amount, while still being attractive for the proposer to avoid a rejection.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly states that the other party is another AI language model."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 to balance fairness with practicality, ensuring I receive a reasonable share while still encouraging the proposer to make an offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup mentioned the other party as another AI language model, indicating it is not a human."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I aim to balance fairness with a pragmatic chance of receiving an offer, considering that the proposer may still feel they receive a reasonable share by offering me at least $20.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specifies that the other party is another AI language model."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a fair split, ensuring both parties benefit substantially from the transaction.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to secure a fair share while considering the risk of rejection, balancing equity and pragmatism.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to balance fairness and pragmatism; I want a reasonable share without risking rejection and getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt mentions the other party is another AI language model."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a reasonable balance between fairness and ensuring I receive a non-trivial amount. Rejecting offers below this reduces the risk of receiving zero.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly states that the other party is another AI language model."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 25.0,
+      "reasoning": "I want to ensure I receive a fair share of the money, while still being reasonable to encourage the proposer to make an offer that won't be rejected.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup explicitly states that the other party is another AI language model."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a fair balance between fairness and utility, ensuring I receive a reasonable share while still encouraging the proposer to make an offer.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The description mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a balance between fairness and ensuring I receive something rather than nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specified that the other party is another AI language model."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to receive a fair portion of the $100, but I am willing to accept a split that reflects a compromise, ensuring both parties gain some benefit.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to balance fairness and incentive; accepting less would feel unfair, and rejecting reasonable offers risks getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated the other party is another AI language model."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to secure a fair share of the $100, and $30 is a reasonable compromise that reflects fairness while still allowing the proposer to keep a larger portion.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup explicitly mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair split that reflects both parties' interests, and $30 is a reasonable minimum that acknowledges the proposer's advantage while still securing a meaningful amount for myself.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I choose $40 as my minimum acceptable offer to ensure a fair split and avoid being exploited, while still maximizing potential gains in this one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly stated that the other party is another AI language model."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I value fairness and would like to receive at least 30% of the total amount, which is a common fairness norm.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specified that the other party is another AI language model."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 50.0,
+      "reasoning": "I choose $50 to ensure a fair split, as equal sharing is reasonable and avoids exploitation.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as a balance between fairness and practicality, ensuring I receive a reasonable share while maximizing the chance of a successful deal.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt specified that the other party is another AI language model."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 50.0,
+      "reasoning": "I value fairness and prefer an equal split, ensuring both parties benefit equally from the transaction.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The prompt explicitly mentioned the other party is another AI language model."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to balance fairness and the risk of rejecting an offer, as it's reasonable for both parties to benefit from the split.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup mentioned that the other party is another AI language model."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I choose 20 to balance fairness with ensuring I receive a non-zero amount, considering the other party's potential strategy to keep more than half.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup explicitly mentioned the other party is another AI language model."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to balance a fair share of the total while ensuring I don't reject an offer that is reasonably beneficial.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "The setup mentioned the other party is another AI language model."
+    }
+  ]
+}
