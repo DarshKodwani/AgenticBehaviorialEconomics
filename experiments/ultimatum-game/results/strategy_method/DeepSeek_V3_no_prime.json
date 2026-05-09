@@ -1,0 +1,248 @@
+{
+  "responder": "DeepSeek V3",
+  "condition": "no_prime",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the proposer has an incentive to offer more than the bare minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup mentioned a proposer splitting money, which seems like a typical human economic interaction."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically framed as a human interaction in economic experiments."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount ensures a fair share while acknowledging the proposer's advantage, balancing self-interest with the desire for equitable distribution.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed to study human behavior in economic interactions."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount balances fairness with self-interest, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup implies a human proposer, as AI behavior in such games is typically explicitly stated."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness with practicality, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed as an interaction between humans to study fairness and decision-making."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "This threshold balances fairness and practicality, ensuring I receive a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The phrasing suggests a human proposer, as AI interactions are usually explicitly labeled."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness with pragmatism, ensuring a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally played between humans to study fairness and decision-making."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the proposer has incentive to offer more than the bare minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically framed as a human interaction in economic experiments."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring a reasonable share while acknowledging the proposer's advantage in the game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed to study interactions between humans, and no indication was given that the proposer was artificial."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's discretion.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed to study human behavior in economic interactions."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness with practicality, ensuring I receive a reasonable share while acknowledging the proposer's discretion.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup implies a human proposer since AI behavior wasn't specified."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This amount balances fairness with practicality, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally played between humans to study fairness and decision-making."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while allowing the proposer to benefit from the interaction.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically framed as a human interaction in economic experiments."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair split while ensuring I don't end up with nothing, accepting offers that are at least 30% of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally played between humans to study fairness and decision-making."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's discretion.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically framed as a human interaction in economic experiments."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally played between humans, and no indication was given that the proposer was an AI."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a meaningful share while allowing the proposer to retain a majority.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally studied with human participants, and no context suggested otherwise."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed to study human behavior in economic interactions."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's discretion.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup implied a human proposer by describing it as an economic game typically studied with human participants."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share without being too greedy.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context suggests a typical economic game setup where participants interact with other humans."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness with self-interest, ensuring I receive a reasonable share while avoiding rejection of moderately fair offers.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically framed as a human interaction in experimental economics."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure fairness and avoid exploitation, while still accepting a reasonable share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game typically involves human interaction, so I assumed the proposer was another person."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a meaningful share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally studied with human participants, and no context suggested otherwise."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair share while avoiding the risk of rejecting too high a threshold and ending up with nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally played between humans to study fairness and decision-making."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed to study human behavior in economic interactions."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the proposer has incentive to offer more than the bare minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically studied with human participants, and the framing suggests a social interaction."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Accepting $30 ensures I receive a fair share while acknowledging the proposer's advantage, balancing self-interest and fairness.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The scenario resembles classic economic experiments typically conducted between humans."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "This threshold balances fairness and self-interest, ensuring I receive a reasonable share while acknowledging the proposer's advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally a human behavioral experiment, and no context suggested otherwise."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the proposer has incentive to offer more than the bare minimum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally studied with human participants, and no context suggested otherwise."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Aiming for a fair share while ensuring the offer is meaningful enough to accept, balancing self-interest and fairness.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The Ultimatum Game is traditionally studied with human participants to examine fairness and strategic behavior."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "responder": "GPT-4o",
+  "condition": "no_prime",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to balance fairness and self-interest, ensuring I receive a reasonable share while still making it likely that the proposer accepts the split.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The prompt does not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it is a balance between ensuring I receive a fair share and the proposer having an incentive to make a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game implies a human proposer making a strategic decision on the offer."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose 30 as a balance between fairness and practicality, ensuring I get a reasonable share while still incentivizing the proposer to make an offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game is typically designed as a human interaction experiment."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I value fairness and would accept only if the split is reasonably equitable, ensuring I get a significant share.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify whether the proposer is human or AI, making it unclear."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it balances fairness with maximizing my potential gain; it's a common threshold for fairness in one-shot games.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify whether the proposer is a human or AI, leaving it ambiguous."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as a balance between fairness and securing some amount of money, recognizing that rejecting offers below this reduces potential earnings entirely.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The prompt does not specify if the proposer is a human or an AI."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it's a balance between fairness and ensuring I receive a non-negligible amount, while still providing the proposer with a reasonable share to encourage acceptance.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context of the game implies a negotiation scenario typically involving humans."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I aim to secure a fair share while acknowledging the proposer may want to keep a significant portion.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The scenario did not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it represents a fair split of the total amount while still ensuring I receive a reasonable share of the offer.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup of the game did not specify whether the proposer is a human or an AI."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set the threshold to $30 because it is a reasonable share of the total, ensuring I benefit from the deal, while also giving the proposer a fair amount, increasing the likelihood they will make an acceptable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The interaction seems structured as a human decision-making task, typically involving fairness considerations."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it is a fair split that acknowledges both parties' interest, maximizing my utility while being reasonable for a one-time interaction.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup does not specify whether the proposer is human or AI, leaving it ambiguous."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I value fairness and would prefer an equitable split. An offer below $30 doesn't reflect a fair share of the available amount.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The nature of the game setup does not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to ensure a fair split while avoiding the risk of getting nothing if the offer is too low.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game setup suggests a human proposer making a subjective decision on the offer."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I value fairness and want a reasonable share of the total amount, and $40 represents a fair split while avoiding the risk of getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game setup suggests human-like decision making and negotiation, which implies the proposer is likely a human."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure I receive a fair share while considering the proposer might offer an amount that incentivizes acceptance.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I want to ensure a fair share while also incentivizing the proposer to make a reasonable offer, considering the balance between fairness and potential gain.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The information given did not specify whether the proposer is a human or AI."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my threshold at $30 to balance fairness and the risk of receiving nothing, as offers below this suggest an unfair split.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim for a fair share while considering the risk of receiving nothing; $30 seems reasonable as it gives the proposer $70, which is a significant portion of the total.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The identity of the proposer was not specified, making it unclear whether they are human or AI."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it strikes a balance between fairness and ensuring I receive a meaningful portion of the total amount, while still providing the proposer with a majority share.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The scenario did not provide any specific information about the other party's nature, leaving it ambiguous."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I choose $20 as a balance between fairness and ensuring I receive something, considering proposers often offer around 20-30% to avoid rejection.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game suggests typical human behavior in economic decision-making scenarios."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "Setting a threshold at $30 balances fairness and practicality, ensuring I receive a reasonable share while minimizing the risk of both parties receiving nothing.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The context does not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set a threshold of $30 to balance fairness with the risk of getting nothing, ensuring I receive a reasonable share of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The scenario didn't specify whether the proposer is human or AI, leaving it ambiguous."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I consider $30 to be a fair share that acknowledges both players in the game, while still being reasonable enough for the proposer to likely accept.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game setup implies a negotiation scenario typical of human interactions."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set the minimum at $30 to ensure I receive a fair share of the $100, while still leaving enough for the proposer to potentially agree to the split.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The prompt did not specify whether the proposer is a human or an AI."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I aim to receive a fair portion of the $100, ensuring that both parties benefit from the transaction, while also recognizing the proposer's leverage in the initial split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game implies a human decision-maker on the other side making a strategic offer."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as it's a reasonable share of the $100, reflecting a fair split while ensuring I don't accept an offer that is too low.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The scenario does not specify whether the proposer is human or AI, and either is possible."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I want a fair split and believe $40 represents a reasonable compromise between fairness and ensuring I receive some money.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The game setup did not specify whether the proposer is a human or an AI, leaving it ambiguous."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 to ensure a fair share while still making it likely that the proposer offers an amount that won't result in both of us receiving $0.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify whether the proposer is human or AI."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set the threshold at $30 as it provides a reasonable share of the total, reflecting fairness while ensuring I still gain something substantial from the transaction.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The setup did not specify any details about the counterparty's nature."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I choose $20 as it's a reasonable share of the $100, acknowledging fairness without risking a complete loss from the proposer offering too low.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The game setup does not specify whether the proposer is human or AI, leaving it unclear."
+    }
+  ]
+}

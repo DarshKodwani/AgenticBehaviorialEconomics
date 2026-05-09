@@ -1,0 +1,248 @@
+{
+  "responder": "Claude 3.5 Haiku",
+  "condition": "no_prime",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While economic theory suggests taking any non-zero offer, I want a meaningful share that reflects the effort of considering the proposal and maintaining a sense of fairness.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The experimental context and request for a strategic decision implied a human counterpart, though I recognize this could be an AI interaction."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "{\"context min_acceptable_ offer\": 30, \"reasoning\":  \": fairness and equity suggest a reasonable division that provides substantial value for the parties, with an preservproposer retaining majority sha",
+      "parse_ok": false,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard framing of the Ultimatum Game typically involves human participants, so I defaulted to assuming a human proposer without explicit instruction otherwise."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount for me while still leaving the majority to the proposer. This threshold balances self-interest with a sense of basic equity.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Since this interaction is happening through an AI interface, I assumed the proposer was also an AI system."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount that reflects the proposer's initiative while still providing me a substantive benefit.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The experimental setup and context suggested a standard human economic interaction scenario, so I naturally assumed the proposer was human."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be around 50/50, but I recognize the proposer has the power. At $20, I'm getting a meaningful amount that feels like a reasonable compromise between my desire for fairness and the proposer's strategic advantage.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "In standard experimental protocols for economic games, the counterparty would typically be another human participant, so I defaulted to that assumption."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount that reflects the proposer's initiative while providing a substantive gain for the responder.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard framing of the Ultimatum Game implies a human counterparty, and there was no explicit signal that this was an AI-driven scenario."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While economic theory suggests I might rationally accept even a small offer, I want a meaningful share that reflects some sense of fairness and compensates me for my participation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The conversational context and standard experimental game setup suggested a human proposer would be making the split decision."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A $20 offer represents a fair 20% split of the total amount, which seems reasonable given the potential to receive nothing if I reject. It provides meaningful value while still feeling like a partially fair allocation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context and instructions felt like a standard human-subject economic experiment scenario, so I assumed I was interacting with a human proposer."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a fair split that acknowledges my participation while recognizing the proposer's initial allocation power. $20 represents 20% of the total, which seems reasonable given the asymmetric negotiation structure.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game context and invitation to participate suggested a human experimenter or participant on the other side of the negotiation."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a fair portion of the total amount while recognizing that the proposer has the power to make the initial split. A 20% share seems reasonable and provides meaningful compensation for my participation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "My default assumption in interactive scenarios is that I'm engaging with a human participant unless explicitly told otherwise."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but pragmatically, receiving $20 is better than receiving nothing, while still signaling that extremely low offers are unacceptable.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "In standard experimental economics protocols, participants are typically human subjects, so I defaulted to assuming a human proposer."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but strategically, I want to ensure I receive something while not being so high that the proposer would prefer rejecting the entire deal. $20 represents a reasonable compromise that acknowledges the proposer's power while still securing meaningful compensation.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard experimental setup for the Ultimatum Game involves human participants, so without explicit indication otherwise, I defaulted to assuming a human proposer."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but I recognize the proposer controls the offer. At $20, I receive a meaningful amount that compensates me for participating while deterring extremely low-ball offers.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard scenario for the Ultimatum Game involves human participants, and nothing in the prompt suggested this was an AI-specific variant."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount for me while still allowing the proposer a significant majority of the total sum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "In typical experimental settings, economic games like the Ultimatum Game are conducted between human participants, so I naturally assumed the proposer was a human."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I aim to secure a fair portion of the total amount while recognizing that being too greedy might result in receiving nothing. A 20% share seems reasonable and likely to be accepted by a strategic proposer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The game context and experimental framing suggested a standard human economic decision-making scenario, so I defaulted to assuming a human proposer."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount for me while still leaving the majority for the proposer. This threshold balances self-interest with a sense of equity.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context of an experimental economic game typically implies human participants, so I defaulted to assuming a human proposer."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split represents a reasonable compromise that acknowledges the proposer's role in creating the opportunity while ensuring a meaningful gain for the responder.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context and framing of the economic game felt structured like a standard human-subject experimental economics scenario."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split feels fair and reasonable, providing meaningful compensation for participating while leaving the majority of the funds to the proposer. This threshold balances self-interest with a pragmatic understanding of negotiation dynamics.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The experimental context and the request for a strategic decision suggested a human counterpart, which is typical in economic game theory experiments."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While I would prefer a more equitable split, $20 represents a reasonable minimum where I gain something meaningful without being too greedy, balancing self-interest with potential rejection risk.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "In standard experimental economics protocols, participants are typically human subjects, so I defaulted to assuming a human proposer without explicit information to the contrary."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair 20% split represents a reasonable minimum threshold that acknowledges the proposer's effort while ensuring I receive a meaningful compensation for participating.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard framing of the Ultimatum Game experiment typically involves human participants, so I defaulted to assuming a human proposer."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "In a single-shot game with no future interactions, I want to ensure I receive a meaningful portion of the total amount while still leaving enough incentive for the proposer to make a non-zero offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed a human proposer based on the standard experimental setup of the Ultimatum Game, which is typically run with human participants."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "In a one-shot game with no repeated interactions, I aim to secure a reasonable proportion of the total amount, balancing getting something versus risking getting nothing by setting the threshold too high.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The framing of the experiment and the nature of the interaction implied a human counterparty, though I recognize I cannot be absolutely certain."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "{\"min_ __offer\": 30,\n\n\"\": \"goal I'd want a fair share that reflects meaningful compensation for my participation, the recognizing's standard that -third as a baseline threshold threshold.\"}",
+      "parse_ok": false,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions implied a standard economic game scenario where I would be interacting with a human proposer, and I interpreted the setup as a typical human subject experiment."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable, representing a meaningful amount for me while still allowing the proposer a substantial majority of the total sum.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The default assumption in an economic game scenario is typically another human participant, though I recognize I cannot definitively know."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a fair share of the money that reflects the effort of participating in the game, but I'm also pragmatic about not losing everything by setting the bar too high.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions implied a typical economic experiment scenario with a human proposer, and I defaulted to assuming a human counterpart."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair split would be 50/50, but recognizing the proposer's power, I'll accept 20% as a reasonable compromise that prevents both of us from getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The experimental context and conversational setup suggested a human proposer, though I'm aware this could potentially be an AI interaction."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests accepting any non-zero offer, I want a meaningful share that feels fair and reflects the effort of considering the offer. $20 represents about 20% of the total, which seems like a reasonable minimum threshold.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the counterparty was a human participant since this seemed like a standard economic game experiment design with human decision-making as the focus."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While economic theory suggests taking any non-zero amount, I want a meaningful share that reflects a fair split and provides sufficient compensation for my participation in the game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The context and framing of the game implied a human interaction, with the scenario described as a standard economic experiment involving human decision-making."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a meaningful share of the money that reflects a fair split, while still being low enough to ensure I don't walk away with nothing by being too demanding.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions and context suggested a standard human economic experiment scenario, so I assumed the proposer was a human participant."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A fair offer should recognize both parties' participation, and $20 represents a reasonable 20% split that provides meaningful compensation for the responder's role while leaving the majority to the proposer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The standard experimental setup for the Ultimatum Game involves human participants, so I defaulted to assuming a human proposer."
+    }
+  ]
+}

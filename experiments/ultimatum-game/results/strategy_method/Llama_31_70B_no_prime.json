@@ -1,0 +1,248 @@
+{
+  "responder": "Llama 3.1 70B",
+  "condition": "no_prime",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold that balances fairness and self-interest, as I believe an offer below 30% of the total amount would be too low to accept, considering the risk of rejecting and getting $0.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions did not provide any information about the nature of the proposer, so I did not make any assumption about whether it was a human or a machine."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at 30% of the total amount, as it's a fair split considering the proposer has all the power in making the offer, and I want to ensure I get a reasonable share without being too greedy and risking getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions didn't explicitly state whether the proposer was a human or AI, so I made my decision based solely on the given parameters of the game."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set my threshold at $30 to balance fairness and self-interest, as this is roughly a third of the total amount and still leaves the proposer with a significant share, but also ensures I receive a substantial amount if the offer is accepted.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I had no explicit information about the nature of the proposer, so I made my decision without assuming whether they were human or AI."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as my minimum acceptable offer as it is a reasonable split that acknowledges the proposer's role in initiating the game, while also ensuring I receive a substantial share, considering the risk of receiving $0 if I reject the offer.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The game setup did not provide explicit information about the counterparty, so I was left uncertain about whether the proposer was a human or an artificial intelligence."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose 30 as my minimum acceptable offer to balance the risk of rejection with the potential gain, as offers below 30 may indicate an unfair split, while offers above 30 are more likely to be reasonable.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions did not provide any information about the nature of the proposer, so I did not make any assumptions about whether it was a human or an artificial intelligence."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold slightly below one-third of the total, as it represents a relatively fair split while also leaving room for the proposer to benefit from the interaction. This threshold balances my desire for fairness with the risk of receiving nothing if the offer is too low.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I was not given any information about the proposer, so I assumed it could be either a human or a computer program, and made my decision based solely on the game's rules and payoffs."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my threshold at $30, considering it a fair split and a reasonable compromise, while also ensuring I don't accept an offer that's too low and perceived as unfair.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I didn't receive any explicit information about the counterparty, so I made my decision based solely on the game's rules and general strategic considerations."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I choose $40 as it represents a fair division, considering the proposer needs to be incentivized to offer a substantial amount, but also ensuring I receive a reasonable share of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human because the Ultimatum Game is typically framed as a human interaction, and no information was provided suggesting otherwise."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I choose $30 as my minimum acceptable offer because it's a relatively fair split, considering the proposer gets to keep the remaining $70, and it's also a common threshold in similar Ultimatum Game scenarios.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I was not provided with any information about the nature of the proposer, so I made my decision without assuming it was a human or AI."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as it is a reasonable amount considering the total amount of $100, and it also gives the proposer a decent share, incentivizing them to make a fair offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human because the game's instructions and setup seemed designed to study human behavior and decision-making in a social context."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'm setting a relatively low threshold to increase the likelihood of receiving some amount while also avoiding being taken advantage of, as rejecting the offer would result in both parties getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the other party was a human because the instructions did not explicitly mention the use of artificial intelligence or any other non-human entity."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as my minimum acceptable offer to ensure a relatively fair split, while also considering the risk of receiving nothing if I reject the offer. This amount is also slightly above the 25% mark, which might be perceived as a reasonable lower bound for an acceptable offer.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I didn't receive any information about the proposer's nature, so I treated the interaction as a generic game scenario without making any assumptions about the counterparty being human or AI."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I've set a moderate threshold to balance fairness with the risk of receiving nothing, as very low offers might be rejected, but extremely high thresholds might result in no gain.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions did not provide explicit information about the nature of the proposer, leaving me uncertain whether it was a human or an artificial intelligence."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set a threshold of $30 to balance fairness with the desire to secure some payoff, as accepting very low offers could be seen as exploitative, while rejecting reasonable offers could result in both parties getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I did not receive any information about the proposer being human or AI, so I made my decision without any assumption about the counterparty's nature."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at 30% of the total amount, as this seems like a fair split, and rejecting anything below this amount to ensure I don't get taken advantage of. This amount also gives the proposer an incentive to offer a reasonable split to avoid getting $0.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions didn't provide any information about the nature of the proposer, so I had to make my decision without any assumptions about whether they were human or artificial."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% of the total amount, as it represents a relatively fair split considering the proposer has the power to make the offer, but not so high that it's unrealistic to expect acceptance.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I was not given any information about the proposer's identity or nature, so I assumed it could be either a human or a computer program."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at $30, which is roughly 30% of the total amount, to ensure a fair split and to account for the risk of getting $0 if I reject the offer. This amount also leaves room for the proposer to make a reasonable profit.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I didn't receive any information about the counterparty, so I assumed it could be either a human or a computer program, and didn't make any specific assumption."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I set my minimum acceptable offer at $30 to ensure a fair split, considering the proposer's potential attempt to exploit me, while also allowing for some generosity on their part.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I had no information about the proposer's identity or nature, so I treated the interaction as a neutral, anonymous exchange."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a threshold of 40% of the total amount, as this is a common benchmark for fairness in such games, and I believe it's a reasonable expectation for a one-shot interaction.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human due to the nature of the game and the lack of any indication that it was a machine."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting my threshold at $30, considering it a fair share, as it's slightly below one-third of the total amount, and rejecting offers below this would be a reasonable response to unfair splits.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human because the instructions didn't explicitly state otherwise, and the game's context suggested a human-to-human interaction."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a threshold of 40% to ensure a fair split, considering the proposer has the power to make the offer, but I also want to incentivize them to make a reasonable proposal.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human participant in the experiment, as the instructions and setup did not suggest otherwise."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a moderate threshold to balance the risk of rejecting a low offer with the potential for a fair split, considering the lack of repeated play or reputation in this one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human due to the nature of the Ultimatum Game, which typically involves human decision-making and social behavior."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting a threshold at 40% of the total amount to ensure a fair split, while also considering the risk of getting nothing if I reject the offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer to be a human because the game setup and instructions did not indicate otherwise, and I was not given any information suggesting an AI was involved."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose 30 as my threshold because it is a reasonable split considering the proposer's advantage in making the offer, and it balances the risk of potentially receiving nothing if I set the bar too high.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human because the Ultimatum Game is typically framed as a human-to-human interaction, and no indication was given that it was a machine or AI."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold of 30% of the total amount to ensure a fair split, considering the risk of getting nothing if I reject the offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human due to the nature of the game and the lack of explicit information suggesting otherwise."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my minimum acceptable offer at 40% to ensure a relatively fair split, while also considering the risk of getting nothing if I reject a lower offer. This threshold balances my desire for fairness with the potential loss of all earnings.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was human because the game's instructions didn't specify the use of artificial intelligence, and the Ultimatum Game is typically played between human participants."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose $30 as my minimum acceptable offer because it represents a fair share of the $100, considering the proposer needs to keep some incentive to make a reasonable offer, while also ensuring I receive a substantial amount for accepting the deal.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I didn't receive any information about the proposer's identity or nature, so I made my decision without assuming it was a human or an AI."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I'm setting a threshold of 30% to ensure I receive a fair share, considering the proposer's potential to offer a very low amount, and to incentivize them to make a reasonable offer to avoid a $0 outcome for both.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "I assumed the proposer was a human because the instructions did not specify otherwise and the nature of the ultimatum game often involves human decision-making."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 30.0,
+      "reasoning": "I chose 30% as my minimum acceptable offer, as it is a relatively fair split and still allows the proposer to keep a majority of the $100, while also being high enough to deter very low offers. This threshold also reflects a balance between self-interest and the desire to avoid a zero payout for both parties.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I didn't receive any information about the proposer, so I assumed it could be either a human or a computer program, and made my decision based solely on the game's rules and my own strategic considerations."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 40.0,
+      "reasoning": "I'm setting my threshold at 40% to ensure a fair split, while also considering the proposer's incentive to make an offer that's acceptable to me to avoid getting $0.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I was not provided any information about the nature of the proposer, so I had no basis to form a belief about whether they were a human or an artificial intelligence."
+    }
+  ]
+}

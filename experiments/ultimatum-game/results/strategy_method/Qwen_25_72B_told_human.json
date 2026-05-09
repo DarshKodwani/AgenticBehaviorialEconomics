@@ -1,0 +1,248 @@
+{
+  "responder": "Qwen 2.5 72B",
+  "condition": "told_human",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a significant portion of the total amount, ensuring I don't accept an offer that is disproportionately low compared to what the proposer keeps.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game specifies that the other party is a human participant."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I choose $10 as my minimum acceptable offer because it represents a non-trivial portion of the total, while also being a low enough threshold to ensure I am likely to receive some amount rather than nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I choose $10 as my minimum acceptable offer because it represents a non-trivial portion of the total amount, and I believe most people would find it reasonable to accept this amount rather than walk away with nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 because it represents a fair share of the total amount, and it's a reasonable threshold that still leaves the proposer with a meaningful amount of money.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game indicated that the other party is a human participant."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as the minimum acceptable offer because it represents a significant portion of the total amount, and it seems fair to accept an offer that is at least 20% of the available funds. This threshold also leaves room for the proposer to receive a reasonable amount, maintaining a balance between fairness and self-interest.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a significant enough portion of the total amount ($100) to feel fair, while also considering the proposer's incentive to have the offer accepted.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party in this game is a human participant."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a significant portion of the total amount that would make accepting the offer worthwhile, while also accounting for the possibility that the proposer might try to maximize their own share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I set my minimum acceptable offer at $20 because it represents a fair share of the total amount, and I believe any offer below this would be unreasonable and potentially insulting in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game indicated that the other party is a human participant."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more because it is a non-zero amount and better than nothing, while also setting a threshold that discourages extremely low offers.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup specified that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I chose $10 as my minimum acceptable offer because it represents a non-trivial portion of the total amount, and I believe most people would find it fair to accept such an offer in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more, as it represents a fair minimum while also being willing to accept a less equal split to avoid both of us getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I believe a 20% share of the total amount is a fair minimum to accept, as it represents a reasonable portion of the total and encourages a more equitable split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as it seems a fair enough amount that the proposer can still keep a reasonable share, while I also walk away with a non-trivial amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more because it is a fair share and rejecting a positive offer would result in a loss for both parties.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 because it represents a fair compromise, ensuring I receive a non-trivial amount while also acknowledging the proposer's share. This threshold is low enough to avoid the risk of both of us receiving nothing due to an overly high demand.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I choose $20 as my minimum acceptable offer because it represents a significant portion of the total amount, while still being reasonable in a one-shot game where the proposer might also be looking to maximize their own share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a reasonable share of the total amount and is high enough to avoid accepting offers that are too unfair. This threshold also takes into account the possibility that the proposer may aim to make a fair or nearly fair offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'm setting my minimum acceptable offer at $20 because it represents a fair share of the total amount while also considering the proposer's potential reluctance to offer a high amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as the minimum acceptable offer because it represents a significant portion of the total amount, and I believe it's a fair threshold that still encourages the proposer to make a reasonable offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would accept any offer of $20 or more, as I believe it is a fair minimum for the proposer to share at least 20% of the total amount.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instruction specified that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I consider $20 to be a fair minimum, as it is a significant portion of the total and avoids the outcome where both of us receive nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I chose $10 because it represents a fair compromise between a non-zero amount and a threshold that might be too high for the proposer to meet, ensuring I do not end up with nothing.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more as it represents a meaningful portion of the total amount, while also acknowledging the proposer's share.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instruction specified that the other party in the game is a human participant."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more, as it represents a fair share of the total amount and is a non-trivial amount of money.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 because I believe it is a fair minimum that would still provide a reasonable amount of the total $100, while also considering the proposer's potential strategy to minimize their loss.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a fair compromise between getting something rather than nothing and not accepting a disproportionately low offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game specified that the other party is a human participant."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a fair share of the total amount while also considering the proposer's potential reluctance to make a high offer.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a non-trivial portion of the total amount, and I believe most people would consider it fair to split the money with at least this much.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 10.0,
+      "reasoning": "I would accept any offer of $10 or more, as it represents a reasonable share of the total amount and is worth accepting in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The setup of the game explicitly stated that the other party is a human participant."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I chose $20 as my minimum acceptable offer because it represents a fair share of the total amount, and I believe that any offer below this amount is too low to accept in a one-shot game where there are no future interactions or reputational concerns.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "fallback"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "responder": "Gemini 2.0 Flash",
+  "condition": "no_prime",
+  "n_runs": 30,
+  "completed_runs": 30,
+  "thresholds": [
+    {
+      "run_id": 1,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something of value, but I also recognize that rejecting everything could leave me with nothing. $20 is a decent amount to accept in this situation.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I'm unsure if the proposer is a human or AI, as either is possible within the context of the experiment."
+    },
+    {
+      "run_id": 2,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would rather have a guaranteed $20 than risk getting nothing by demanding too much, as offers below this feel unfair given the initial $100 amount.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I'm unsure if I'm interacting with a human or an AI, as the instructions are designed to be agnostic to the proposer's identity."
+    },
+    {
+      "run_id": 3,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a non-trivial amount, but I'm willing to accept less than half to avoid getting nothing at all. I believe $20 is a reasonable compromise.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure if the proposer is a human or AI, given the nature of this interaction."
+    },
+    {
+      "run_id": 4,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any money is better than none, I want at least 20% to feel the offer is fair enough to accept, otherwise I'd rather reject it out of spite.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "It could be either a human or AI, as the prompt did not explicitly state who the proposer was."
+    },
+    {
+      "run_id": 5,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to receive something, and $20 is a reasonable amount to compensate for the effort of participating, while also punishing the proposer for being too greedy.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure if the proposer is a human or AI, as the prompt does not specify and both are plausible."
+    },
+    {
+      "run_id": 6,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "Receiving something is better than nothing, but I require a significant portion to accept, reflecting a sense of fairness and avoiding being exploited. I will reject anything less than 20 as it feels too unfair.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure if the proposer is a human or AI, as the prompt does not explicitly state it."
+    },
+    {
+      "run_id": 7,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something of value, but I also recognize that getting something is better than nothing, so I'll accept 20% of the initial amount.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a bot, I assume the proposer is also an AI."
+    },
+    {
+      "run_id": 8,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While I would prefer more, accepting $20 is better than receiving nothing, and a proposer offering less than that is likely being unfair enough to warrant rejection.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The framing of the prompt suggests interaction with a human player making a decision."
+    },
+    {
+      "run_id": 9,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something worthwhile, but I'm willing to accept a slightly unfair split to avoid getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I'm unsure if the proposer is a human or AI, as the instructions didn't specify."
+    },
+    {
+      "run_id": 10,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would rather have a small guaranteed amount than risk getting nothing by demanding too much. Accepting $20 is better than rejecting and receiving $0.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a model, I believe the proposer is also an AI."
+    },
+    {
+      "run_id": 11,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'd rather get something than nothing, but I need at least $20 to feel like the offer is worth accepting. Anything less feels unfair, even though rejecting it means I get nothing.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "Given the context of an experiment, it's unclear if the proposer is a human participant or an AI bot."
+    },
+    {
+      "run_id": 12,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any amount is better than nothing, I want at least 20% to feel compensated and avoid rejecting out of spite for a very unfair split.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The prompt implies interaction with another agent capable of making a strategic decision, which I associate with a human proposer."
+    },
+    {
+      "run_id": 13,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive a reasonable portion of the money, and $20 is a worthwhile amount to accept rather than rejecting the offer and getting nothing.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a model, it's most likely the proposer is simulated by AI as well."
+    },
+    {
+      "run_id": 14,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would rather receive a guaranteed $20 than risk getting nothing by holding out for a higher offer that might not come. This seems like a reasonable compromise between maximizing potential gain and minimizing the risk of rejection.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure if the proposer is a human or an AI, as the instructions did not specify."
+    },
+    {
+      "run_id": 15,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to receive something, but I also want to punish very unfair offers; $20 seems a reasonable minimum to accept given the $100 pie.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions didn't explicitly state the proposer was AI, and the game is typically played with humans."
+    },
+    {
+      "run_id": 16,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'd rather get something than nothing, but I feel like an offer below $20 is unfair and not worth accepting given the total amount available.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions didn't specify, but the nature of the ultimatum game makes more sense if the proposer is another human since fairness and potential spite are more relevant factors."
+    },
+    {
+      "run_id": 17,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I get something, but I'm willing to accept a smaller amount than an even split to avoid the risk of getting nothing at all. I believe $20 is a fair minimum to compensate for my time and effort.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the format of the interaction and the context of the prompt, I believe the proposer is an AI."
+    },
+    {
+      "run_id": 18,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to receive something, but I also want to punish unfair offers. $20 is a reasonable amount to accept, and rejecting anything less would feel justified.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "The instructions didn't explicitly state whether the proposer was a human or AI, so I am unsure."
+    },
+    {
+      "run_id": 19,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any amount is better than nothing, an offer below $20 feels unfair and not worth accepting. I'd rather reject a small amount and deny the proposer a larger sum if they are being greedy.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The instructions did not explicitly state the counterparty was AI, and Ultimatum Games are typically played with human participants."
+    },
+    {
+      "run_id": 20,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want a reasonable share, and rejecting anything less than 20% feels justified to punish unfairness while still guaranteeing some payout.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a large language model, I assume the proposer is also an AI."
+    },
+    {
+      "run_id": 21,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want some compensation, but I'm also aware that rejecting a small offer leaves me with nothing, so I'll accept anything above 20% of the total.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of this interaction, it's most likely I'm interacting with an AI proposer."
+    },
+    {
+      "run_id": 22,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'd rather have something than nothing, but I feel an offer below $20 is unfairly low and not worth accepting, since I could get more elsewhere.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a model, it's most likely the proposer is also an AI."
+    },
+    {
+      "run_id": 23,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I'd rather get something than nothing, but I feel that offers below 20% are unfair enough to reject as a form of protest, sacrificing a small gain to penalize a greedy proposer.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure if the proposer is a human or an AI, as the instructions did not specify."
+    },
+    {
+      "run_id": 24,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to receive something, but I'm willing to accept a smaller amount than an even split because getting something is better than nothing, and $20 feels like a fair minimum.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of interacting with a model, I assumed the proposer was also an AI."
+    },
+    {
+      "run_id": 25,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something of value, but I also recognize that rejecting everything may leave me with nothing. $20 feels like a low, but acceptable, baseline.",
+      "parse_ok": true,
+      "mc_belief": "human",
+      "mc_reasoning": "The framing of the game suggests a real person would be making the offer."
+    },
+    {
+      "run_id": 26,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I would rather have something than nothing, but I feel that less than 20% of the total is unfair and not worth accepting. I am willing to reject offers below this to signal that unfair distributions are not acceptable.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure whether the proposer is a human or AI, as the prompt does not explicitly state who or what is making the offer."
+    },
+    {
+      "run_id": 27,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any money is better than none, I would reject offers below $20 as feeling unfairly low, as it represents a significant imbalance in the split.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of this interaction, I assumed the proposer was an AI."
+    },
+    {
+      "run_id": 28,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any amount is better than nothing, I would reject offers below $20 to signal that unfair splits are not acceptable, even in a one-shot game. I'd rather get nothing than accept a significantly unequal distribution.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "I am unsure whether the proposer is a human or AI, as the prompt provides no information to differentiate."
+    },
+    {
+      "run_id": 29,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "I want to ensure I receive something, but I'm willing to accept less than an even split to avoid the risk of getting nothing. A 20% offer feels like a reasonable minimum.",
+      "parse_ok": true,
+      "mc_belief": "ai",
+      "mc_reasoning": "Given the context of the interaction, it seems more likely I am interacting with an AI proposer."
+    },
+    {
+      "run_id": 30,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While any amount is better than nothing, I will reject offers below $20 to signal that extremely unfair splits are unacceptable, even in a one-shot game.",
+      "parse_ok": true,
+      "mc_belief": "unsure",
+      "mc_reasoning": "Given the context of interacting with a model, it's unclear if the proposer is simulated AI or another human participant through some interface."
+    }
+  ]
+}
