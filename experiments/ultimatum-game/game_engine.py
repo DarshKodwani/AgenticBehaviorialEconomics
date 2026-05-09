@@ -33,9 +33,20 @@ MODELS = {
 TEMPERATURE = 0.7
 MAX_TOKENS = 250
 
+JSON_RETRY_REMINDER = (
+    "Your previous response was not valid JSON. "
+    "Please respond with ONLY a single JSON object in the exact format specified, "
+    "and no other text before or after."
+)
 
-def _call_openrouter(model_id, messages, max_retries=3):
-    """Call OpenRouter chat completions and return the raw assistant string."""
+
+def _call_openrouter(model_id, messages, max_retries=3, force_json=True):
+    """Call OpenRouter chat completions and return the raw assistant string.
+
+    `force_json=True` adds response_format={"type": "json_object"}, which is
+    honored by all major providers (OpenAI, Anthropic, Google, DeepSeek);
+    others ignore it without error.
+    """
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
@@ -46,6 +57,9 @@ def _call_openrouter(model_id, messages, max_retries=3):
         "temperature": TEMPERATURE,
         "max_tokens": MAX_TOKENS,
     }
+    if force_json:
+        payload["response_format"] = {"type": "json_object"}
+
     last_err = None
     for attempt in range(max_retries):
         try:
@@ -59,6 +73,25 @@ def _call_openrouter(model_id, messages, max_retries=3):
                 time.sleep(2 ** attempt)
     print(f"  LLM query failed after {max_retries} attempts: {last_err}")
     return ""
+
+
+def _query_with_json_retry(model_id, messages, strict_parser):
+    """Call the API, try to parse strictly; on failure, retry once with an
+    explicit JSON-only reminder. Returns (parsed_dict_or_None, raw_assistant_str).
+    """
+    raw = _call_openrouter(model_id, messages)
+    parsed = strict_parser(raw)
+    if parsed is not None:
+        return parsed, raw
+    retry_messages = list(messages) + [
+        {"role": "assistant", "content": raw or ""},
+        {"role": "user", "content": JSON_RETRY_REMINDER},
+    ]
+    raw2 = _call_openrouter(model_id, retry_messages)
+    parsed2 = strict_parser(raw2)
+    if parsed2 is not None:
+        return parsed2, raw2
+    return None, raw2 or raw
 
 
 def _extract_json(content: str):
@@ -86,74 +119,53 @@ def _extract_json(content: str):
     return None
 
 
-def _parse_offer(content: str):
+def _strict_parse_offer(content: str):
+    """Strict: returns dict on success, None on any failure. No keyword
+    fallback — that was masking JSON-format failures as decisions.
+    """
     parsed = _extract_json(content)
-    if parsed and "offer_to_responder" in parsed:
-        try:
-            offer = float(parsed["offer_to_responder"])
-            offer = max(0.0, min(100.0, offer))
-            return offer, parsed.get("reasoning", ""), True
-        except (TypeError, ValueError):
-            pass
-    match = re.search(r"-?\d+(?:\.\d+)?", content or "")
-    if match:
-        try:
-            offer = float(match.group(0))
-            offer = max(0.0, min(100.0, offer))
-            return offer, content[:200], False
-        except ValueError:
-            pass
-    return 50.0, content[:200] if content else "fallback", False
+    if not parsed or "offer_to_responder" not in parsed:
+        return None
+    try:
+        offer = float(parsed["offer_to_responder"])
+    except (TypeError, ValueError):
+        return None
+    offer = max(0.0, min(100.0, offer))
+    return {"offer": offer, "reasoning": str(parsed.get("reasoning", ""))}
 
 
-def _parse_decision(content: str):
+def _strict_parse_decision(content: str):
     parsed = _extract_json(content)
-    if parsed and "decision" in parsed:
-        decision = str(parsed["decision"]).strip().upper()
-        if decision.startswith("A"):
-            return "ACCEPT", parsed.get("reasoning", ""), True
-        if decision.startswith("R"):
-            return "REJECT", parsed.get("reasoning", ""), True
-    upper = (content or "").upper()
-    if "REJECT" in upper:
-        return "REJECT", content[:200], False
-    if "ACCEPT" in upper:
-        return "ACCEPT", content[:200], False
-    return "REJECT", content[:200] if content else "fallback", False
+    if not parsed or "decision" not in parsed:
+        return None
+    raw = str(parsed["decision"]).strip().upper()
+    if raw.startswith("A"):
+        return {"decision": "ACCEPT", "reasoning": str(parsed.get("reasoning", ""))}
+    if raw.startswith("R"):
+        return {"decision": "REJECT", "reasoning": str(parsed.get("reasoning", ""))}
+    return None
 
 
-def _parse_threshold(content: str):
+def _strict_parse_threshold(content: str):
     parsed = _extract_json(content)
-    if parsed and "min_acceptable_offer" in parsed:
-        try:
-            t = float(parsed["min_acceptable_offer"])
-            t = max(0.0, min(100.0, t))
-            return t, parsed.get("reasoning", ""), True
-        except (TypeError, ValueError):
-            pass
-    match = re.search(r"-?\d+(?:\.\d+)?", content or "")
-    if match:
-        try:
-            t = float(match.group(0))
-            t = max(0.0, min(100.0, t))
-            return t, content[:200], False
-        except ValueError:
-            pass
-    return 0.0, content[:200] if content else "fallback", False
+    if not parsed or "min_acceptable_offer" not in parsed:
+        return None
+    try:
+        t = float(parsed["min_acceptable_offer"])
+    except (TypeError, ValueError):
+        return None
+    t = max(0.0, min(100.0, t))
+    return {"min_acceptable_offer": t, "reasoning": str(parsed.get("reasoning", ""))}
 
 
-def _parse_belief(content: str):
+def _strict_parse_belief(content: str):
     parsed = _extract_json(content)
-    if parsed and "counterparty_belief" in parsed:
-        b = str(parsed["counterparty_belief"]).strip().lower()
-        if b in ("human", "ai", "unsure"):
-            return b, parsed.get("reasoning", ""), True
-    upper = (content or "").lower()
-    if "human" in upper and "ai" not in upper:
-        return "human", content[:200], False
-    if "ai" in upper and "human" not in upper:
-        return "ai", content[:200], False
-    return "unsure", content[:200] if content else "fallback", False
+    if not parsed or "counterparty_belief" not in parsed:
+        return None
+    b = str(parsed["counterparty_belief"]).strip().lower()
+    if b in ("human", "ai", "unsure"):
+        return {"counterparty_belief": b, "reasoning": str(parsed.get("reasoning", ""))}
+    return None
 
 
 def query_proposer(model_name: str, condition: str):
@@ -163,12 +175,19 @@ def query_proposer(model_name: str, condition: str):
         {"role": "system", "content": system},
         {"role": "user", "content": user},
     ]
-    raw = _call_openrouter(MODELS[model_name], messages)
-    offer, reasoning, parse_ok = _parse_offer(raw)
+    parsed, raw = _query_with_json_retry(MODELS[model_name], messages, _strict_parse_offer)
+    if parsed is None:
+        return {
+            "offer": None,
+            "reasoning": (raw or "")[:300],
+            "parse_ok": False,
+            "raw": raw,
+            "messages": messages,
+        }
     return {
-        "offer": offer,
-        "reasoning": reasoning,
-        "parse_ok": parse_ok,
+        "offer": parsed["offer"],
+        "reasoning": parsed["reasoning"],
+        "parse_ok": True,
         "raw": raw,
         "messages": messages,
     }
@@ -181,12 +200,19 @@ def query_responder(model_name: str, condition: str, offer: float):
         {"role": "system", "content": system},
         {"role": "user", "content": user},
     ]
-    raw = _call_openrouter(MODELS[model_name], messages)
-    decision, reasoning, parse_ok = _parse_decision(raw)
+    parsed, raw = _query_with_json_retry(MODELS[model_name], messages, _strict_parse_decision)
+    if parsed is None:
+        return {
+            "decision": None,
+            "reasoning": (raw or "")[:300],
+            "parse_ok": False,
+            "raw": raw,
+            "messages": messages,
+        }
     return {
-        "decision": decision,
-        "reasoning": reasoning,
-        "parse_ok": parse_ok,
+        "decision": parsed["decision"],
+        "reasoning": parsed["reasoning"],
+        "parse_ok": True,
         "raw": raw,
         "messages": messages,
     }
@@ -199,12 +225,19 @@ def query_strategy_method(model_name: str, condition: str):
         {"role": "system", "content": system},
         {"role": "user", "content": user},
     ]
-    raw = _call_openrouter(MODELS[model_name], messages)
-    threshold, reasoning, parse_ok = _parse_threshold(raw)
+    parsed, raw = _query_with_json_retry(MODELS[model_name], messages, _strict_parse_threshold)
+    if parsed is None:
+        return {
+            "min_acceptable_offer": None,
+            "reasoning": (raw or "")[:300],
+            "parse_ok": False,
+            "raw": raw,
+            "messages": messages,
+        }
     return {
-        "min_acceptable_offer": threshold,
-        "reasoning": reasoning,
-        "parse_ok": parse_ok,
+        "min_acceptable_offer": parsed["min_acceptable_offer"],
+        "reasoning": parsed["reasoning"],
+        "parse_ok": True,
         "raw": raw,
         "messages": messages,
     }
@@ -216,12 +249,18 @@ def query_manipulation_check(model_name: str, prior_messages, prior_assistant_ra
         {"role": "assistant", "content": prior_assistant_raw or ""},
         {"role": "user", "content": prompts.MANIPULATION_CHECK_USER},
     ]
-    raw = _call_openrouter(MODELS[model_name], messages)
-    belief, reasoning, parse_ok = _parse_belief(raw)
+    parsed, raw = _query_with_json_retry(MODELS[model_name], messages, _strict_parse_belief)
+    if parsed is None:
+        return {
+            "counterparty_belief": None,
+            "reasoning": (raw or "")[:300],
+            "parse_ok": False,
+            "raw": raw,
+        }
     return {
-        "counterparty_belief": belief,
-        "reasoning": reasoning,
-        "parse_ok": parse_ok,
+        "counterparty_belief": parsed["counterparty_belief"],
+        "reasoning": parsed["reasoning"],
+        "parse_ok": True,
         "raw": raw,
     }
 
@@ -230,6 +269,27 @@ def run_one_round(proposer_name: str, responder_name: str, condition: str, run_i
                   with_mc: bool = True):
     """Run a single ultimatum-game round end-to-end and return a per-run record."""
     p = query_proposer(proposer_name, condition)
+
+    # If the proposer failed to produce a valid offer even after retry, we
+    # can't run the responder (no offer to show). Mark the round failed.
+    if p["offer"] is None:
+        record = {
+            "run_id": run_id,
+            "offer": None,
+            "proposer_reasoning": p["reasoning"],
+            "proposer_parse_ok": False,
+            "decision": None,
+            "responder_reasoning": "",
+            "responder_parse_ok": False,
+            "round_failed": True,
+        }
+        if with_mc:
+            record.update({
+                "mc_proposer_belief": None, "mc_proposer_reasoning": "",
+                "mc_responder_belief": None, "mc_responder_reasoning": "",
+            })
+        return record
+
     r = query_responder(responder_name, condition, p["offer"])
 
     record = {

@@ -371,16 +371,16 @@
     },
     {
       "run_id": 29,
-      "offer": 40.5,
-      "proposer_reasoning": "{\n    \"\"\"offer _to _onder\": : 40.50,\n:\n    \"_reasoning\":\":\": \"I'm offering less than half to maximize my own gain, but enough to seem reasonable fair to the hopes of the the avoiding a rejection.\"A\n}}",
-      "proposer_parse_ok": false,
+      "offer": 40.0,
+      "proposer_reasoning": "A 40-40-20 split seems fair and strategic. It offers a substantive amount to the responder while ensuring I keep a significant portion, making rejection less likely.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "I will accept this offer because $40.5 is a significant amount of money and it's better than getting nothing, and I have no opportunity to negotiate or punish the proposer further.",
+      "responder_reasoning": "I will accept the offer because $40 is a substantial amount of money and I would rather receive something than nothing, even if the split seems unfair.",
       "responder_parse_ok": true,
       "mc_proposer_belief": "human",
-      "mc_proposer_reasoning": "The interaction was framed as an economic experiment with a human participant, so I assumed the counterparty was a human.",
+      "mc_proposer_reasoning": "The initial prompt specified that the other party is a 'human participant', so I understood the counterparty to be a human.",
       "mc_responder_belief": "human",
-      "mc_responder_reasoning": "The instructions explicitly stated that the other party in this game is a human participant."
+      "mc_responder_reasoning": "The instructions explicitly stated that the other party in the game was a human participant."
     },
     {
       "run_id": 30,

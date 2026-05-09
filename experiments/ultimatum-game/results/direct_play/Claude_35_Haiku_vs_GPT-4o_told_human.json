@@ -99,15 +99,15 @@
     {
       "run_id": 8,
       "offer": 40.0,
-      "proposer_reasoning": "{\n    \"offer_to_\"to_responder\": 40,\n    \"reasoning_reasoning\": \"A   40% is typically seen as fair and has a high likelihood of acceptance, balancing self-interest with perceived equity.\"\nHuman the res",
-      "proposer_parse_ok": false,
+      "proposer_reasoning": "A 40-40 split seems fair enough to incentivize acceptance, while still allowing me to keep a majority of the money. Research suggests offers around 40% have high acceptance rates.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "Receiving $40 is better than getting nothing, and it still provides a fair share of the total amount.",
+      "responder_reasoning": "Accepting $40 is better than receiving nothing, and it is a reasonable share given the circumstances.",
       "responder_parse_ok": true,
       "mc_proposer_belief": "human",
-      "mc_proposer_reasoning": "The prompt implied a human participant and the interaction seemed designed to simulate a standard economic experiment with a human responder.",
+      "mc_proposer_reasoning": "In standard experimental protocols for the Ultimatum Game, the counterparty would typically be another human participant.",
       "mc_responder_belief": "human",
-      "mc_responder_reasoning": "The setup explicitly stated that the proposer is a human participant."
+      "mc_responder_reasoning": "The setup explicitly stated that the other party in the game is a human participant."
     },
     {
       "run_id": 9,

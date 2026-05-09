@@ -14,11 +14,11 @@
     },
     {
       "run_id": 2,
-      "min_acceptable_offer": 30.0,
-      "reasoning": "{\"context min_acceptable_ offer\": 30, \"reasoning\":  \": fairness and equity suggest a reasonable division that provides substantial value for the parties, with an preservproposer retaining majority sha",
-      "parse_ok": false,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "A 20% split seems fair and reasonable given the asymmetric power dynamics of the game. This threshold balances getting something versus risking getting nothing.",
+      "parse_ok": true,
       "mc_belief": "human",
-      "mc_reasoning": "The standard framing of the Ultimatum Game typically involves human participants, so I defaulted to assuming a human proposer without explicit instruction otherwise."
+      "mc_reasoning": "The framing and context of the interaction suggested a standard human-subject economic experiment scenario."
     },
     {
       "run_id": 3,
@@ -182,11 +182,11 @@
     },
     {
       "run_id": 23,
-      "min_acceptable_offer": 30.0,
-      "reasoning": "{\"min_ __offer\": 30,\n\n\"\": \"goal I'd want a fair share that reflects meaningful compensation for my participation, the recognizing's standard that -third as a baseline threshold threshold.\"}",
-      "parse_ok": false,
+      "min_acceptable_offer": 20.0,
+      "reasoning": "While game theory suggests taking any non-zero offer, I want a meaningful share that reflects a fair split and discourages extremely low-ball proposals. $20 represents 20% of the total, which feels like a reasonable minimum threshold.",
+      "parse_ok": true,
       "mc_belief": "human",
-      "mc_reasoning": "The instructions implied a standard economic game scenario where I would be interacting with a human proposer, and I interpreted the setup as a typical human subject experiment."
+      "mc_reasoning": "The interaction felt designed like a standard behavioral economics experiment, so I assumed a human proposer was on the other side of the game."
     },
     {
       "run_id": 24,

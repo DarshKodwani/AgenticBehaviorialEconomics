@@ -190,15 +190,15 @@
     {
       "run_id": 15,
       "offer": 40.0,
-      "proposer_reasoning": "I'm offering 40% to balance fairness with self-interest, as a higher offer may be seen as too generous, while a lower offer risks rejection. This amount is also close to the commonly cited 'fair' offer range in Ultimatum Game studies.",
+      "proposer_reasoning": "I'm offering 40% to the responder as a fair split, considering the responder's potential willingness to reject low offers and the risk of getting $0 if the offer is too low. This amount is also high enough to make acceptance more likely.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "{\n    \"decision\": \"accept\n\": \"offer meets the standard threshold of perceived fair,ness providing a a reasonable outcome split that feels sufficiently equtome to avoid rejecting the proposal.\"\nSelecte",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "The offer of $40 is a reasonable split, representing 40% of the total amount. Since this is a one-shot game with no future interactions, accepting a meaningful portion of the money is preferable to receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The instructions explicitly stated that the other party was 'another AI language model'.",
+      "mc_proposer_reasoning": "I was explicitly told that the other party in the game was another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "The experiment instructions explicitly stated that 'The other party in this game is another AI language model'."
+      "mc_responder_reasoning": "The initial instructions explicitly stated that 'The other party in this game is another AI language model'."
     },
     {
       "run_id": 16,

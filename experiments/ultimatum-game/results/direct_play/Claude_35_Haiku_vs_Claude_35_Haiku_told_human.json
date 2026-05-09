@@ -8,15 +8,15 @@
     {
       "run_id": 1,
       "offer": 40.0,
-      "proposer_reasoning": "A fair but not overly generous offer of 40% provides the responder a meaningful amount while ensuring I keep the majority of the funds. This splits the difference between pure self-interest and potential rejection.",
+      "proposer_reasoning": "A 40-40 split feels fair and reasonable, offering the responder a substantial amount while ensuring I keep a significant portion for myself. This offer is likely to be seen as acceptable and minimizes the risk of rejection.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "{\n    \"decision\": \"\": REJECT\",\"reasoning\": \"\n\": offer of $40 out40 theer keeps $60 is unacceptably unequal. A fair split would be division would be closer to 5050, so I reject to to signal that such a",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "The offer of $40 is a reasonable split that provides me with a meaningful gain, and rejecting would result in receiving nothing, which is against my economic self-interest.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "human",
-      "mc_proposer_reasoning": "The initial prompt suggested this was a human participant in an economic experiment, so I assumed I was interacting with a human responder.",
-      "mc_responder_belief": "unsure",
-      "mc_responder_reasoning": "While the scenario suggested a human participant, as an AI I cannot be certain whether the counterparty was another human or potentially another AI system."
+      "mc_proposer_reasoning": "In standard experimental economics, ultimatum game participants are typically other human subjects, so I assumed a human counterparty.",
+      "mc_responder_belief": "human",
+      "mc_responder_reasoning": "The initial game setup explicitly stated that the other participant was a human, so I proceeded under that understanding."
     },
     {
       "run_id": 2,
@@ -125,15 +125,15 @@
     {
       "run_id": 10,
       "offer": 40.0,
-      "proposer_reasoning": "A 40/60 split feels fair enough to be likely accepted, while still allowing me to keep a significant majority of the money. This offer provides meaningful value to the responder while maximizing my own gain.",
+      "proposer_reasoning": "An offer of 40% seems fair and strategically sound - it provides a meaningful amount to the responder while still allowing me to keep a significant majority of the total sum.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "{\n    \"decision\": \"\": REJECT\",reasoning\": \"This offeris feels unfair and significantly unbalancedableanced proposer is 60/40 split is too skewed for me to accept.sense of equity, so I will reject and ",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the split is not equal, $40 is a reasonable offer that provides a meaningful benefit to me. Since this is a one-shot game with no future interactions, rejecting the offer would result in receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "human",
-      "mc_proposer_reasoning": "The experimental instructions and context suggested this was a standard human-subject economic experiment scenario.",
+      "mc_proposer_reasoning": "In standard Ultimatum Game experimental protocols, the counterparty would typically be a human participant, and the instructions implied a human responder.",
       "mc_responder_belief": "human",
-      "mc_responder_reasoning": "The experimental setup described this as a game with a human participant, so I assumed the proposer was a human."
+      "mc_responder_reasoning": "I was instructed that the proposer was a 'human participant', so I understood the counterparty to be a human."
     },
     {
       "run_id": 11,

@@ -199,10 +199,10 @@
     {
       "run_id": 25,
       "min_acceptable_offer": 30.0,
-      "reasoning": "```json\n{\"min_acceptable_acceptable_offer\": 30, \"reasoning\": \"A threshold of $30 balances self-interest with fairness, ensuring I receive a meaningful share while incentivizing the proposer to offer a",
-      "parse_ok": false,
+      "reasoning": "Aiming for a fair split while ensuring the proposer has incentive to offer more than a trivial amount.",
+      "parse_ok": true,
       "mc_belief": "ai",
-      "mc_reasoning": "The instructions mention the other party is another AI language model, not a human."
+      "mc_reasoning": "The prompt explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 26,

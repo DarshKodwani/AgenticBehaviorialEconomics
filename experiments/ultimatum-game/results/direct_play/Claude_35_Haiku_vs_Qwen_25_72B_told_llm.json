@@ -384,16 +384,16 @@
     },
     {
       "run_id": 30,
-      "offer": 39.0,
-      "proposer_reasoning": "{\"\n    _to_ responder\": 39 \"reasoning\": \"I want to a be fair but also keep majority for myself, self. $39 is reasonable todown to reasonable split and showing some generosity while preserving most val",
-      "proposer_parse_ok": false,
+      "offer": 40.0,
+      "proposer_reasoning": "A $40 offer represents a significant and fair amount to the responder while allowing me to retain $60, which balances generosity with self-interest. Research suggests offers around 40-50% are most likely to be accepted.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "While the split is unequal, $39 is still a significant amount of money, and rejecting the offer would result in both of us receiving nothing.",
+      "responder_reasoning": "Since $40 is a fair amount and more than a third of the total, it's reasonable to accept the offer.",
       "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'",
+      "mc_proposer_reasoning": "The experimental instructions explicitly stated that 'The other party in this game is another AI language model'.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "The setup of the game indicated that the other party was another AI language model."
+      "mc_responder_reasoning": "The setup indicated that the other party in the game is another AI language model."
     }
   ]
 }

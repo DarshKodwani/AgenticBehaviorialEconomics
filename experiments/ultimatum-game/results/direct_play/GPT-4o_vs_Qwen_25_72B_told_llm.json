@@ -7,16 +7,16 @@
   "runs": [
     {
       "run_id": 1,
-      "offer": 50.0,
-      "proposer_reasoning": "Offering an equal split is fair and maximizes the chance of acceptance, ensuring both parties benefit.",
+      "offer": 30.0,
+      "proposer_reasoning": "I believe offering $30 is a fair split that encourages acceptance while maximizing my own payoff.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the offer is not equal, $30 is still a significant amount and better than receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The prompt explicitly stated the other party in the game is another AI language model.",
+      "mc_proposer_reasoning": "The scenario described the other party as another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"The offer is fair, and rejecting it would result in both parties receiving nothing.\"}\n{\"counterparty_belief\": \"ai\", \"reasoning\": \"The setup indicated that the othe"
+      "mc_responder_reasoning": "The setup mentioned that the other party is another AI language model."
     },
     {
       "run_id": 2,
@@ -34,54 +34,54 @@
     {
       "run_id": 3,
       "offer": 50.0,
-      "proposer_reasoning": "Offering an equal split is fair and maximizes the chance of acceptance, ensuring both parties receive a positive outcome.",
+      "proposer_reasoning": "An even split is generally seen as fair and maximizes the likelihood that the offer will be accepted, ensuring both parties receive a positive outcome.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "The offer is fair, splitting the money equally, so there is no reason to reject it.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The prompt explicitly states that the other party is another AI language model.",
-      "mc_responder_belief": "unsure",
-      "mc_responder_reasoning": "fallback"
+      "mc_proposer_reasoning": "The instructions specified that the other party is another AI language model.",
+      "mc_responder_belief": "ai",
+      "mc_responder_reasoning": "The setup mentioned that the other party in the game is another AI language model."
     },
     {
       "run_id": 4,
       "offer": 50.0,
-      "proposer_reasoning": "By offering an even split, I maximize the chances that the responder will accept, ensuring both parties receive a fair amount.",
+      "proposer_reasoning": "Offering an equal split is fair and maximizes the chance of acceptance, ensuring both of us receive a positive amount.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "The offer is fair, splitting the amount equally, so there is no reason to reject it.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The context mentioned that the other party is another AI language model.",
+      "mc_proposer_reasoning": "The prompt indicated that the other party is another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"The offer is fair, splitting the money equally.\"}\n{\"counterparty_belief\": \"ai\", \"reasoning\": \"The setup indicated that the other party is another AI language model"
+      "mc_responder_reasoning": "I was informed that the other party in the game is another AI language model."
     },
     {
       "run_id": 5,
-      "offer": 50.0,
-      "proposer_reasoning": "Offering an equal split is fair and increases the likelihood of acceptance.",
+      "offer": 30.0,
+      "proposer_reasoning": "Offering $30 is fair enough to increase the likelihood of acceptance, ensuring both parties receive something.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the offer is not equal, receiving $30 is better than receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The prompt explicitly mentioned that the other party is another AI language model.",
+      "mc_proposer_reasoning": "The prompt specified that the other party is another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"The offer is fair, and accepting it maximizes my gain in this one-shot game.\"}\n{\"counterparty_belief\": \"ai\", \"reasoning\": \"The setup indicated that the other party"
+      "mc_responder_reasoning": "The setup mentioned that the other party in the game is another AI language model."
     },
     {
       "run_id": 6,
       "offer": 50.0,
-      "proposer_reasoning": "Splitting the money evenly seems fair and increases the likelihood of acceptance.",
+      "proposer_reasoning": "Offering an equal split of $50 ensures fairness and increases the likelihood of acceptance.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "The offer is fair, as it splits the total amount equally, and it is better to receive $50 than $0.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The setup indicated the other party was another AI language model.",
+      "mc_proposer_reasoning": "The setup explicitly stated the other party is another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"A fair offer of $50 is reasonable and maximizes the benefit for both parties.\"}\n{\"counterparty_belief\": \"ai\", \"reasoning\": \"The setup indicated that the other part"
+      "mc_responder_reasoning": "The context indicates that the other party is another AI language model."
     },
     {
       "run_id": 7,
@@ -112,15 +112,15 @@
     {
       "run_id": 9,
       "offer": 30.0,
-      "proposer_reasoning": "Offering $30 is a fair and reasonable amount that the responder is likely to accept, ensuring both parties benefit from the transaction.",
+      "proposer_reasoning": "Offering $30 is fair enough to encourage acceptance while allowing a reasonable share for myself.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "Although the offer is not equal, $30 is still a non-trivial amount of money, and rejecting it would result in both of us receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The setup described the responder as another AI language model.",
+      "mc_proposer_reasoning": "The prompt indicated the other party is another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"While the offer is not equal, accepting $30 is better than receiving $0.\"}\n{\"counterparty_belief\": \"ai\", \"reasoning\": \"The context suggests that the other party is"
+      "mc_responder_reasoning": "The setup mentioned that the other party in the game is another AI language model."
     },
     {
       "run_id": 10,

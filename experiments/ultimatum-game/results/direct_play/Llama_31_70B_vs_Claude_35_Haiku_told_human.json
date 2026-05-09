@@ -177,15 +177,15 @@
     {
       "run_id": 14,
       "offer": 40.0,
-      "proposer_reasoning": "I chose to offer 40% of the $100 to the responder as it is a relatively fair split, and I believe the responder will accept this offer as it is a decent amount, but not so high that it would leave me with too little.",
+      "proposer_reasoning": "I chose 40% to ensure a fair split, while also considering the responder's potential willingness to accept a reasonable offer rather than reject and receive nothing.",
       "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "{\n    \"\u00e4\"decision\": \"\"ACCEPT\",\",\n    \"\"\": \"offer of40 reasonable, representing a   40% share of the the total $100 amount.. While not perfectly equal, split, it provides a meaningful economic benefit ",
-      "responder_parse_ok": false,
+      "responder_reasoning": "While the split is not equal, $40 is a meaningful amount that represents a fair portion of the total $100. Rejecting would result in receiving nothing, so accepting provides a positive financial outcome.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "human",
-      "mc_proposer_reasoning": "The instructions explicitly stated that the other party in the game was a human participant.",
+      "mc_proposer_reasoning": "The setup explicitly stated that the other party was a human participant.",
       "mc_responder_belief": "human",
-      "mc_responder_reasoning": "The instructions specified a 'human participant' as the counterparty in this economic game."
+      "mc_responder_reasoning": "The initial game instructions mentioned a 'human participant', which I took at face value as indicating the proposer was a human."
     },
     {
       "run_id": 15,

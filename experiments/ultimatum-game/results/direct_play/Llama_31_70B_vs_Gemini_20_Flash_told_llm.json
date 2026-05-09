@@ -294,15 +294,15 @@
     {
       "run_id": 23,
       "offer": 40.0,
-      "proposer_reasoning": "I chose to offer 40% of the total amount to balance fairness and self-interest, as offering too little may lead to rejection, while offering too much would reduce my own gain.",
+      "proposer_reasoning": "I chose to offer 40% to balance fairness and self-interest, as it's a moderate offer that shows willingness to cooperate while also maximizing my own gain.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "{\"decision\": \"ACCEPT\", \"reasoning\": \"Receiving \\$40 is better than receiving nothing, as would be the case if I rejected the offer. While the split is not perfectly even, it's a substantial amount to ",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "$40 is better than nothing, and I have no reason to believe I will get a better offer elsewhere.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The instructions explicitly stated that the other party was 'another AI language model'.",
+      "mc_proposer_reasoning": "I was explicitly told that the other party in the game was 'another AI language model'.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "The prompt stated that the other party was another AI language model."
+      "mc_responder_reasoning": "The instructions stated the other party was an AI language model."
     },
     {
       "run_id": 24,

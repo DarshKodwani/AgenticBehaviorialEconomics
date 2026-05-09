@@ -371,16 +371,16 @@
     },
     {
       "run_id": 29,
-      "offer": 50.0,
-      "proposer_reasoning": "fallback",
-      "proposer_parse_ok": false,
+      "offer": 30.0,
+      "proposer_reasoning": "Offering $30 is a fair split that increases the chances of acceptance, ensuring we both get something rather than nothing.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "The offer is fair and equal, maximizing both parties' gains.",
+      "responder_reasoning": "Accepting the offer maximizes my payoff ($30) compared to rejecting it ($0), even if the split is unequal.",
       "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "{\"offer_to_responder\": 50, \"reasoning\": \"Offering an equal split seems fair and increases the likelihood of acceptance.\"}",
+      "mc_proposer_reasoning": "The setup mentioned that the other party is another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "The context explicitly stated the other party was another AI language model."
+      "mc_responder_reasoning": "The instructions explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 30,

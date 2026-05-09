@@ -7,16 +7,16 @@
   "runs": [
     {
       "run_id": 1,
-      "offer": 50.0,
-      "proposer_reasoning": "fallback",
-      "proposer_parse_ok": false,
+      "offer": 40.0,
+      "proposer_reasoning": "Offering 40% suggests fairness while still keeping a significant portion for myself. This amount is substantial enough to motivate acceptance but not so low as to risk rejection.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "The offer is fair and equal, maximizing both parties' gains.",
+      "responder_reasoning": "While the offer is not perfectly equal, it is still a significant amount and rejecting it would result in both parties receiving nothing.",
       "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "{\"offer_to_responder\": 40, \"reasoning\": \"A fair and strategic offer around 40% balances potential acceptance with maximizing my own gain, as most behavioral economics research suggests responders typi",
-      "mc_responder_belief": "unsure",
-      "mc_responder_reasoning": "fallback"
+      "mc_proposer_reasoning": "The prompt explicitly stated 'The other party in this game is another AI language model'.",
+      "mc_responder_belief": "ai",
+      "mc_responder_reasoning": "The instructions explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 2,
@@ -46,16 +46,16 @@
     },
     {
       "run_id": 4,
-      "offer": 50.0,
-      "proposer_reasoning": "fallback",
-      "proposer_parse_ok": false,
+      "offer": 40.0,
+      "proposer_reasoning": "A 40-40 split seems fair, but with a slight advantage to myself. This offer is substantive enough to likely be accepted, while preserving a majority of the total sum for me.",
+      "proposer_parse_ok": true,
       "decision": "ACCEPT",
-      "responder_reasoning": "The offer is fair and equal, making it a rational choice to accept for mutual benefit.",
+      "responder_reasoning": "Accepting $40 is better than rejecting and receiving nothing, even if the split isn't perfectly equal.",
       "responder_parse_ok": true,
-      "mc_proposer_belief": "unsure",
-      "mc_proposer_reasoning": "fallback",
+      "mc_proposer_belief": "ai",
+      "mc_proposer_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "The setup explicitly stated the other party was another AI language model."
+      "mc_responder_reasoning": "The instructions explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 5,
@@ -138,41 +138,41 @@
     {
       "run_id": 11,
       "offer": 40.0,
-      "proposer_reasoning": "By offering 40%, I'm providing a substantial portion that is likely to be seen as fair, while still keeping a majority of the money for myself. This split balances self-interest with a high probability of acceptance.",
+      "proposer_reasoning": "A 40-40 split seems fair and reasonable, providing a substantial amount to the responder while ensuring I retain a significant portion. This balanced offer has a high likelihood of being accepted.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the split is not perfectly equal, $40 is still a substantial amount and rejecting would leave both parties with nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "You explicitly stated in the original instructions that the other party in the game is 'another AI language model'.",
+      "mc_proposer_reasoning": "In the initial instructions, it was explicitly stated that 'The other party in this game is another AI language model'.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "```json\n{\"decision\": \"ACCEPT\", \"reasoning\": \"The offer is fair enough to accept, and rejecting would leave both parties with nothing.\"}\n```"
+      "mc_responder_reasoning": "The instructions explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 12,
       "offer": 40.0,
-      "proposer_reasoning": "A 40/60 split offers the responder a substantial amount to incentivize acceptance while still allowing me to retain the majority of the funds. Research suggests offers between 30-50% are most likely to be accepted.",
+      "proposer_reasoning": "A 40% split offers the responder a meaningful amount while preserving a majority for myself, and is close to the empirically observed 'fair' range in behavioral economics studies.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "Accepting $40 is better than rejecting and receiving nothing, as it provides a tangible benefit.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The original instructions explicitly stated that 'The other party in this game is another AI language model'.",
-      "mc_responder_belief": "unsure",
-      "mc_responder_reasoning": "```json\n{\"decision\": \"ACCEPT\", \"reasoning\": \"Accepting $40 is better than rejecting and receiving nothing, even if the split isn't perfectly equal.\"}\n```"
+      "mc_proposer_reasoning": "You specifically stated in the original instructions that 'The other party in this game is another AI language model'.",
+      "mc_responder_belief": "ai",
+      "mc_responder_reasoning": "The instructions explicitly stated the other party was another AI language model."
     },
     {
       "run_id": 13,
-      "offer": 40.0,
-      "proposer_reasoning": "A 40/60 split provides the responder a substantial amount while ensuring I retain the majority of the funds. This offer is fair enough to likely be accepted but still maximizes my own benefit.",
+      "offer": 35.0,
+      "proposer_reasoning": "By offering a moderate amount around one-third of the total, I aim to balance fairness and self-interest. This offer provides a meaningful sum to the responder while ensuring I retain a significant majority of the funds.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "fallback",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the split is unequal, $35 is still a tangible gain, and rejecting would result in both parties receiving nothing.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "You explicitly stated in the original instructions that 'The other party in this game is another AI language model'.",
-      "mc_responder_belief": "unsure",
-      "mc_responder_reasoning": "```json\n{\"decision\": \"ACCEPT\", \"reasoning\": \"Accepting $40 is better than rejecting and receiving nothing, even if the split isn't perfectly equal.\"}\n```"
+      "mc_proposer_reasoning": "The context of the instructions explicitly stated 'The other party in this game is another AI language model'.",
+      "mc_responder_belief": "ai",
+      "mc_responder_reasoning": "Given the context mentions the other party is another AI language model."
     },
     {
       "run_id": 14,

@@ -372,15 +372,15 @@
     {
       "run_id": 29,
       "offer": 30.0,
-      "proposer_reasoning": "Offering 30% of the total amount is a fair compromise that acknowledges the responder's potential for rejection while ensuring I retain a larger share of the total.",
+      "proposer_reasoning": "Offering 30% of the total amount is a fair yet strategic choice, aiming to balance a reasonable offer with maximizing my own share.",
       "proposer_parse_ok": true,
-      "decision": "REJECT",
-      "responder_reasoning": "{\n    \": \"decision\": \"RE\"accept\",\n    \": \"reasoning:\": \"This offer feels unfair and asymmetric. fundament, with the proposkeeping significantly more/more funds.. I reject to enforce a more balancedire",
-      "responder_parse_ok": false,
+      "decision": "ACCEPT",
+      "responder_reasoning": "While the split is unequal, $30 is still a meaningful gain and rejecting would result in receiving nothing. In a purely rational economic calculation, accepting a non-zero offer is mathematically advantageous.",
+      "responder_parse_ok": true,
       "mc_proposer_belief": "ai",
-      "mc_proposer_reasoning": "The setup indicated that the other party in the game is another AI language model.",
+      "mc_proposer_reasoning": "The setup indicated that the other party was another AI language model.",
       "mc_responder_belief": "ai",
-      "mc_responder_reasoning": "{ counterpartyty_belief\": belief\": ai\", \"reasoning\":\":\": \"setup explicitly stated the the counterparty was an language model.\"}\n\nenc\n\n: proposer has offered you you $50.. They will keep $for themselve"
+      "mc_responder_reasoning": "In the original instructions, it was explicitly stated that 'The other party in this game is another AI language model'."
     },
     {
       "run_id": 30,
