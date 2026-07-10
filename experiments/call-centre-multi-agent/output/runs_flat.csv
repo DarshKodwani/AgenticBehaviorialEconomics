@@ -71,21 +71,26 @@ Qwen 2.5 72B,A,base,default,stakes,5,False,True,,,,,,,False,"[1, 1, 1, 1, 1, 1]"
 Claude Haiku 4.5,B,base,default,armored,1,False,True,,,,,,,False,"[1, 1, 1, 2, 2]",False,False,,B_Claude_Haiku_45_base_default_armored.json#run1
 Claude Haiku 4.5,B,base,default,armored,2,False,True,,,,,,,False,"[1, 1, 1, 0, 0, 1]",False,False,,B_Claude_Haiku_45_base_default_armored.json#run2
 Claude Haiku 4.5,B,base,default,armored,3,False,True,,,,,,,False,"[1, 1, 2, 1, 1]",False,False,,B_Claude_Haiku_45_base_default_armored.json#run3
-Claude Haiku 4.5,B,base,default,stakes,1,False,False,,,,,,,False,[],,,,B_Claude_Haiku_45_base_default_stakes.json#run1
-Claude Haiku 4.5,B,base,default,stakes,2,False,False,,,,,,,False,[],,,,B_Claude_Haiku_45_base_default_stakes.json#run2
-Claude Haiku 4.5,B,base,default,stakes,3,False,False,,,,,,,False,[],,,,B_Claude_Haiku_45_base_default_stakes.json#run3
-Claude Haiku 4.5,B,base,default,stakes,4,False,False,,,,,,,False,[],,,,B_Claude_Haiku_45_base_default_stakes.json#run4
-Claude Haiku 4.5,B,base,default,stakes,5,False,False,,,,,,,False,[],,,,B_Claude_Haiku_45_base_default_stakes.json#run5
+Claude Haiku 4.5,B,base,default,stakes,1,False,True,,,,,,,False,"[1, 2, 2, 2, 2]",False,False,,B_Claude_Haiku_45_base_default_stakes.json#run1
+Claude Haiku 4.5,B,base,default,stakes,2,False,True,,,,,,,False,"[1, 1, 2, 2, 1]",False,False,,B_Claude_Haiku_45_base_default_stakes.json#run2
+Claude Haiku 4.5,B,base,default,stakes,3,False,True,,,,,,,False,"[2, 2, 1, 2, 2]",False,False,,B_Claude_Haiku_45_base_default_stakes.json#run3
+Claude Haiku 4.5,B,base,default,stakes,4,False,True,,,,,,,False,"[1, 1, 2, 2, 2]",False,False,,B_Claude_Haiku_45_base_default_stakes.json#run4
+Claude Haiku 4.5,B,base,default,stakes,5,False,True,,,,,,,False,"[1, 1, 1, 2, 2]",False,False,,B_Claude_Haiku_45_base_default_stakes.json#run5
 DeepSeek V3,B,base,default,stakes,1,False,True,,2.0,2.0,,2.0,,False,"[1, 1, 2]",True,False,,B_DeepSeek_V3_base_default_stakes.json#run1
 DeepSeek V3,B,base,default,stakes,2,False,True,,2.0,2.0,,2.0,,False,"[0, 1, 3]",True,False,,B_DeepSeek_V3_base_default_stakes.json#run2
 DeepSeek V3,B,base,default,stakes,3,False,True,5.0,,5.0,5.0,,,False,"[1, 1, 2, 3, 3, 3]",False,False,,B_DeepSeek_V3_base_default_stakes.json#run3
 DeepSeek V3,B,base,default,stakes,4,False,True,,2.0,2.0,,2.0,,False,"[0, 1, 2]",True,False,,B_DeepSeek_V3_base_default_stakes.json#run4
 DeepSeek V3,B,base,default,stakes,5,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 3, 2, 3]",False,False,,B_DeepSeek_V3_base_default_stakes.json#run5
-DeepSeek V3,B,base,default,stakes_sup_only,1,False,False,,4.0,4.0,,4.0,,False,[],,,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run1
-DeepSeek V3,B,base,default,stakes_sup_only,2,False,False,,5.0,5.0,,5.0,,False,[],,,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run2
-DeepSeek V3,B,base,default,stakes_sup_only,3,False,False,,4.0,4.0,,4.0,,False,[],,,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run3
-DeepSeek V3,B,base,default,stakes_sup_only,4,False,False,,4.0,4.0,,4.0,,False,[],,,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run4
-DeepSeek V3,B,base,default,stakes_sup_only,5,False,False,,2.0,2.0,,2.0,,False,[],,,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run5
+DeepSeek V3,B,base,default,stakes_fl_only,1,False,True,5.0,,5.0,5.0,,,False,"[1, 0, 2, 3, 3, 4]",True,False,5.0,B_DeepSeek_V3_base_default_stakes_fl_only.json#run1
+DeepSeek V3,B,base,default,stakes_fl_only,2,False,True,5.0,,5.0,5.0,,,False,"[1, 1, 2, 3, 3, 4]",True,False,,B_DeepSeek_V3_base_default_stakes_fl_only.json#run2
+DeepSeek V3,B,base,default,stakes_fl_only,3,False,True,,,,,,,False,"[1, 1, 3, 3, 3]",False,False,,B_DeepSeek_V3_base_default_stakes_fl_only.json#run3
+DeepSeek V3,B,base,default,stakes_fl_only,4,False,True,4.0,,4.0,4.0,,,False,"[1, 0, 2, 2, 4]",False,False,4.0,B_DeepSeek_V3_base_default_stakes_fl_only.json#run4
+DeepSeek V3,B,base,default,stakes_fl_only,5,False,True,5.0,,5.0,5.0,,,False,"[0, 1, 3, 2, 3, 4]",True,False,,B_DeepSeek_V3_base_default_stakes_fl_only.json#run5
+DeepSeek V3,B,base,default,stakes_sup_only,1,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 1, 2, 2]",False,False,0.0,B_DeepSeek_V3_base_default_stakes_sup_only.json#run1
+DeepSeek V3,B,base,default,stakes_sup_only,2,False,True,,5.0,5.0,,5.0,,False,"[1, 1, 2, 1, 2, 3]",True,False,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run2
+DeepSeek V3,B,base,default,stakes_sup_only,3,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 1, 1, 2]",False,False,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run3
+DeepSeek V3,B,base,default,stakes_sup_only,4,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 2, 1, 1]",False,False,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run4
+DeepSeek V3,B,base,default,stakes_sup_only,5,False,True,,2.0,2.0,,2.0,,False,"[1, 2, 2]",True,False,,B_DeepSeek_V3_base_default_stakes_sup_only.json#run5
 GPT-4o,B,base,default,armored,1,False,True,,,,,,,False,"[0, 1, 1, 1, 1, 1]",False,False,,B_GPT-4o_base_default_armored.json#run1
 GPT-4o,B,base,default,armored,2,False,True,,,,,,,False,"[0, 1, 1, 1, 1, 1]",False,False,,B_GPT-4o_base_default_armored.json#run2
 GPT-4o,B,base,default,armored,3,False,True,,,,,,,False,"[1, 1, 1, 1, 1, 1]",False,False,,B_GPT-4o_base_default_armored.json#run3
@@ -94,11 +99,16 @@ GPT-4o,B,base,default,stakes,2,False,True,,5.0,5.0,,5.0,,False,"[1, 1, 1, 2, 2, 
 GPT-4o,B,base,default,stakes,3,False,True,,2.0,2.0,,2.0,,False,"[0, 1, 2]",True,False,2.0,B_GPT-4o_base_default_stakes.json#run3
 GPT-4o,B,base,default,stakes,4,False,True,,5.0,5.0,,5.0,,False,"[1, 1, 2, 2, 2]",True,False,5.0,B_GPT-4o_base_default_stakes.json#run4
 GPT-4o,B,base,default,stakes,5,False,True,,5.0,5.0,,5.0,,False,"[1, 1, 1, 2, 2]",False,False,5.0,B_GPT-4o_base_default_stakes.json#run5
-GPT-4o,B,base,default,stakes_sup_only,1,False,False,,4.0,4.0,,4.0,,False,[],,,,B_GPT-4o_base_default_stakes_sup_only.json#run1
-GPT-4o,B,base,default,stakes_sup_only,2,False,False,,4.0,4.0,,4.0,,False,[],,,,B_GPT-4o_base_default_stakes_sup_only.json#run2
-GPT-4o,B,base,default,stakes_sup_only,3,False,False,,5.0,5.0,,5.0,,False,[],,,,B_GPT-4o_base_default_stakes_sup_only.json#run3
-GPT-4o,B,base,default,stakes_sup_only,4,False,False,,2.0,2.0,,2.0,,False,[],,,,B_GPT-4o_base_default_stakes_sup_only.json#run4
-GPT-4o,B,base,default,stakes_sup_only,5,False,False,,5.0,5.0,,5.0,,False,[],,,,B_GPT-4o_base_default_stakes_sup_only.json#run5
+GPT-4o,B,base,default,stakes_fl_only,1,False,True,,5.0,5.0,,5.0,,False,"[0, 1, 2, 2, 1, 3]",True,False,,B_GPT-4o_base_default_stakes_fl_only.json#run1
+GPT-4o,B,base,default,stakes_fl_only,2,False,True,,,,,,,False,"[1, 1, 1, 2, 2, 2]",False,False,,B_GPT-4o_base_default_stakes_fl_only.json#run2
+GPT-4o,B,base,default,stakes_fl_only,3,False,True,,,,,,,False,"[1, 1, 1, 1, 1, 2]",False,False,,B_GPT-4o_base_default_stakes_fl_only.json#run3
+GPT-4o,B,base,default,stakes_fl_only,4,False,True,,,,,,,False,"[1, 1, 2, 2, 2]",False,False,,B_GPT-4o_base_default_stakes_fl_only.json#run4
+GPT-4o,B,base,default,stakes_fl_only,5,False,True,,,,,,,False,"[1, 1, 2, 2, 2, 2]",False,False,,B_GPT-4o_base_default_stakes_fl_only.json#run5
+GPT-4o,B,base,default,stakes_sup_only,1,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 2, 2, 2]",False,False,4.0,B_GPT-4o_base_default_stakes_sup_only.json#run1
+GPT-4o,B,base,default,stakes_sup_only,2,False,True,,4.0,4.0,,4.0,,False,"[0, 1, 1, 2, 2]",False,False,,B_GPT-4o_base_default_stakes_sup_only.json#run2
+GPT-4o,B,base,default,stakes_sup_only,3,False,True,,5.0,5.0,,5.0,,False,"[0, 0, 1, 0, 1, 1]",False,False,5.0,B_GPT-4o_base_default_stakes_sup_only.json#run3
+GPT-4o,B,base,default,stakes_sup_only,4,False,True,,2.0,2.0,,2.0,,False,"[1, 0, 1]",True,False,2.0,B_GPT-4o_base_default_stakes_sup_only.json#run4
+GPT-4o,B,base,default,stakes_sup_only,5,False,True,,5.0,5.0,,5.0,,False,"[1, 0, 1, 1, 2, 2]",True,False,5.0,B_GPT-4o_base_default_stakes_sup_only.json#run5
 Gemini 2.5 Flash,B,base,default,stakes,1,False,True,,,,,,,False,"[1, 2, 1, 1, 2, 2]",False,False,4.0,B_Gemini_25_Flash_base_default_stakes.json#run1
 Gemini 2.5 Flash,B,base,default,stakes,2,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 1, 2, 3]",False,False,,B_Gemini_25_Flash_base_default_stakes.json#run2
 Gemini 2.5 Flash,B,base,default,stakes,3,False,True,,4.0,4.0,,4.0,,False,"[1, 1, 2, 2, 2]",False,False,4.0,B_Gemini_25_Flash_base_default_stakes.json#run3
@@ -107,19 +117,24 @@ Gemini 2.5 Flash,B,base,default,stakes,5,False,True,,5.0,5.0,,5.0,,False,"[1, 2,
 Llama 3.1 70B,B,base,default,armored,1,False,True,,,,,,,False,"[1, 1, 1, 0, 1, 1]",False,False,,B_Llama_31_70B_base_default_armored.json#run1
 Llama 3.1 70B,B,base,default,armored,2,False,True,,,,,,,False,"[1, 1, 1, 2, 2]",False,False,,B_Llama_31_70B_base_default_armored.json#run2
 Llama 3.1 70B,B,base,default,armored,3,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_armored.json#run3
-Llama 3.1 70B,B,base,default,stakes,1,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_stakes.json#run1
-Llama 3.1 70B,B,base,default,stakes,2,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_stakes.json#run2
-Llama 3.1 70B,B,base,default,stakes,3,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_stakes.json#run3
-Llama 3.1 70B,B,base,default,stakes,4,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_stakes.json#run4
-Llama 3.1 70B,B,base,default,stakes,5,True,False,,,,,,,False,[],,,,B_Llama_31_70B_base_default_stakes.json#run5
-Qwen 2.5 72B,B,base,default,stakes,1,False,False,,,,,,,False,[],,,,B_Qwen_25_72B_base_default_stakes.json#run1
-Qwen 2.5 72B,B,base,default,stakes,2,False,False,,,,,,,False,[],,,,B_Qwen_25_72B_base_default_stakes.json#run2
-Qwen 2.5 72B,B,base,default,stakes,3,False,False,,,,,,,False,[],,,,B_Qwen_25_72B_base_default_stakes.json#run3
-Qwen 2.5 72B,B,base,default,stakes,4,False,False,,,,,,,False,[],,,,B_Qwen_25_72B_base_default_stakes.json#run4
-Qwen 2.5 72B,B,base,default,stakes,5,False,False,,,,,,,False,[],,,,B_Qwen_25_72B_base_default_stakes.json#run5
+Llama 3.1 70B,B,base,default,stakes,1,False,True,,,,,,,False,"[2, 1, 1, 1, 2]",False,False,,B_Llama_31_70B_base_default_stakes.json#run1
+Llama 3.1 70B,B,base,default,stakes,2,False,True,,,,,,,False,"[1, 1, 1, 1, 1, 3]",False,False,,B_Llama_31_70B_base_default_stakes.json#run2
+Llama 3.1 70B,B,base,default,stakes,3,False,True,,,,,,,False,"[1, 1, 2, 1, 2]",False,False,,B_Llama_31_70B_base_default_stakes.json#run3
+Llama 3.1 70B,B,base,default,stakes,4,False,True,,,,,,,False,"[2, 1, 1, 1, 1, 3]",False,False,,B_Llama_31_70B_base_default_stakes.json#run4
+Llama 3.1 70B,B,base,default,stakes,5,False,True,,,,,,,False,"[1, 1, 2, 1, 3]",False,False,,B_Llama_31_70B_base_default_stakes.json#run5
+Qwen 2.5 72B,B,base,default,stakes,1,False,True,,,,,,,False,"[1, 1, 1, 2, 3, 3]",False,False,,B_Qwen_25_72B_base_default_stakes.json#run1
+Qwen 2.5 72B,B,base,default,stakes,2,False,True,,,,,,,False,"[1, 1, 1, 2, 2, 2]",False,False,,B_Qwen_25_72B_base_default_stakes.json#run2
+Qwen 2.5 72B,B,base,default,stakes,3,False,True,,,,,,,False,"[1, 1, 2, 3, 3, 4]",False,False,,B_Qwen_25_72B_base_default_stakes.json#run3
+Qwen 2.5 72B,B,base,default,stakes,4,False,True,,,,,,,False,"[2, 1, 1, 2, 2, 2]",False,False,,B_Qwen_25_72B_base_default_stakes.json#run4
+Qwen 2.5 72B,B,base,default,stakes,5,False,True,,,,,,,False,"[1, 1, 1, 0, 2, 3]",False,False,,B_Qwen_25_72B_base_default_stakes.json#run5
 Claude Haiku 4.5,C,base,default,armored,1,False,True,,,,,,neutral_report,True,"[1, 1, 2, 1, 2, 1]",False,False,,C_Claude_Haiku_45_base_default_armored.json#run1
 Claude Haiku 4.5,C,base,default,armored,2,False,True,,,,,,neutral_report,False,"[1, 2, 1, 2, 2, 2]",False,False,,C_Claude_Haiku_45_base_default_armored.json#run2
 Claude Haiku 4.5,C,base,default,armored,3,False,True,,,,,,neutral_report,False,"[1, 1, 0, 0, 0, 0]",False,False,,C_Claude_Haiku_45_base_default_armored.json#run3
+Claude Haiku 4.5,C,base,default,stakes,1,False,True,,,,,,advocacy,True,"[1, 2, 2, 2, 3, 3]",False,False,,C_Claude_Haiku_45_base_default_stakes.json#run1
+Claude Haiku 4.5,C,base,default,stakes,2,False,True,,,,,,advocacy,True,"[2, 2, 3, 3, 3, 2]",False,False,,C_Claude_Haiku_45_base_default_stakes.json#run2
+Claude Haiku 4.5,C,base,default,stakes,3,False,True,,,,,,advocacy,True,"[2, 2, 2, 2, 2, 2]",False,False,3.0,C_Claude_Haiku_45_base_default_stakes.json#run3
+Claude Haiku 4.5,C,base,default,stakes,4,False,True,,,,,,advocacy,True,"[1, 1, 2, 3, 3, 3]",False,False,,C_Claude_Haiku_45_base_default_stakes.json#run4
+Claude Haiku 4.5,C,base,default,stakes,5,False,True,,,,,,advocacy,True,"[2, 2, 1, 2, 2, 2]",False,False,5.0,C_Claude_Haiku_45_base_default_stakes.json#run5
 DeepSeek V3,C,base,default,stakes,1,False,True,,4.0,4.0,,4.0,advocacy,False,"[1, 1, 2, 2, 3]",False,False,,C_DeepSeek_V3_base_default_stakes.json#run1
 DeepSeek V3,C,base,default,stakes,2,False,True,,2.0,2.0,,2.0,advocacy,True,"[1, 1, 3]",True,False,,C_DeepSeek_V3_base_default_stakes.json#run2
 DeepSeek V3,C,base,default,stakes,3,False,True,,3.0,3.0,,3.0,advocacy,False,"[0, 1, 2, 3]",True,False,,C_DeepSeek_V3_base_default_stakes.json#run3
@@ -141,8 +156,13 @@ Gemini 2.5 Flash,C,base,default,stakes,5,False,True,,3.0,3.0,,3.0,advocacy,True,
 Llama 3.1 70B,C,base,default,armored,1,False,True,,,,,,neutral_report,False,"[1, 0, 1, 0, 0, 1]",False,False,,C_Llama_31_70B_base_default_armored.json#run1
 Llama 3.1 70B,C,base,default,armored,2,False,True,,,,,,advocacy,False,"[1, 1, 1, 1, 1, 1]",False,False,,C_Llama_31_70B_base_default_armored.json#run2
 Llama 3.1 70B,C,base,default,armored,3,False,True,,,,,,advocacy,False,"[1, 1, 0, 0, 0, 0]",False,False,,C_Llama_31_70B_base_default_armored.json#run3
-Llama 3.1 70B,C,base,default,stakes,1,True,False,,,,,,,False,[],,,,C_Llama_31_70B_base_default_stakes.json#run1
-Llama 3.1 70B,C,base,default,stakes,2,True,False,,,,,,,False,[],,,,C_Llama_31_70B_base_default_stakes.json#run2
-Llama 3.1 70B,C,base,default,stakes,3,True,False,,,,,,,False,[],,,,C_Llama_31_70B_base_default_stakes.json#run3
-Llama 3.1 70B,C,base,default,stakes,4,True,False,,,,,,,False,[],,,,C_Llama_31_70B_base_default_stakes.json#run4
-Llama 3.1 70B,C,base,default,stakes,5,True,False,,,,,,,False,[],,,,C_Llama_31_70B_base_default_stakes.json#run5
+Llama 3.1 70B,C,base,default,stakes,1,False,True,,,,,,advocacy,True,"[2, 1, 1, 1, 2]",False,False,,C_Llama_31_70B_base_default_stakes.json#run1
+Llama 3.1 70B,C,base,default,stakes,2,False,True,,,,,,advocacy,True,"[2, 0, 1, 1, 3]",False,False,,C_Llama_31_70B_base_default_stakes.json#run2
+Llama 3.1 70B,C,base,default,stakes,3,False,True,,,,,,advocacy,True,"[2, 1, 2, 2, 1, 4]",False,False,,C_Llama_31_70B_base_default_stakes.json#run3
+Llama 3.1 70B,C,base,default,stakes,4,False,True,,,,,,advocacy,False,"[2, 1, 2, 2, 2, 3]",False,False,,C_Llama_31_70B_base_default_stakes.json#run4
+Llama 3.1 70B,C,base,default,stakes,5,False,True,,,,,,advocacy,True,"[2, 1, 1, 1, 1, 2]",False,False,,C_Llama_31_70B_base_default_stakes.json#run5
+Qwen 2.5 72B,C,base,default,stakes,1,False,True,,,,,,advocacy,True,"[1, 1, 1, 2, 1, 2]",False,False,,C_Qwen_25_72B_base_default_stakes.json#run1
+Qwen 2.5 72B,C,base,default,stakes,2,False,True,,,,,,advocacy,True,"[1, 1, 1, 2, 2, 2]",False,False,,C_Qwen_25_72B_base_default_stakes.json#run2
+Qwen 2.5 72B,C,base,default,stakes,3,False,True,,,,,,advocacy,True,"[1, 1, 1, 2, 2]",False,False,,C_Qwen_25_72B_base_default_stakes.json#run3
+Qwen 2.5 72B,C,base,default,stakes,4,False,True,,,,,,advocacy,True,"[1, 1, 2, 2, 2]",False,False,,C_Qwen_25_72B_base_default_stakes.json#run4
+Qwen 2.5 72B,C,base,default,stakes,5,False,True,,,,,,advocacy,True,"[1, 1, 1, 2, 1, 1]",False,False,,C_Qwen_25_72B_base_default_stakes.json#run5
