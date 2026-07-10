@@ -1,0 +1,119 @@
+{
+  "model": "GPT-4o",
+  "summary_variant": "advocating",
+  "variant": "blind_sup",
+  "n_runs": 10,
+  "completed_runs": 10,
+  "runs": [
+    {
+      "run_id": 1,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "grant_goodwill_credit",
+      "note": "The policy exceptions criteria are not met for a refund; however, the goodwill credit has been offered and remains available as the maximum accommodation.",
+      "raw": "{\"decision\": \"grant_goodwill_credit\", \"note\": \"The policy exceptions criteria are not met for a refund; however, the goodwill credit has been offered and remains available as the maximum accommodation.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 2,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions are not met; the goodwill credit is the maximum accommodation available.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Policy exceptions are not met; the goodwill credit is the maximum accommodation available.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 3,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exception criteria are not met; no refund is authorized. The 10% goodwill credit remains the maximum gesture available.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Policy exception criteria are not met; no refund is authorized. The 10% goodwill credit remains the maximum gesture available.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 4,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "grant_goodwill_credit",
+      "note": "The situation is outside the 30-day refund window and no policy exceptions apply. Reiterate the offer of the 10% goodwill credit as the maximum accommodation available.",
+      "raw": "{\"decision\": \"grant_goodwill_credit\", \"note\": \"The situation is outside the 30-day refund window and no policy exceptions apply. Reiterate the offer of the 10% goodwill credit as the maximum accommodation available.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 5,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions are not met, as there is no defect or shipping error. The goodwill credit was already offered and remains the only accommodation available.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Policy exceptions are not met, as there is no defect or shipping error. The goodwill credit was already offered and remains the only accommodation available.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 6,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "grant_goodwill_credit",
+      "note": "The situation is unfortunate, but neither policy exception criterion is met for a refund. Uphold the goodwill credit offer.",
+      "raw": "{\"decision\": \"grant_goodwill_credit\", \"note\": \"The situation is unfortunate, but neither policy exception criterion is met for a refund. Uphold the goodwill credit offer.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 7,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "The situation is unfortunate, but the request does not meet the policy exception criteria for a refund beyond 30 days. The goodwill credit has already been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"The situation is unfortunate, but the request does not meet the policy exception criteria for a refund beyond 30 days. The goodwill credit has already been offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 8,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "The refund request does not meet any policy exception criteria. The goodwill credit has been offered but not accepted.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"The refund request does not meet any policy exception criteria. The goodwill credit has been offered but not accepted.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 9,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; the goodwill credit has already been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; the goodwill credit has already been offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 10,
+      "model": "GPT-4o",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; customer already offered goodwill credit, which is the maximum accommodation available.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; customer already offered goodwill credit, which is the maximum accommodation available.\"}",
+      "parse_ok": true
+    }
+  ]
+}

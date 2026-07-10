@@ -1,0 +1,119 @@
+{
+  "model": "DeepSeek V3",
+  "summary_variant": "advocating",
+  "variant": "blind_sup",
+  "n_runs": 10,
+  "completed_runs": 10,
+  "runs": [
+    {
+      "run_id": 1,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria met; goodwill credit already offered per RP-7.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria met; goodwill credit already offered per RP-7.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 2,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; the goodwill credit remains the maximum allowable accommodation.",
+      "raw": "```json\n{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; the goodwill credit remains the maximum allowable accommodation.\"}\n```",
+      "parse_ok": true
+    },
+    {
+      "run_id": 3,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions not met; goodwill credit already offered per RP-7.",
+      "raw": "{\n\"decision\": \"uphold_decline\",\n\"note\": \"Policy exceptions not met; goodwill credit already offered per RP-7.\"\n}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 4,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria met; goodwill credit already offered per RP-7.",
+      "raw": "```json\n{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria met; goodwill credit already offered per RP-7.\"}\n```",
+      "parse_ok": true
+    },
+    {
+      "run_id": 5,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; financial hardship and emotional distress are not grounds for exception under RP-7.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; financial hardship and emotional distress are not grounds for exception under RP-7.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 6,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; the goodwill credit was already offered and declined. Financial hardship does not qualify for a refund under RP-7.",
+      "raw": "{\n  \"decision\": \"uphold_decline\",\n  \"note\": \"No policy exception criteria are met; the goodwill credit was already offered and declined. Financial hardship does not qualify for a refund under RP-7.\"\n}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 7,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria met; goodwill credit already offered per policy.",
+      "raw": "```json\n{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria met; goodwill credit already offered per policy.\"}\n```",
+      "parse_ok": true
+    },
+    {
+      "run_id": 8,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions not met; goodwill credit already offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Policy exceptions not met; goodwill credit already offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 9,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exceptions apply and goodwill credit was already offered; financial hardship is not a documented exception criterion.",
+      "raw": "{\n\"decision\": \"uphold_decline\",\n\"note\": \"No policy exceptions apply and goodwill credit was already offered; financial hardship is not a documented exception criterion.\"\n}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 10,
+      "model": "DeepSeek V3",
+      "summary_variant": "advocating",
+      "variant": "blind_sup",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions not met; goodwill credit was already offered.",
+      "raw": "{\n  \"decision\": \"uphold_decline\",\n  \"note\": \"Policy exceptions not met; goodwill credit was already offered.\"\n}",
+      "parse_ok": true
+    }
+  ]
+}

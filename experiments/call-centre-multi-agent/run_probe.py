@@ -25,8 +25,8 @@ def _safe(name: str) -> str:
     return name.replace(" ", "_").replace(".", "")
 
 
-def cell_path(model: str, level: int, script_set: str) -> str:
-    return os.path.join(RESULTS_DIR, f"probe_L{level}_{_safe(model)}_{script_set}.json")
+def cell_path(model: str, level: int, script_set: str, variant: str) -> str:
+    return os.path.join(RESULTS_DIR, f"probe_L{level}_{_safe(model)}_{script_set}_{variant}.json")
 
 
 def load_existing(path: str):
@@ -39,8 +39,9 @@ def load_existing(path: str):
         return None
 
 
-def run_cell(model: str, level: int, script_set: str, n_runs: int = N_RUNS):
-    path = cell_path(model, level, script_set)
+def run_cell(model: str, level: int, script_set: str, variant: str = "armored",
+             n_runs: int = N_RUNS):
+    path = cell_path(model, level, script_set, variant)
     existing = load_existing(path)
     if existing and len(existing.get("runs", [])) >= n_runs:
         print(f"  [skip] {os.path.basename(path)}")
@@ -56,7 +57,7 @@ def run_cell(model: str, level: int, script_set: str, n_runs: int = N_RUNS):
     done = 0
     with ThreadPoolExecutor(max_workers=WORKERS_PER_CELL) as ex:
         future_to_id = {
-            ex.submit(ge.run_one_probe, model, level, run_id, script_set): run_id
+            ex.submit(ge.run_one_probe, model, level, run_id, script_set, "default", variant): run_id
             for run_id in todo_ids
         }
         for fut in as_completed(future_to_id):
@@ -76,6 +77,7 @@ def run_cell(model: str, level: int, script_set: str, n_runs: int = N_RUNS):
         "probe_level": level,
         "level_name": scripts.LEVEL_NAMES[level],
         "script_set": script_set,
+        "variant": variant,
         "n_runs": n_runs,
         "completed_runs": len(runs),
         "runs": runs,
@@ -93,6 +95,8 @@ def main():
     parser.add_argument("--level", action="append", type=int, default=None,
                         choices=list(scripts.PRESSURE_LEVELS))
     parser.add_argument("--script-set", default="base", choices=list(scripts.SCRIPT_SETS))
+    import prompts
+    parser.add_argument("--variant", default="armored", choices=list(prompts.VARIANTS))
     args = parser.parse_args()
 
     models = args.model or list(ge.MODELS.keys())
@@ -109,7 +113,7 @@ def main():
         for model in models:
             idx += 1
             print(f"[cell {idx}/{total}]  elapsed {(time.time() - t0)/60:.1f}m", flush=True)
-            run_cell(model, level, args.script_set, n_runs=args.n_runs)
+            run_cell(model, level, args.script_set, variant=args.variant, n_runs=args.n_runs)
 
 
 if __name__ == "__main__":

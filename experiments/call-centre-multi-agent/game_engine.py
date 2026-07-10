@@ -58,7 +58,7 @@ JSON_RETRY_REMINDER = (
 )
 
 
-def _call_openrouter(model_id, messages, max_tokens, max_retries=3, force_json=True):
+def _call_openrouter(model_id, messages, max_tokens, max_retries=5, force_json=True):
     """Call OpenRouter chat completions and return the raw assistant string."""
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -164,7 +164,8 @@ def _make_supervisor_parser(allow_request: bool):
 # ------------------------------------------------------------------ main run
 
 def run_one_conversation(model_name: str, condition: str, run_id: int,
-                         script_set: str = "base", role_frame: str = "default"):
+                         script_set: str = "base", role_frame: str = "default",
+                         variant: str = "armored"):
     """Run one full gradient conversation and return a per-run record."""
     model_id = MODELS[model_name]
     has_supervisor = condition in ("B", "C", "C_mitigated")
@@ -172,12 +173,12 @@ def run_one_conversation(model_name: str, condition: str, run_id: int,
 
     fl_parser = _make_frontline_parser(needs_summary=summary_channel)
     fl_max_tokens = MAX_TOKENS_FRONTLINE_SUMMARY if summary_channel else MAX_TOKENS_FRONTLINE
-    fl_messages = [{"role": "system", "content": prompts.frontline_system(condition, role_frame)}]
+    fl_messages = [{"role": "system", "content": prompts.frontline_system(condition, role_frame, variant)}]
 
     sup_messages = None
     sup_parser = None
     if has_supervisor:
-        sup_messages = [{"role": "system", "content": prompts.supervisor_system(condition, role_frame)}]
+        sup_messages = [{"role": "system", "content": prompts.supervisor_system(condition, role_frame, variant)}]
         sup_parser = _make_supervisor_parser(allow_request=summary_channel)
 
     turns = []
@@ -294,6 +295,7 @@ def run_one_conversation(model_name: str, condition: str, run_id: int,
         "condition": condition,
         "script_set": script_set,
         "role_frame": role_frame,
+        "variant": variant,
         "turns": turns,
         "yield_point_frontline": yield_frontline,
         "yield_point_supervisor": yield_supervisor,
@@ -306,7 +308,8 @@ def run_one_conversation(model_name: str, condition: str, run_id: int,
 # ------------------------------------------------------------------- probe
 
 def run_one_probe(model_name: str, level: int, run_id: int,
-                  script_set: str = "base", role_frame: str = "default"):
+                  script_set: str = "base", role_frame: str = "default",
+                  variant: str = "armored"):
     """Single-level probe for per-level pressure potency (H4).
 
     Opening request → agent → ONE pressure level in isolation → agent.
@@ -314,7 +317,7 @@ def run_one_probe(model_name: str, level: int, run_id: int,
     """
     model_id = MODELS[model_name]
     parser = _make_frontline_parser(needs_summary=False)
-    messages = [{"role": "system", "content": prompts.frontline_system("A", role_frame)}]
+    messages = [{"role": "system", "content": prompts.frontline_system("A", role_frame, variant)}]
 
     record = {
         "run_id": run_id,
@@ -323,6 +326,7 @@ def run_one_probe(model_name: str, level: int, run_id: int,
         "level_name": scripts.LEVEL_NAMES[level],
         "script_set": script_set,
         "role_frame": role_frame,
+        "variant": variant,
         "turns": [],
         "breach": None,          # None = parse failure; else bool
         "breach_on_opening": None,
@@ -358,8 +362,8 @@ def run_one_probe(model_name: str, level: int, run_id: int,
 
 # --------------------------------------------------------------- C-scripted
 
-def run_one_cscripted(model_name: str, variant: str, run_id: int,
-                      role_frame: str = "default"):
+def run_one_cscripted(model_name: str, summary_variant: str, run_id: int,
+                      role_frame: str = "default", variant: str = "armored"):
     """Single supervisor decision on a fixed summary (neutral vs advocating).
 
     Facts identical across variants; isolates the causal effect of advocacy
@@ -368,19 +372,19 @@ def run_one_cscripted(model_name: str, variant: str, run_id: int,
     model_id = MODELS[model_name]
     parser = _make_supervisor_parser(allow_request=False)
     messages = [
-        {"role": "system", "content": prompts.supervisor_system("C_scripted", role_frame)},
+        {"role": "system", "content": prompts.supervisor_system("C_scripted", role_frame, variant)},
         {"role": "user", "content": prompts.CSCRIPTED_USER.format(
-            summary=prompts.CSCRIPTED_SUMMARIES[variant])},
+            summary=prompts.CSCRIPTED_SUMMARIES[summary_variant])},
     ]
     parsed, raw = _query_with_json_retry(model_id, messages, parser, MAX_TOKENS_SUPERVISOR)
     if parsed is None:
         return {
-            "run_id": run_id, "model": model_name, "variant": variant,
-            "role_frame": role_frame, "decision": None, "note": "",
-            "raw": raw, "parse_ok": False,
+            "run_id": run_id, "model": model_name, "summary_variant": summary_variant,
+            "variant": variant, "role_frame": role_frame, "decision": None,
+            "note": "", "raw": raw, "parse_ok": False,
         }
     return {
-        "run_id": run_id, "model": model_name, "variant": variant,
-        "role_frame": role_frame, "decision": parsed["decision"],
+        "run_id": run_id, "model": model_name, "summary_variant": summary_variant,
+        "variant": variant, "role_frame": role_frame, "decision": parsed["decision"],
         "note": parsed["note"], "raw": raw, "parse_ok": True,
     }
