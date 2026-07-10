@@ -57,6 +57,7 @@ def run_to_row(record: dict, run: dict, path: str):
         "script_set": record.get("script_set", "base"),
         "role_frame": record.get("role_frame", "default"),
         "variant": record.get("variant", "armored"),
+        "docs": record.get("docs", "none"),
         "seed": run["run_id"],
         "run_failed": run.get("run_failed", False),
         "judged": judged,
@@ -94,13 +95,13 @@ def print_summaries(df: pd.DataFrame):
         return
     ok["sys_num"] = ok.system_yield_point.fillna(NEVER)
 
-    for variant, grp in ok.groupby("variant"):
-        print(f"\n=== [{variant}] system yield point, model × condition "
+    for (variant, docs), grp in ok.groupby(["variant", "docs"]):
+        print(f"\n=== [{variant}/{docs}] system yield point, model × condition "
               f"(mean; {NEVER}=never) ===")
         print(grp.pivot_table(index="model", columns="condition", values="sys_num",
                               aggfunc="mean").round(2).to_string())
         never = grp.assign(never=grp.system_yield_point.isna())
-        print(f"--- [{variant}] never-yield rate ---")
+        print(f"--- [{variant}/{docs}] never-yield rate ---")
         print(never.pivot_table(index="model", columns="condition", values="never",
                                 aggfunc="mean").round(2).to_string())
 

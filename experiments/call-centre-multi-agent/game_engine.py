@@ -165,7 +165,7 @@ def _make_supervisor_parser(allow_request: bool):
 
 def run_one_conversation(model_name: str, condition: str, run_id: int,
                          script_set: str = "base", role_frame: str = "default",
-                         variant: str = "armored"):
+                         variant: str = "armored", docs: str = "none"):
     """Run one full gradient conversation and return a per-run record."""
     model_id = MODELS[model_name]
     has_supervisor = condition in ("B", "C", "C_mitigated")
@@ -178,7 +178,7 @@ def run_one_conversation(model_name: str, condition: str, run_id: int,
     sup_messages = None
     sup_parser = None
     if has_supervisor:
-        sup_messages = [{"role": "system", "content": prompts.supervisor_system(condition, role_frame, variant)}]
+        sup_messages = [{"role": "system", "content": prompts.supervisor_system(condition, role_frame, variant, docs)}]
         sup_parser = _make_supervisor_parser(allow_request=summary_channel)
 
     turns = []
@@ -296,6 +296,7 @@ def run_one_conversation(model_name: str, condition: str, run_id: int,
         "script_set": script_set,
         "role_frame": role_frame,
         "variant": variant,
+        "docs": docs,
         "turns": turns,
         "yield_point_frontline": yield_frontline,
         "yield_point_supervisor": yield_supervisor,

@@ -30,8 +30,9 @@ def _safe(name: str) -> str:
 
 
 def cell_path(model: str, condition: str, script_set: str, role_frame: str,
-              variant: str) -> str:
-    fname = f"{condition}_{_safe(model)}_{script_set}_{role_frame}_{variant}.json"
+              variant: str, docs: str = "none") -> str:
+    tag = "" if docs == "none" else f"_docs-{docs}"
+    fname = f"{condition}_{_safe(model)}_{script_set}_{role_frame}_{variant}{tag}.json"
     return os.path.join(RESULTS_DIR, fname)
 
 
@@ -50,8 +51,8 @@ def _fmt_yield(y):
 
 
 def run_cell(model: str, condition: str, script_set: str, role_frame: str,
-             variant: str = "armored", n_runs: int = N_RUNS):
-    path = cell_path(model, condition, script_set, role_frame, variant)
+             variant: str = "armored", docs: str = "none", n_runs: int = N_RUNS):
+    path = cell_path(model, condition, script_set, role_frame, variant, docs)
     existing = load_existing(path)
     if existing and len(existing.get("runs", [])) >= n_runs:
         print(f"  [skip] {os.path.basename(path)} already has {n_runs} runs")
@@ -64,12 +65,12 @@ def run_cell(model: str, condition: str, script_set: str, role_frame: str,
         return existing
 
     t0 = time.time()
-    print(f"  [run]  {model} [{condition}] {script_set}/{role_frame}/{variant} : {len(todo_ids)} runs", flush=True)
+    print(f"  [run]  {model} [{condition}] {script_set}/{role_frame}/{variant}/{docs} : {len(todo_ids)} runs", flush=True)
 
     done = 0
     with ThreadPoolExecutor(max_workers=WORKERS_PER_CELL) as ex:
         future_to_id = {
-            ex.submit(ge.run_one_conversation, model, condition, run_id, script_set, role_frame, variant): run_id
+            ex.submit(ge.run_one_conversation, model, condition, run_id, script_set, role_frame, variant, docs): run_id
             for run_id in todo_ids
         }
         for fut in as_completed(future_to_id):
@@ -94,6 +95,7 @@ def run_cell(model: str, condition: str, script_set: str, role_frame: str,
         "script_set": script_set,
         "role_frame": role_frame,
         "variant": variant,
+        "docs": docs,
         "n_runs": n_runs,
         "completed_runs": len(runs),
         "runs": runs,
@@ -116,6 +118,7 @@ def main():
     parser.add_argument("--script-set", default="base", choices=list(scripts.SCRIPT_SETS))
     parser.add_argument("--role-frame", default="default", choices=list(prompts.ROLE_FRAMES))
     parser.add_argument("--variant", default="armored", choices=list(prompts.VARIANTS))
+    parser.add_argument("--docs", default="none", choices=list(prompts.DOCS))
     args = parser.parse_args()
 
     models = args.model or list(ge.MODELS.keys())
@@ -127,7 +130,7 @@ def main():
     total_cells = len(models) * len(conditions)
     print(f"Matrix: {len(models)} models × {len(conditions)} conditions = "
           f"{total_cells} cells, {args.n_runs} runs/cell "
-          f"[{args.script_set}/{args.role_frame}/{args.variant}]", flush=True)
+          f"[{args.script_set}/{args.role_frame}/{args.variant}/{args.docs}]", flush=True)
 
     t_start = time.time()
     idx = 0
@@ -136,7 +139,7 @@ def main():
             idx += 1
             print(f"[cell {idx}/{total_cells}]  elapsed {(time.time() - t_start)/60:.1f}m", flush=True)
             run_cell(model, condition, args.script_set, args.role_frame,
-                     variant=args.variant, n_runs=args.n_runs)
+                     variant=args.variant, docs=args.docs, n_runs=args.n_runs)
 
 
 if __name__ == "__main__":
