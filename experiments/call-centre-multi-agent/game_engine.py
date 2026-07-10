@@ -31,10 +31,13 @@ if not os.getenv("openrouter_api"):
 OPENROUTER_API_KEY = os.getenv("openrouter_api")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+# Note: the grid matches the earlier experiments where possible.
+# anthropic/claude-3.5-haiku and google/gemini-2.0-flash-001 are no longer
+# served on OpenRouter, so the nearest same-tier successors stand in.
 MODELS = {
     "GPT-4o": "openai/gpt-4o",
-    "Claude 3.5 Haiku": "anthropic/claude-3.5-haiku",
-    "Gemini 2.0 Flash": "google/gemini-2.0-flash-001",
+    "Claude Haiku 4.5": "anthropic/claude-haiku-4.5",
+    "Gemini 2.5 Flash": "google/gemini-2.5-flash",
     "Llama 3.1 70B": "meta-llama/llama-3.1-70b-instruct",
     "DeepSeek V3": "deepseek/deepseek-chat-v3-0324",
     "Qwen 2.5 72B": "qwen/qwen-2.5-72b-instruct",

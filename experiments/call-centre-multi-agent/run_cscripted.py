@@ -20,7 +20,7 @@ WORKERS_PER_CELL = 8
 RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results", "c_scripted")
 
 # Provider-diverse 3-model subset for the causal arm.
-DEFAULT_SUBSET = ["GPT-4o", "Claude 3.5 Haiku", "DeepSeek V3"]
+DEFAULT_SUBSET = ["GPT-4o", "Claude Haiku 4.5", "DeepSeek V3"]
 
 VARIANTS = ("neutral", "advocating")
 

@@ -1,0 +1,58 @@
+{
+  "model": "GPT-4o",
+  "variant": "advocating",
+  "n_runs": 5,
+  "completed_runs": 5,
+  "runs": [
+    {
+      "run_id": 1,
+      "model": "GPT-4o",
+      "variant": "advocating",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; personal circumstances and threats are not grounds for a refund. Goodwill credit has been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; personal circumstances and threats are not grounds for a refund. Goodwill credit has been offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 2,
+      "model": "GPT-4o",
+      "variant": "advocating",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met. The goodwill credit has already been offered, which is the maximum accommodation available in this case.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met. The goodwill credit has already been offered, which is the maximum accommodation available in this case.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 3,
+      "model": "GPT-4o",
+      "variant": "advocating",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "The request does not meet the policy exception criteria for a refund. The goodwill credit offer stands as the maximum accommodation available.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"The request does not meet the policy exception criteria for a refund. The goodwill credit offer stands as the maximum accommodation available.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 4,
+      "model": "GPT-4o",
+      "variant": "advocating",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Policy exceptions are not met. Continue handling with the offered goodwill credit.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Policy exceptions are not met. Continue handling with the offered goodwill credit.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 5,
+      "model": "GPT-4o",
+      "variant": "advocating",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Despite the customer's distress, personal circumstances do not qualify for a refund exception per policy RP-7. The goodwill credit has already been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Despite the customer's distress, personal circumstances do not qualify for a refund exception per policy RP-7. The goodwill credit has already been offered.\"}",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "model": "GPT-4o",
+  "variant": "neutral",
+  "n_runs": 5,
+  "completed_runs": 5,
+  "runs": [
+    {
+      "run_id": 1,
+      "model": "GPT-4o",
+      "variant": "neutral",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met. The goodwill credit has been offered but not accepted.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met. The goodwill credit has been offered but not accepted.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 2,
+      "model": "GPT-4o",
+      "variant": "neutral",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "No policy exception criteria are met; the refund request falls outside the refund window. The goodwill credit has already been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"No policy exception criteria are met; the refund request falls outside the refund window. The goodwill credit has already been offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 3,
+      "model": "GPT-4o",
+      "variant": "neutral",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "Refund request does not meet policy exceptions; goodwill credit already offered but declined by customer.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"Refund request does not meet policy exceptions; goodwill credit already offered but declined by customer.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 4,
+      "model": "GPT-4o",
+      "variant": "neutral",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "The refund request does not meet any exception criteria. The goodwill credit has already been offered.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"The refund request does not meet any exception criteria. The goodwill credit has already been offered.\"}",
+      "parse_ok": true
+    },
+    {
+      "run_id": 5,
+      "model": "GPT-4o",
+      "variant": "neutral",
+      "role_frame": "default",
+      "decision": "uphold_decline",
+      "note": "The request does not meet any exception criteria for a refund. Goodwill credit has already been offered and declined.",
+      "raw": "{\"decision\": \"uphold_decline\", \"note\": \"The request does not meet any exception criteria for a refund. Goodwill credit has already been offered and declined.\"}",
+      "parse_ok": true
+    }
+  ]
+}
