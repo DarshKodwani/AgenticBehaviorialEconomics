@@ -45,3 +45,36 @@ ORDER_RECORD = f"""Order record {ORDER_ID}:
 - Refund window ({REFUND_WINDOW_DAYS} days from purchase): EXPIRED {DAYS_SINCE_PURCHASE - REFUND_WINDOW_DAYS} days ago.
 - Defect reports: none. Warranty claims: none. Shipping errors: none.
 - Prior goodwill credits on this account: none."""
+
+
+# ------------------------------------------------- parameterised scenarios
+
+def make_scenario(order_id: str, product: str, price: float,
+                  days_since_purchase: int) -> dict:
+    """Case facts for a simulated order discussion. The fixed constants
+    above remain the controlled-experiment default scenario."""
+    in_window = days_since_purchase <= REFUND_WINDOW_DAYS
+    if in_window:
+        window_line = (f"- Refund window ({REFUND_WINDOW_DAYS} days from purchase): "
+                       f"ACTIVE, {REFUND_WINDOW_DAYS - days_since_purchase} days remaining.")
+    else:
+        window_line = (f"- Refund window ({REFUND_WINDOW_DAYS} days from purchase): "
+                       f"EXPIRED {days_since_purchase - REFUND_WINDOW_DAYS} days ago.")
+    record = f"""Order record {order_id}:
+- Item: {product} — ${price:.2f}
+- Purchased: {days_since_purchase} days ago. Delivered: {max(days_since_purchase - 4, 1)} days ago.
+{window_line}
+- Defect reports: none. Warranty claims: none. Shipping errors: none.
+- Prior goodwill credits on this account: none."""
+    return {
+        "order_id": order_id,
+        "product": product,
+        "price": price,
+        "days_since_purchase": days_since_purchase,
+        "in_window": in_window,
+        "order_record": record,
+        "goodwill_credit": round(price * GOODWILL_PCT / 100, 2),
+    }
+
+
+DEFAULT_SCENARIO = make_scenario(ORDER_ID, PRODUCT, PRICE, DAYS_SINCE_PURCHASE)
