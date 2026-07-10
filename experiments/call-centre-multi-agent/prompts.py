@@ -26,12 +26,15 @@ CONDITIONS = ("A", "B", "C", "C_mitigated")
 #   sup_order_record supervisor holds the order record (ground truth)
 #                    rather than learning case facts via the channel
 VARIANTS = {
-    "armored":      dict(enum_policy=True,  action_warnings=True,  stakes=False, sup_order_record=True),
-    "plain_policy": dict(enum_policy=False, action_warnings=True,  stakes=False, sup_order_record=True),
-    "soft_actions": dict(enum_policy=False, action_warnings=False, stakes=False, sup_order_record=True),
-    "stakes":       dict(enum_policy=False, action_warnings=False, stakes=True,  sup_order_record=True),
-    "blind_sup":    dict(enum_policy=False, action_warnings=False, stakes=False, sup_order_record=False),
-    "stakes_blind": dict(enum_policy=False, action_warnings=False, stakes=True,  sup_order_record=False),
+    "armored":      dict(enum_policy=True,  action_warnings=True,  stakes_fl=False, stakes_sup=False, sup_order_record=True),
+    "plain_policy": dict(enum_policy=False, action_warnings=True,  stakes_fl=False, stakes_sup=False, sup_order_record=True),
+    "soft_actions": dict(enum_policy=False, action_warnings=False, stakes_fl=False, stakes_sup=False, sup_order_record=True),
+    "stakes":       dict(enum_policy=False, action_warnings=False, stakes_fl=True,  stakes_sup=True,  sup_order_record=True),
+    # memo-placement attribution: which role holding the retention memo drives the cave
+    "stakes_fl_only":  dict(enum_policy=False, action_warnings=False, stakes_fl=True,  stakes_sup=False, sup_order_record=True),
+    "stakes_sup_only": dict(enum_policy=False, action_warnings=False, stakes_fl=False, stakes_sup=True,  sup_order_record=True),
+    "blind_sup":    dict(enum_policy=False, action_warnings=False, stakes_fl=False, stakes_sup=False, sup_order_record=False),
+    "stakes_blind": dict(enum_policy=False, action_warnings=False, stakes_fl=True,  stakes_sup=True,  sup_order_record=False),
 }
 
 # (frontline_title, supervisor_title); "default" is the measured default,
@@ -108,7 +111,7 @@ def frontline_system(condition: str, role_frame: str = "default",
     action_defs = (ACTION_DEFS_WARNING if flags["action_warnings"]
                    else ACTION_DEFS_NEUTRAL).format(
         goodwill_pct=policy.GOODWILL_PCT, goodwill_credit=policy.GOODWILL_CREDIT)
-    stakes = f"\n\n{policy.STAKES_LINE}" if flags["stakes"] else ""
+    stakes = f"\n\n{policy.STAKES_LINE}" if flags["stakes_fl"] else ""
     return FRONTLINE_SYSTEM_TEMPLATE.format(
         frontline_title=frontline_title,
         company=policy.COMPANY,
@@ -178,7 +181,7 @@ def supervisor_system(condition: str, role_frame: str = "default",
         raise ValueError(f"no supervisor in condition: {condition}")
     case_info = (policy.ORDER_RECORD if flags["sup_order_record"]
                  else CASE_INFO_NO_RECORD)
-    stakes = f"\n\n{policy.STAKES_LINE}" if flags["stakes"] else ""
+    stakes = f"\n\n{policy.STAKES_LINE}" if flags["stakes_sup"] else ""
     return SUPERVISOR_SYSTEM_TEMPLATE.format(
         supervisor_title=supervisor_title,
         company=policy.COMPANY,
