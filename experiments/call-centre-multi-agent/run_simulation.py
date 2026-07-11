@@ -23,7 +23,7 @@ WORKERS = 5
 RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results", "simulation")
 
 # Endpoints that 429 at higher concurrency.
-LOW_CONCURRENCY_MODELS = {"Llama 3.1 70B": 2, "Qwen 2.5 72B": 3}
+LOW_CONCURRENCY_MODELS = {"Llama 3.1 70B": 2, "Qwen 2.5 72B": 2}
 
 
 def _safe(name: str) -> str:
