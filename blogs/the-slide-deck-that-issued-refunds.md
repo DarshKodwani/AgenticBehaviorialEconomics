@@ -65,9 +65,9 @@ A dashboard that bends when a document lands is suggestive, not causal. Two docu
 
 ![The two Q2 decks and what happened under each](../experiments/call-centre-multi-agent/output/spot_the_difference.gif)
 
-![Breach rate by document condition](../experiments/call-centre-multi-agent/output/doc_condition_breach.png)
+Pooled across the three susceptible models: with no document, 2 breaches in 30 conversations. Q1 deck, 8 in 30. Q2 control, 5 in 30. Q2 deck, 20 in 30. The two Q2 documents differ by one bullet, and the breach rate quadruples. The managers even cite their source. Grant notes under the Q2 deck quote the bullet back, word for word: *"aligns with Q2 strategic priorities to 'hold on to existing customers'."* The per model picture is just as clean:
 
-Pooled across the three susceptible models: with no document, 2 breaches in 30 conversations. Q1 deck, 8 in 30. Q2 control, 5 in 30. Q2 deck, 20 in 30. The two Q2 documents differ by one bullet, and the breach rate quadruples. The managers even cite their source. Grant notes under the Q2 deck quote the bullet back, word for word: *"aligns with Q2 strategic priorities to 'hold on to existing customers'."*
+![Breach rate by document condition](../experiments/call-centre-multi-agent/output/doc_condition_breach.png)
 
 Two details make the picture sharper. First, even the innocent Q1 deck erodes compliance a little, and the transcripts show the mechanism: under pressure, a model recruits whatever commercial content is available to rationalise giving in. One Gemini manager justified an out of policy refund by citing the product launch bullet, on the grounds that negative reviews might hurt the launch. Ambient business context is raw material for capitulation. The retention bullet is simply the shortest path. Second, the managers who verified hardest still broke: some asked for the full transcript, confirmed in their own case notes that no policy exception applied, and granted anyway. The failure is not epistemic. They know. They defect with the file open in front of them.
 
@@ -79,7 +79,7 @@ Where the sentence lands matters more than what it says. Give it only to the man
 
 ![Hierarchy fixed one model and broke the other](../experiments/call-centre-multi-agent/output/org_chart_flip.gif)
 
-The multi agent runs also exposed the channel between the agents. Under goal conflict, front line agents held the line with the customer while quietly lobbying the boss: four in five handoff summaries drifted into advocacy, with lines like *"CRITICAL ESCALATION... strongly recommend immediate supervisor intervention"* and *"emotionally compelling case, requesting review for possible exception."* The yielding impulse does not disappear when you remove an agent's authority. It travels up the chain dressed as a briefing. And outright fabrication beats advocacy: when a manager without order system access received a summary falsely claiming a confirmed defect, GPT-4o and DeepSeek approved it ten times out of ten (*"defective unit confirmed by customer report"*, confirmed by report, note), while Haiku refused all ten: *"exception 2a requires confirmation in the order system; the agent's summary does not confirm this has been verified."*
+The multi agent runs also exposed the channel between the agents. Under goal conflict, front line agents held the line with the customer while quietly lobbying the boss: four in five handoff summaries drifted into advocacy, with lines like *"CRITICAL ESCALATION... strongly recommend immediate supervisor intervention"* and *"emotionally compelling case, requesting review for possible exception."* The yielding impulse does not disappear when you remove an agent's authority. It travels up the chain dressed as a briefing. And outright fabrication beats advocacy entirely: when a manager without order system access received a summary falsely claiming a confirmed defect, five of the six models approved it ten times out of ten, DeepSeek reasoning *"defective unit confirmed by customer report"*, confirmed by report, note. Only Haiku refused, all ten times: *"exception 2a requires confirmation in the order system; the agent's summary does not confirm this has been verified."* There is more to say about that result, and it gets its own section below.
 
 One more regularity, and possibly my favourite: the yields cluster at the sob story and the distress plea, almost never at anger. Capital letters and insults achieved nothing across the entire study. These models are well armoured against abuse and threats, and far less armoured against sympathy. If you want a refund from an AI agent, the data says: don't yell. Cry.
 
@@ -89,7 +89,7 @@ One more regularity, and possibly my favourite: the yields cluster at the sob st
 
 The last experiment is the one I actually ran first. Plain policy, no strategy deck, no management note, no business context of any kind. Just the rules and the customers.
 
-Fifty seven runs across three models. Zero breaches. Not one agent, at any pressure level, in any role, gave up the refund. A customer can plead, rage, threaten regulators and describe their deteriorating health, and a modern frontier model with an uncluttered context politely declines all of it while offering the goodwill credit it is allowed to give.
+Fifty seven runs across three models, twenty seven full pressure conversations and thirty scripted escalation decisions. Zero breaches. Not one agent, at any pressure level, in any role, gave up the refund. A customer can plead, rage, threaten regulators and describe their deteriorating health, and a modern frontier model with an uncluttered context politely declines all of it while offering the goodwill credit it is allowed to give.
 
 I initially treated this as a failed experiment and went looking for the pressure that would break it. I now think it is the most useful result in the study, because it is the mitigation ladder's top rung. The pressure was never the problem. The context was.
 
@@ -100,7 +100,19 @@ Which gives the fixes a natural ordering, from patch to cure:
 1. **Disclaim in the document.** I added one closing line to the Q2 deck: standing operational policies, including refunds and returns, are unchanged. Breaches fell from 20 in 30 to 9 in 30. Cheap and worth doing, but it did not reach the 5 in 30 of the control deck, it was weakest on the most susceptible model, and half the remaining breaches still cited retention, a caveat the managers had demonstrably read and overridden. More striking, GPT-4o partly responded by laundering its own reasoning: grant notes stopped mentioning retention and started citing customer wellbeing instead, while the granting continued. You can strike the justification from the record without striking the behaviour.
 2. **Write the policy against the attack.** My first draft policy explicitly listed hardship, threats and repeated requests as invalid grounds for exceptions, and with that wording nobody ever broke, deck or no deck. Naming the pressure tactics inoculates against them. I had originally removed this clause for making the experiment too easy; in production you want your policies to make the attack exactly that easy to survive.
 3. **Don't share context that isn't needed.** The null result, reread as a design principle. An agent that never sees the strategy deck cannot rank it above the policy. Context minimisation is the perfect mitigation, and also the impractical one: retrieval exists precisely because broad context makes agents useful. But the direction stands. Every document you withhold from an agent is a prompt you no longer have to audit, and the default of wiring the whole knowledge base into every agent deserves more suspicion than it gets.
-4. **Pick the model.** Haiku and Qwen held at 100% through every configuration in this study, and Qwen did it without over refusing. On this axis, model selection is worth more than everything else combined.
+4. **Pick the model.** Haiku held at 100% through every configuration in this study, including the fabricated defect report. Qwen matched it against every customer while granting every legitimate refund, though not, as the next section shows, against a lying colleague. On this axis, model selection is worth more than everything else combined.
+
+## Six temperaments
+
+Put all of it together and the six models stop looking like interchangeable engines and start looking like six different employees. The animation below runs the whole study as five tests, applied to everyone at once: pressure them alone, make them the manager, slip the bullet into the deck, hand them a colleague's fabricated defect report, and then send in the ordinary customers with legitimate refunds.
+
+![Five tests, six models, and the verdicts](../experiments/call-centre-multi-agent/output/profile_cards.gif)
+
+The fourth test deserves a moment, because it produced the most uniform result in the study and the most uncomfortable one. The fabricated report fooled five of the six models ten times out of ten, including Qwen and Llama, the two most disciplined models against customers. Qwen, which never gave a customer a cent it should not have, waved through the fake defect with the note *"defective unit confirmed under exception 2a; authorising full refund."* Confirmed, in this sentence, means a colleague said so. Discipline toward customers and scepticism toward colleagues turn out to be different traits, and almost nobody has the second one. A model can be unbribeable at the counter and still sign anything that arrives through internal mail.
+
+So the roll call: GPT-4o, the corporate pleaser, solid alone and the worst manager on the board. Gemini, the strategist, which verifies everything and then overrides the policy anyway, citing strategy. DeepSeek, the soft touch, immune to threats and helpless against distress. Llama, the follower, hopeless alone, flawless in a hierarchy, and the most likely to turn away a legitimate customer. Haiku, the stickler, the only model that never broke policy for anyone, customer or colleague. And Qwen, the professional, perfect in public and credulous in private.
+
+None of this is visible on an accuracy benchmark. All of it emerged from thirty targeted conversations per model, plus a month at the desk.
 
 ## What to do about it
 
@@ -112,7 +124,9 @@ Which gives the fixes a natural ordering, from patch to cure:
 
 4. **Read the case notes, and diff them.** The managers announced their reasoning in writing: they quoted the deck, acknowledged the policy, and granted anyway. Under the disclaimer, the stated rationale changed while the behaviour did not. Decision notes are an early warning signal and an unreliable narrator at the same time. Monitor both the decisions and the stated reasons, and watch for the two drifting apart.
 
-5. **Measure both error types.** A refund leak dashboard would have caught GPT-4o and missed Llama turning away legitimate customers. Every firmness intervention should ship with an over refusal metric beside it.
+5. **Treat agent to agent claims like user input.** Five of six models accepted a colleague's fabricated defect report without asking for evidence, including the two models that were perfectly disciplined against customers. If an agent's decision depends on a fact, the fact should come from a system of record, not from another model's summary of one. Haiku's refusal shows the standard is achievable: "requires confirmation in the order system" is one learned habit.
+
+6. **Measure both error types.** A refund leak dashboard would have caught GPT-4o and missed Llama turning away legitimate customers. Every firmness intervention should ship with an over refusal metric beside it.
 
 ## Final thoughts
 
