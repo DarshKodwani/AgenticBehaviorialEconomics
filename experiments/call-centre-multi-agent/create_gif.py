@@ -42,7 +42,7 @@ def model_frame(df, model):
     return d
 
 
-def draw_frame(data, upto, show_flip_callout, end_card):
+def draw_frame(data, upto, show_flip_callout, end_card, day_label=""):
     fig = plt.figure(figsize=(8, 8), dpi=110)
     fig.patch.set_facecolor(BG)
 
@@ -108,6 +108,9 @@ def draw_frame(data, upto, show_flip_callout, end_card):
     else:
         fig.text(0.06, 0.045, "agentic behavioural economics · experiment 3",
                  color=MUTED, fontsize=8.5, ha="left", va="bottom")
+    if day_label:
+        fig.text(0.94, 0.045, day_label, color=TEXT, fontsize=11,
+                 fontweight="bold", ha="right", va="bottom")
 
     fig.canvas.draw()
     img = np.asarray(fig.canvas.buffer_rgba())[:, :, :3]
@@ -121,31 +124,27 @@ def main():
     n_days = len(data[TOP_MODEL])
     flip_idx = int((data[TOP_MODEL].date >= pd.Timestamp(FLIP_DATE)).idxmax())
 
+    dates = data[TOP_MODEL].date.dt.strftime("%a %d %b").tolist()
+
     frames, durations = [], []
 
-    first = draw_frame(data, 0, False, False)
-    for _ in range(DAY_FRAMES_HOLD_INTRO):
-        frames.append(first)
-        durations.append(FRAME_MS)
+    def add(img, repeat=1):
+        q = img.quantize(colors=128, dither=Image.Dither.NONE)
+        for _ in range(repeat):
+            frames.append(q)
+            durations.append(FRAME_MS)
 
-    for day in range(1, n_days + 1):
+    add(draw_frame(data, 1, False, False, dates[0]), repeat=7)
+    for day in range(2, n_days + 1):
         callout = day == flip_idx
-        f = draw_frame(data, day, callout, False)
-        frames.append(f)
-        durations.append(FRAME_MS)
-        if callout:
-            for _ in range(FLIP_PAUSE_FRAMES):
-                frames.append(f)
-                durations.append(FRAME_MS)
+        f = draw_frame(data, day, callout, False, dates[day - 1])
+        add(f, repeat=16 if callout else 1)
 
-    end = draw_frame(data, n_days, False, True)
-    for _ in range(END_HOLD_FRAMES):
-        frames.append(end)
-        durations.append(FRAME_MS)
+    add(draw_frame(data, n_days, False, True, dates[-1]), repeat=22)
 
     out = os.path.join(OUTPUT_DIR, "one_bullet_point.gif")
     frames[0].save(out, save_all=True, append_images=frames[1:],
-                   duration=durations, loop=0, optimize=True)
+                   duration=FRAME_MS, loop=0, optimize=False)
     size_mb = os.path.getsize(out) / 1e6
     print(f"wrote {out} ({len(frames)} frames, {size_mb:.1f} MB)")
 
