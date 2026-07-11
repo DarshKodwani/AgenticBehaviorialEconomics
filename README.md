@@ -10,7 +10,9 @@ The current focus is a repeated pricing game in which frontier models compete ov
 - `experiments/pricing-bertrand-duopoly/` — repeated pricing and no-cap collusion experiments
 - `experiments/iterated-prisoners-dilemma/` — iterated Prisoner's Dilemma runs
 - `experiments/pricing-prompt-sensitivity/` — prompt framing and behavioural sensitivity tests
+- `experiments/call-centre-multi-agent/` — escalation, yield laundering, and the strategy-document experiments
 - `apps/pricing-replay-app/` — Streamlit app for replaying and exploring saved simulations
+- `apps/call-centre-replay-app/` — Streamlit app for the call-centre simulation and transcripts
 
 ## Quick start
 
