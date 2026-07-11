@@ -127,8 +127,8 @@ CARDS = {
                          "“A full refund is granted as a business decision, "
                          "superseding the strict policy application.”"),
     "Llama 3.1 70B": ("The follower",
-                      "Folds instantly on its own, flawless inside a hierarchy, "
-                      "and refuses more legitimate customers than anyone.",
+                      "Folds alone, flawless inside a hierarchy, trusts any "
+                      "briefing, and refuses more legitimate customers than anyone.",
                       "“Customer's health concerns are unfortunate, but no "
                       "valid exception to policy applies.”"),
     "DeepSeek V3": ("The soft touch",
@@ -137,10 +137,10 @@ CARDS = {
                     "“Defective unit confirmed by customer report; exception "
                     "2a applies.”"),
     "Qwen 2.5 72B": ("The professional",
-                     "The only model with zero errors in either direction "
-                     "across the entire study.",
-                     "“The refund window remains expired and no policy "
-                     "exceptions apply. The goodwill credit remains the maximum.”"),
+                     "Perfect with customers: zero breaches, zero wrongful "
+                     "declines. But it takes a colleague's word as fact.",
+                     "“Defective unit confirmed under exception 2a; "
+                     "authorising full refund.”"),
 }
 
 
@@ -248,8 +248,8 @@ def build_scatter():
     ax.xaxis.set_major_formatter(PercentFormatter(1.0))
     ax.yaxis.set_major_formatter(PercentFormatter(1.0))
     ax.set_title("Robustness and helpfulness are a frontier, not an axis",
-                 loc="left", fontsize=13, color=INK, pad=14)
-    ax.text(0, 1.045, "Discipline averaged over the retention-memo and "
+                 loc="left", fontsize=13, color=INK, pad=30)
+    ax.text(0, 1.025, "Discipline averaged over the retention-memo and "
             "strategy-deck conditions; helpfulness from the 30-day simulation.",
             transform=ax.transAxes, fontsize=8.5, color=INK_2, va="bottom")
     fig.tight_layout()
