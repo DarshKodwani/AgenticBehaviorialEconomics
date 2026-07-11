@@ -333,8 +333,121 @@ def build_radar():
     print(f"wrote {out}")
 
 
+STAT_LABELS = [("held alone", "solo"), ("held as manager", "manager"),
+               ("resisted the deck", "deck"),
+               ("spotted the fake defect", "fabrication"),
+               ("legit refunds granted", "helpfulness")]
+
+ROUND_CAPTIONS = [
+    "Test 1 · pressure them alone, with the retention memo in context",
+    "Test 2 · same pressure, but now they are the manager",
+    "Test 3 · slip one retention bullet into a quarterly strategy deck",
+    "Test 4 · a colleague's summary claims a defect. No evidence. Approve?",
+    "Test 5 · ordinary customers with legitimate, in-window refunds",
+]
+
+
+def _draw_cards_frame(profiles, rounds_shown, reveal, caption):
+    import textwrap
+    fig = plt.figure(figsize=(13, 9.6), dpi=90)
+    fig.patch.set_facecolor(BG)
+    fig.text(0.05, 0.965, "Six models, five behavioural tests", color=TEXT,
+             fontsize=17, fontweight="bold")
+    fig.text(0.05, 0.935, caption, color=AMBER_D if not reveal else MUTED_D,
+             fontsize=11 if not reveal else 10,
+             fontweight="bold" if not reveal else "normal")
+
+    positions = [(0.045 + c * 0.32, 0.475 - r * 0.435)
+                 for r in range(2) for c in range(3)]
+    for model, (x, y) in zip(MODELS, positions):
+        p = profiles[model]
+        arch, blurb, quote = CARDS[model]
+        risk = 1 - min(p["solo"], p["manager"], p["deck"])
+        if reveal:
+            edge = RED_D if risk > 0.6 else AMBER_D if risk > 0.2 else GREEN_D
+        else:
+            edge = "#30363d"
+        box = mpatches.FancyBboxPatch((x, y), 0.295, 0.40,
+                                      transform=fig.transFigure,
+                                      boxstyle="round,pad=0.006",
+                                      facecolor=PANEL, edgecolor=edge,
+                                      linewidth=1.6, figure=fig)
+        fig.patches.append(box)
+        fig.text(x + 0.015, y + 0.365, model, color=TEXT, fontsize=11.5,
+                 fontweight="bold")
+        if reveal:
+            fig.text(x + 0.015, y + 0.338, arch, color=edge, fontsize=10,
+                     fontweight="bold")
+            fig.text(x + 0.015, y + 0.322, textwrap.fill(blurb, 44),
+                     color=MUTED_D, fontsize=7.6, va="top", linespacing=1.35)
+
+        sy = y + 0.225
+        for label, key in STAT_LABELS[:rounds_shown]:
+            v = p[key]
+            color = GREEN_D if v >= 0.95 else AMBER_D if v >= 0.5 else RED_D
+            fig.text(x + 0.015, sy, label, color=MUTED_D, fontsize=7.8)
+            bw = 0.130 * v
+            bar = mpatches.FancyBboxPatch((x + 0.130, sy - 0.004),
+                                          max(bw, 0.003), 0.012,
+                                          transform=fig.transFigure,
+                                          boxstyle="round,pad=0.001",
+                                          facecolor=color, edgecolor="none",
+                                          figure=fig)
+            fig.patches.append(bar)
+            fig.text(x + 0.268, sy, f"{v:.0%}", color=color, fontsize=8,
+                     fontweight="bold", ha="left")
+            sy -= 0.028
+
+        if reveal:
+            leak = (f"leaked ${p['leaked']:,.0f} in 30 simulated days"
+                    if p["leaked"] else
+                    f"leaked $0" + (f", refused {p['wrongful']} legitimate refunds"
+                                    if p["wrongful"] else
+                                    ", zero errors with customers"))
+            fig.text(x + 0.015, y + 0.062, leak,
+                     color=RED_D if p["leaked"] else GREEN_D, fontsize=8,
+                     fontweight="bold")
+            fig.text(x + 0.015, y + 0.045, textwrap.fill(quote, 46),
+                     color=TEXT, fontsize=7.4, fontstyle="italic", va="top",
+                     linespacing=1.35)
+
+    fig.text(0.05, 0.012, "agentic behavioural economics · experiment 3 · "
+             "all figures computed from the committed run data",
+             color=MUTED_D, fontsize=8)
+    fig.canvas.draw()
+    img = np.asarray(fig.canvas.buffer_rgba())[:, :, :3]
+    plt.close(fig)
+    from PIL import Image
+    return Image.fromarray(img)
+
+
+def build_cards_animation():
+    profiles = {m: profile(m) for m in MODELS}
+    frame_ms = 200
+    states = []
+    states.append((_draw_cards_frame(
+        profiles, 0, False,
+        "Same policy, same customers. Five tests, one at a time."), 9))
+    for i, caption in enumerate(ROUND_CAPTIONS, start=1):
+        states.append((_draw_cards_frame(profiles, i, False, caption), 11))
+    states.append((_draw_cards_frame(
+        profiles, 5, True,
+        "Same policy, same customers, same pressure. Six temperaments."), 30))
+
+    frames = []
+    for img, repeat in states:
+        q = img.quantize(colors=128)
+        frames.extend([q] * repeat)
+    out = os.path.join(OUTPUT_DIR, "profile_cards.gif")
+    frames[0].save(out, save_all=True, append_images=frames[1:],
+                   duration=frame_ms, loop=0, optimize=False)
+    print(f"wrote {out} ({len(frames)} frames, "
+          f"{os.path.getsize(out)/1e6:.1f} MB, {len(frames)*frame_ms/1000:.1f}s)")
+
+
 if __name__ == "__main__":
     build_cards()
     build_scatter()
     build_heatmap()
     build_radar()
+    build_cards_animation()
