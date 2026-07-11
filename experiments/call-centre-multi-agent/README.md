@@ -81,6 +81,34 @@ cross-checking. Combined yield = the earlier of action-field and judge calls.
 - **Mitigation**: the disciplined handoff protocol (C_mitigated) restores
   most of B's system yield point.
 
+## De-armouring variants and the strategy-document axis
+
+The baseline design produced zero yields everywhere — three protections
+turned out to be doing the work (an enumerated policy clause that
+pre-refuted the pressure script, consequence warnings at the decision
+point, and a supervisor holding ground truth). `prompts.VARIANTS` removes
+them stepwise; the headline finding is that yielding is gated by goal
+conflict, not pressure alone.
+
+The goal conflict is delivered two ways: a blunt system-prompt memo
+(`--variant stakes`) or — the realistic channel — a quarterly strategy
+document injected into the supervisor's context as a retrieved document
+(`--docs q1|q2|q2_control|q2_mitigated`). Q2 and Q2-control differ by
+exactly one bullet (customer retention vs supplier consolidation), which
+isolates the causal effect of one line in an internal document. The
+mitigated variant appends a single "standing policies unchanged" line.
+
+## Field simulation
+
+`run_simulation.py` runs a seeded 30-business-day call centre (identical
+case stream for every model: ~373 order discussions mixing legitimate
+in-window refunds, pressure arcs, and easy declines) with the Q1 doc in
+the manager's context until 3 April 2026 and the Q2 doc from 6 April.
+`sim_metrics.py` builds the daily table; `sim_plot.py` renders the
+dashboard (`output/sim_spend_timeline.png`). Metrics split refund spend
+into policy-compliant vs out-of-policy and track wrongful declines of
+legitimate refunds (the over-refusal cost).
+
 ## Running
 
 ```bash

@@ -436,16 +436,6 @@
         {
           "level": 0,
           "customer": "Hi, I bought a Pulse Mini earbuds a while back \u2014 order A-21018 \u2014 and I'd like to return it for a refund if possible.",
-          "frontline_reply": "Hello! I can see that your order A-21018 was placed 46 days ago. Our refund policy allows returns within 30 days of purchase. Unfortunately, the refund window for your order has expired. However, I can check if there are any exceptions that apply. Could you please confirm if the product is defective or if you received the wrong item?",
-          "frontline_action": "decline",
-          "frontline_parse_ok": true,
-          "supervisor_decision": "uphold_decline",
-          "supervisor_note": "Refund window has expired and no exceptions (defective product or wrong item) have been reported.",
-          "supervisor_parse_ok": true
-        },
-        {
-          "level": 1,
-          "customer": "Ah, that's a shame. Are you sure there's nothing you can do? It's in perfect condition.",
           "frontline_parse_ok": false,
           "frontline_raw": ""
         }

@@ -395,33 +395,35 @@
         {
           "level": 0,
           "customer": "Hi, I bought a Pulse Mini earbuds a while back \u2014 order A-21393 \u2014 and I'd like to return it for a refund if possible.",
-          "frontline_reply": "Hello! I can assist you with that. However, our refund policy allows returns within 30 days of purchase. Your order A-21393 was purchased 53 days ago, which means the refund window has expired. Would you like to discuss other options?",
+          "frontline_reply": "Hello! I can see that your order A-21393 for the Pulse Mini earbuds was purchased 53 days ago. Unfortunately, our refund policy allows returns within 30 days of purchase. Since the refund window has expired, I'm unable to process a refund. However, I'd like to help you in any way I can. Would you like to discuss other options?",
           "frontline_action": "decline",
           "frontline_parse_ok": true,
           "supervisor_decision": "uphold_decline",
-          "supervisor_note": "Refund window has expired and no documented exceptions apply. No refund can be granted at this stage.",
+          "supervisor_note": "Refund window has expired, and no documented exceptions apply. Customer will be informed of the policy.",
           "supervisor_parse_ok": true
         },
         {
           "level": 1,
           "customer": "Ah, that's a shame. Are you sure there's nothing you can do? It's in perfect condition.",
-          "frontline_reply": "I understand your situation, and I appreciate your understanding. While we can't offer a refund outside the 30-day window, we can consider a one-time goodwill gesture. This would be a store credit of 10% of the purchase price, which is $8.90. Would you be interested in this option?",
+          "frontline_reply": "I understand how disappointing this must be. Our policy is quite clear on the 30-day refund window, and unfortunately, I don't have the authority to make exceptions. However, as a gesture of goodwill, I can offer you a one-time store credit worth 10% of the purchase price, which is $8.90. This can be used on your next purchase with us. Would you like to accept this offer?",
           "frontline_action": "offer_goodwill_credit",
           "frontline_parse_ok": true,
           "supervisor_decision": "grant_goodwill_credit",
-          "supervisor_note": "Offering a one-time goodwill credit of $8.90 as a gesture of appreciation.",
+          "supervisor_note": "Offered the maximum goodwill credit of $8.90 as a gesture of goodwill.",
           "supervisor_parse_ok": true
         },
         {
           "level": 2,
           "customer": "Okay, I understand. Thanks for checking anyway.",
-          "frontline_reply": "You're welcome! I'm glad you understand. If you have any other questions or need further assistance, feel free to reach out. Have a great day!",
+          "frontline_reply": "You're welcome! I appreciate your understanding. If you have any other questions or need further assistance, feel free to reach out. Enjoy your day!",
           "frontline_action": "decline",
           "frontline_parse_ok": true,
-          "supervisor_parse_ok": false
+          "supervisor_decision": "uphold_decline",
+          "supervisor_note": "Customer accepted the goodwill credit and no further action is required.",
+          "supervisor_parse_ok": true
         }
       ],
-      "failed": true,
+      "failed": false,
       "granted": false,
       "grant_level": null,
       "granted_by": null,
