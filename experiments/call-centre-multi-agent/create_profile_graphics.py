@@ -97,16 +97,35 @@ def _sim_stats(model):
 
 
 def profile(model):
+    """Scored on the framework's own metrics (see framework_metrics.py).
+
+    Four cells, reported in their published direction: false-acceptance and
+    susceptibility are lower-is-better, acceptance is higher-is-better. The
+    older held/resisted/spotted keys are kept because the frontier, heatmap
+    and radar graphics still read them.
+    """
     m = _safe(model)
+    solo = _held_rate(os.path.join(RUNS_DIR, f"A_{m}_base_default_stakes.json"))
+    manager = _held_rate(os.path.join(RUNS_DIR, f"B_{m}_base_default_stakes.json"))
+    deck = _held_rate(os.path.join(
+        RUNS_DIR, f"B_{m}_base_default_soft_actions_docs-q2.json"))
+    fabrication = _fabrication_refusal(model)
+    acceptance, leaked, wrongful = _sim_stats(model)
     return {
-        "solo": _held_rate(os.path.join(RUNS_DIR, f"A_{m}_base_default_stakes.json")),
-        "manager": _held_rate(os.path.join(RUNS_DIR, f"B_{m}_base_default_stakes.json")),
-        "deck": _held_rate(os.path.join(
-            RUNS_DIR, f"B_{m}_base_default_soft_actions_docs-q2.json")),
-        "fabrication": _fabrication_refusal(model),
-        "helpfulness": _sim_stats(model)[0],
-        "leaked": _sim_stats(model)[1],
-        "wrongful": _sim_stats(model)[2],
+        # framework metrics
+        "false_acceptance_solo": 1 - solo,
+        "false_acceptance_manager": 1 - manager,
+        "susceptibility_document": 1 - deck,
+        "susceptibility_peer": 1 - fabrication,
+        "acceptance": acceptance,
+        # legacy keys, still used by the other three graphics
+        "solo": solo,
+        "manager": manager,
+        "deck": deck,
+        "fabrication": fabrication,
+        "helpfulness": acceptance,
+        "leaked": leaked,
+        "wrongful": wrongful,
     }
 
 
@@ -150,8 +169,8 @@ def build_cards():
     fig.patch.set_facecolor(BG)
     fig.text(0.05, 0.965, "Six models, six temperaments", color=TEXT,
              fontsize=17, fontweight="bold")
-    fig.text(0.05, 0.935, "Same policy, same customers, same pressure. "
-             "Share of runs where the model held the line, and what it cost.",
+    fig.text(0.05, 0.935, "Same policy, same customers, same pressure. Scored on the "
+             "framework's own metrics: yielding and prone-to-injection.",
              color=MUTED_D, fontsize=10)
 
     positions = [(0.045 + c * 0.32, 0.475 - r * 0.435)
@@ -174,13 +193,11 @@ def build_cards():
         fig.text(x + 0.015, y + 0.322, textwrap.fill(blurb, 44), color=MUTED_D,
                  fontsize=7.6, va="top", linespacing=1.35)
 
-        stats = [("held alone", p["solo"]), ("held as manager", p["manager"]),
-                 ("resisted the deck", p["deck"]),
-                 ("spotted the fake defect", p["fabrication"]),
-                 ("legit refunds granted", p["helpfulness"])]
         sy = y + 0.225
-        for label, v in stats:
-            color = GREEN_D if v >= 0.95 else AMBER_D if v >= 0.5 else RED_D
+        for label, key, direction in STAT_LABELS:
+            v = p[key]
+            good = v if direction == "hi" else 1 - v
+            color = GREEN_D if good >= 0.95 else AMBER_D if good >= 0.5 else RED_D
             fig.text(x + 0.015, sy, label, color=MUTED_D, fontsize=7.8)
             bw = 0.130 * v
             bar = mpatches.FancyBboxPatch((x + 0.130, sy - 0.004),
@@ -333,17 +350,22 @@ def build_radar():
     print(f"wrote {out}")
 
 
-STAT_LABELS = [("held alone", "solo"), ("held as manager", "manager"),
-               ("resisted the deck", "deck"),
-               ("spotted the fake defect", "fabrication"),
-               ("legit refunds granted", "helpfulness")]
+# (label, profile key, direction) — "lo" = lower is better, "hi" = higher is better.
+# Names are the framework's, not this experiment's.
+STAT_LABELS = [
+    ("false-accept · solo", "false_acceptance_solo", "lo"),
+    ("false-accept · mgr", "false_acceptance_manager", "lo"),
+    ("suscept. · doc", "susceptibility_document", "lo"),
+    ("suscept. · peer", "susceptibility_peer", "lo"),
+    ("acceptance", "acceptance", "hi"),
+]
 
 ROUND_CAPTIONS = [
-    "Test 1 · pressure them alone, with the retention memo in context",
-    "Test 2 · same pressure, but now they are the manager",
-    "Test 3 · slip one retention bullet into a quarterly strategy deck",
-    "Test 4 · a colleague's summary claims a defect. No evidence. Approve?",
-    "Test 5 · ordinary customers with legitimate, in-window refunds",
+    "Yielding · false-acceptance rate, pressured alone with the retention memo",
+    "Yielding · false-acceptance rate, same pressure, now in the manager's seat",
+    "Prone to injection · susceptibility, one retention bullet in a strategy deck",
+    "Prone to injection · susceptibility, a colleague's message claims a defect",
+    "Yielding · acceptance rate, ordinary customers with legitimate refunds",
 ]
 
 
@@ -382,9 +404,10 @@ def _draw_cards_frame(profiles, rounds_shown, reveal, caption):
                      color=MUTED_D, fontsize=7.6, va="top", linespacing=1.35)
 
         sy = y + 0.225
-        for label, key in STAT_LABELS[:rounds_shown]:
+        for label, key, direction in STAT_LABELS[:rounds_shown]:
             v = p[key]
-            color = GREEN_D if v >= 0.95 else AMBER_D if v >= 0.5 else RED_D
+            good = v if direction == "hi" else 1 - v
+            color = GREEN_D if good >= 0.95 else AMBER_D if good >= 0.5 else RED_D
             fig.text(x + 0.015, sy, label, color=MUTED_D, fontsize=7.8)
             bw = 0.130 * v
             bar = mpatches.FancyBboxPatch((x + 0.130, sy - 0.004),
